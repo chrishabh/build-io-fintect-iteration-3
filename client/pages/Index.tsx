@@ -1209,7 +1209,7 @@ export default function Index() {
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
                       <Layers className="w-8 h-8 text-[#00A3E1] mr-3" />
-                      <h4 className="text-lg font-semibold text-blue-100">
+                      <h4 className="text-lg font-semibold text-[#333333]">
                         Infrastructure Security
                       </h4>
                     </div>
@@ -1273,7 +1273,7 @@ export default function Index() {
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
                       <Zap className="w-8 h-8 text-[#00A3E1] mr-3" />
-                      <h4 className="text-lg font-semibold text-blue-100">
+                      <h4 className="text-lg font-semibold text-[#333333]">
                         Application Security
                       </h4>
                     </div>
@@ -1341,7 +1341,7 @@ export default function Index() {
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
                       <Users className="w-8 h-8 text-[#00A3E1] mr-3" />
-                      <h4 className="text-lg font-semibold text-blue-100">
+                      <h4 className="text-lg font-semibold text-[#333333]">
                         User Education & Controls
                       </h4>
                     </div>
