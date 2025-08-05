@@ -29,7 +29,16 @@ export default function Index() {
   const [isVisible, setIsVisible] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlay, setIsAutoPlay] = useState(true);
+  const [currentStatIndex, setCurrentStatIndex] = useState(0);
   const carouselRef = useRef<HTMLDivElement>(null);
+
+  // Rotating statistics data
+  const rotatingStats = [
+    { value: "500+", label: "Financial Institutions", color: "text-cyan-400" },
+    { value: "1000+", label: "Active Users", color: "text-green-400" },
+    { value: "2M+", label: "Transactions Daily", color: "text-purple-400" },
+    { value: "150+", label: "Countries Served", color: "text-yellow-400" },
+  ];
 
   useEffect(() => {
     setIsVisible(true);
