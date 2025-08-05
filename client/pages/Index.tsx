@@ -643,7 +643,7 @@ export default function Index() {
             {features.map((feature, index) => (
               <Card
                 key={index}
-                className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/15 hover:shadow-2xl transition-all duration-500 group transform hover:scale-105 hover:-translate-y-2"
+                className="bg-white border-[#00A3E1]/20 hover:bg-[#F5F7FA] hover:shadow-2xl hover:border-[#00A3E1]/40 transition-all duration-500 group transform hover:scale-105 hover:-translate-y-2"
                 style={{
                   animationDelay: `${index * 200}ms`,
                   animation: "fadeInUp 0.8s ease-out forwards",
@@ -653,10 +653,10 @@ export default function Index() {
                   <div className="mb-4 transform group-hover:rotate-12 transition-transform duration-300">
                     {feature.icon}
                   </div>
-                  <CardTitle className="text-xl text-white group-hover:text-cyan-400 transition-colors duration-300">
+                  <CardTitle className="text-xl text-[#333333] group-hover:text-[#00A3E1] transition-colors duration-300">
                     {feature.title}
                   </CardTitle>
-                  <CardDescription className="text-blue-200 group-hover:text-blue-100 transition-colors">
+                  <CardDescription className="text-[#666666] group-hover:text-[#333333] transition-colors">
                     {feature.description}
                   </CardDescription>
                 </CardHeader>
@@ -665,19 +665,19 @@ export default function Index() {
                     {feature.features.map((item, idx) => (
                       <li
                         key={idx}
-                        className="flex items-center text-sm text-blue-100 transform hover:translate-x-2 transition-transform duration-200"
+                        className="flex items-center text-sm text-[#666666] transform hover:translate-x-2 transition-transform duration-200"
                         style={{
                           animationDelay: `${index * 200 + idx * 100}ms`,
                         }}
                       >
-                        <CheckCircle className="w-4 h-4 text-cyan-400 mr-3 flex-shrink-0 animate-pulse" />
+                        <CheckCircle className="w-4 h-4 text-[#00A3E1] mr-3 flex-shrink-0 animate-pulse" />
                         {item}
                       </li>
                     ))}
                   </ul>
                   <Button
                     variant="outline"
-                    className="w-full mt-6 border-white/30 text-white hover:bg-gradient-to-r hover:from-cyan-500/20 hover:to-purple-500/20 backdrop-blur-sm transition-all duration-300 group-hover:border-cyan-400/50"
+                    className="w-full mt-6 border-[#00A3E1]/30 text-[#00A3E1] hover:bg-gradient-to-r hover:from-[#00A3E1]/10 hover:to-[#00C6FF]/10 transition-all duration-300 group-hover:border-[#00A3E1]/50"
                   >
                     Learn More
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
