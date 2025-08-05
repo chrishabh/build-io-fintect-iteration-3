@@ -625,14 +625,14 @@ export default function Index() {
       {/* Solutions Section */}
       <section
         id="solutions"
-        className="py-20 px-6 bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm relative z-10"
+        className="py-20 px-6 bg-white relative z-10"
       >
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">
+            <h2 className="text-4xl font-bold text-[#333333] mb-4">
               Integrated Fintech Solution Architecture
             </h2>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            <p className="text-xl text-[#666666] max-w-3xl mx-auto">
               Our comprehensive solution combines cutting-edge technology with
               financial expertise. From Client Management to Back Office
               Administration and regulatory compliance.
