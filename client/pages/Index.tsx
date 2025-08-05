@@ -335,20 +335,21 @@ export default function Index() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-r from-blue-900 to-blue-800 text-white">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">
+      <section className="py-20 px-6 bg-gradient-to-r from-purple-900 via-blue-900 to-indigo-900 text-white relative z-10">
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-blue-500/10"></div>
+        <div className="container mx-auto text-center relative z-10">
+          <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
             Ready to Transform Your Financial Operations?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Discover how our integrated solutions can streamline your processes and 
+            Discover how our integrated solutions can streamline your processes and
             accelerate your digital transformation journey.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50 px-8 py-3">
+            <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-3 shadow-lg border-0">
               Schedule Assessment Review
             </Button>
-            <Button size="lg" variant="outline" className="border-blue-300 text-white hover:bg-blue-800 px-8 py-3">
+            <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 px-8 py-3 backdrop-blur-sm">
               Download Whitepaper
             </Button>
           </div>
