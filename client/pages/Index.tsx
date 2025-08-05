@@ -469,7 +469,7 @@ export default function Index() {
                 <span className="text-white font-bold text-sm">FT</span>
               </div>
               <span className="text-xl font-bold text-white">
-                New Fintek Technologies
+                New Field Technologies
               </span>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
@@ -1506,7 +1506,7 @@ export default function Index() {
                   <span className="text-white font-bold text-sm">FT</span>
                 </div>
                 <span className="text-xl font-bold text-white">
-                  New Fintek Technologies
+                  New Field Technologies
                 </span>
               </div>
               <p className="text-blue-200">
@@ -1591,7 +1591,7 @@ export default function Index() {
           </div>
 
           <div className="border-t border-white/20 mt-8 pt-8 text-center text-blue-200">
-            <p>&copy; 2024 New Fintek Technologies. All rights reserved.</p>
+            <p>&copy; 2024 New Field Technologies. All rights reserved.</p>
           </div>
         </div>
       </footer>
