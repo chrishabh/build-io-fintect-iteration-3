@@ -1179,7 +1179,7 @@ export default function Index() {
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
                       <Lock className="w-8 h-8 text-[#0072FF] mr-3" />
-                      <h4 className="text-lg font-semibold text-purple-100">
+                      <h4 className="text-lg font-semibold text-[#333333]">
                         Data Encryption
                       </h4>
                     </div>
@@ -1243,7 +1243,7 @@ export default function Index() {
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
                       <CheckCircle className="w-8 h-8 text-[#0072FF] mr-3" />
-                      <h4 className="text-lg font-semibold text-purple-100">
+                      <h4 className="text-lg font-semibold text-[#333333]">
                         Compliance & Regulatory
                       </h4>
                     </div>
@@ -1307,7 +1307,7 @@ export default function Index() {
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
                       <Activity className="w-8 h-8 text-[#0072FF] mr-3" />
-                      <h4 className="text-lg font-semibold text-purple-100">
+                      <h4 className="text-lg font-semibold text-[#333333]">
                         Monitoring & Incident Response
                       </h4>
                     </div>
@@ -1371,7 +1371,7 @@ export default function Index() {
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
                       <Globe className="w-8 h-8 text-[#0072FF] mr-3" />
-                      <h4 className="text-lg font-semibold text-purple-100">
+                      <h4 className="text-lg font-semibold text-[#333333]">
                         Performance & Architecture
                       </h4>
                     </div>
