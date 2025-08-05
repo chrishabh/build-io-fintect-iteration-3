@@ -34,40 +34,71 @@ export default function Index() {
 
   const features = [
     {
-      icon: <Settings className="w-8 h-8 text-blue-600" />,
-      title: "Client Interaction System",
-      description: "Comprehensive client management and interaction platform",
-      features: ["Client Portal", "Real-time Chat", "Document Sharing", "Meeting Scheduler"]
+      icon: <Users className="w-8 h-8 text-blue-600" />,
+      title: "Client Portal (User-facing Dashboard) & Mobile application",
+      description: "Clean overview dashboard with cards and charts",
+      features: [
+        "Client demographic info (KYC, personal data, financial profile)",
+        "View/download statements, contract notes",
+        "Trading capabilities: Cambio, Equity, Loans, Margin, Repo, Bonds, Asset Management",
+        "Bank Lodgement, Payments, Journal"
+      ]
     },
     {
-      icon: <Database className="w-8 h-8 text-blue-600" />,
-      title: "Back Office Management",
-      description: "Streamlined backend operations and administrative tools",
-      features: ["User Management", "Role Based Access", "Audit Trails", "Compliance Reports"]
+      icon: <CheckCircle className="w-8 h-8 text-green-600" />,
+      title: "Client Onboarding Application (Self-Service)",
+      description: "Step-by-step digital KYC onboarding wizard",
+      features: [
+        "Upload documents, verify TRN, and digitally sign",
+        "Choose investment services during onboarding",
+        "Automated compliance checks",
+        "Real-time status tracking"
+      ]
     },
     {
-      icon: <Activity className="w-8 h-8 text-blue-600" />,
-      title: "Transaction Monitoring",
-      description: "Advanced monitoring and fraud detection systems",
-      features: ["Real-time Alerts", "Risk Assessment", "Transaction Analytics", "Compliance Tracking"]
+      icon: <Shield className="w-8 h-8 text-purple-600" />,
+      title: "Onboarding Admin Portal",
+      description: "View incoming onboarding applications",
+      features: [
+        "Third-party verification integrations (TRN, address, credit score)",
+        "Approve, reject, or send back for revision",
+        "Upon approval, auto-create client account and assign unique ID",
+        "Compliance workflow management"
+      ]
     },
     {
-      icon: <Database className="w-8 h-8 text-orange-600" />,
-      title: "Data Warehouse & BI",
-      description: "Comprehensive data analytics and business intelligence",
-      features: ["Data Integration", "Custom Reports", "Predictive Analytics", "Dashboard Builder"]
+      icon: <BarChart3 className="w-8 h-8 text-blue-600" />,
+      title: "Client Management Portal (Back Office)",
+      description: "Monitor and manage client portfolios and trades",
+      features: [
+        "Generate trade reports, P&L, commissions",
+        "Audit logs of client activities and orders",
+        "Bulk export and compliance reporting features",
+        "Portfolio performance analytics"
+      ]
     },
     {
-      icon: <Globe className="w-8 h-8 text-orange-600" />,
-      title: "External Integrations",
-      description: "Seamless integration with external systems and APIs",
-      features: ["Banking APIs", "Payment Gateways", "Third-party Services", "Legacy Systems"]
+      icon: <CreditCard className="w-8 h-8 text-orange-600" />,
+      title: "CRM Portal",
+      description: "360° Client View (interaction logs, portfolio snapshot, preferences)",
+      features: [
+        "Lead Management with pipelines",
+        "Ticket Management for client queries",
+        "Target Management for sales teams",
+        "Mass Email Campaign Builder + Templates",
+        "Survey Management with analytics"
+      ]
     },
     {
-      icon: <PieChart className="w-8 h-8 text-purple-600" />,
-      title: "Financial Accounting",
-      description: "Complete financial management and accounting solutions",
-      features: ["General Ledger", "Financial Reports", "Tax Management", "Audit Support"]
+      icon: <DollarSign className="w-8 h-8 text-green-600" />,
+      title: "Accounting System",
+      description: "Journal entries per trade (automated)",
+      features: [
+        "Trial Balance, Ledger, Balance Sheet",
+        "Month-end and year-end reports",
+        "Tax-ready financial statements and audit trail",
+        "Automated reconciliation processes"
+      ]
     }
   ];
 
