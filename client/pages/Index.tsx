@@ -447,6 +447,25 @@ export default function Index() {
 
                 {/* Enhanced Features Banner */}
                 {categoryIndex === 0 && (
+                  <div className="mt-12 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-8 text-white">
+                    <div className="grid md:grid-cols-3 gap-6 text-center">
+                      <div>
+                        <div className="text-3xl font-bold mb-2">Unified</div>
+                        <div className="text-indigo-100">Client Experience</div>
+                      </div>
+                      <div>
+                        <div className="text-3xl font-bold mb-2">Mobile-First</div>
+                        <div className="text-indigo-100">Design</div>
+                      </div>
+                      <div>
+                        <div className="text-3xl font-bold mb-2">Complete</div>
+                        <div className="text-indigo-100">Onboarding Flow</div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {categoryIndex === 1 && (
                   <div className="mt-12 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl p-8 text-white">
                     <div className="grid md:grid-cols-3 gap-6 text-center">
                       <div>
@@ -465,7 +484,7 @@ export default function Index() {
                   </div>
                 )}
 
-                {categoryIndex === 1 && (
+                {categoryIndex === 2 && (
                   <div className="mt-12 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-8 text-white">
                     <div className="grid md:grid-cols-3 gap-6 text-center">
                       <div>
@@ -484,7 +503,7 @@ export default function Index() {
                   </div>
                 )}
 
-                {categoryIndex === 2 && (
+                {categoryIndex === 3 && (
                   <div className="mt-12 bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl p-8 text-white">
                     <div className="grid md:grid-cols-3 gap-6 text-center">
                       <div>
