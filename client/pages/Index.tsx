@@ -283,9 +283,10 @@ export default function Index() {
               Advanced Fintech Financial Technology
             </Badge>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-              Integrated Fintech
+              <span className="inline-block animate-fade-in-up">Integrated</span>{' '}
+              <span className="inline-block animate-fade-in-up delay-200">Fintech</span>
               <br />
-              <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent inline-block animate-fade-in-up delay-500">
                 Solution Architecture
               </span>
             </h1>
