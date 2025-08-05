@@ -552,16 +552,16 @@ export default function Index() {
             {/* Stats */}
             <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
               {/* Rotating Statistic */}
-              <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-500 transform hover:scale-105 group relative overflow-hidden">
+              <div className="text-center bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-[#00A3E1]/10 hover:bg-white transition-all duration-500 transform hover:scale-105 group relative overflow-hidden shadow-lg">
                 <div
-                  className={`text-4xl font-bold mb-2 transition-all duration-500 ${rotatingStats[currentStatIndex].color} animate-floating`}
+                  className={`text-4xl font-bold mb-2 transition-all duration-500 text-[#00A3E1] animate-floating`}
                 >
                   {rotatingStats[currentStatIndex].value}
                 </div>
-                <div className="text-blue-200 group-hover:text-white transition-colors min-h-[20px]">
+                <div className="text-[#666666] group-hover:text-[#333333] transition-colors min-h-[20px]">
                   {rotatingStats[currentStatIndex].label}
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#00A3E1]/5 to-[#00C6FF]/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 {/* Progress indicator */}
                 <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1">
                   {rotatingStats.map((_, index) => (
@@ -569,8 +569,8 @@ export default function Index() {
                       key={index}
                       className={`w-2 h-2 rounded-full transition-all duration-300 ${
                         index === currentStatIndex
-                          ? "bg-cyan-400 scale-125"
-                          : "bg-white/30"
+                          ? "bg-[#00A3E1] scale-125"
+                          : "bg-[#00A3E1]/30"
                       }`}
                     />
                   ))}
