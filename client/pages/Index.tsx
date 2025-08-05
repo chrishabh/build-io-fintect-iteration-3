@@ -27,10 +27,30 @@ import {
 
 export default function Index() {
   const [isVisible, setIsVisible] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [isAutoPlay, setIsAutoPlay] = useState(true);
+  const carouselRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
+
+  // Auto-play carousel
+  useEffect(() => {
+    if (!isAutoPlay) return;
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % enterpriseServices.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [isAutoPlay]);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % enterpriseServices.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + enterpriseServices.length) % enterpriseServices.length);
+  };
 
   const features = [
     {
