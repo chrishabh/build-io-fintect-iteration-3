@@ -1185,19 +1185,19 @@ export default function Index() {
                     </div>
                     <ul className="space-y-2 text-sm text-[#666666]">
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#0072FF] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         End-to-end encryption (TLS 1.3 in transit)
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#0072FF] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         AES-256 encryption at rest
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#0072FF] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Field-level encryption for sensitive data
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#0072FF] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Encrypted file storage for documents
                       </li>
                     </ul>
@@ -1249,19 +1249,19 @@ export default function Index() {
                     </div>
                     <ul className="space-y-2 text-sm text-[#666666]">
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#0072FF] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         KYC/AML checks with third-party APIs
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#0072FF] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Immutable audit logs for all actions
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#0072FF] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Regulatory export tools (SEC, FSC)
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#0072FF] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         GDPR, CCPA & Jamaican DPA compliance
                       </li>
                     </ul>
@@ -1313,23 +1313,23 @@ export default function Index() {
                     </div>
                     <ul className="space-y-2 text-sm text-[#666666]">
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#0072FF] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Real-time security monitoring
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#0072FF] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         SIEM integration (Splunk, Datadog)
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#0072FF] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Intrusion Detection Systems (IDS)
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#0072FF] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Incident response playbooks
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#0072FF] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Disaster Recovery & BCP
                       </li>
                     </ul>
@@ -1377,19 +1377,19 @@ export default function Index() {
                     </div>
                     <ul className="space-y-2 text-sm text-[#666666]">
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#0072FF] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         99.9% uptime SLA guarantee
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#0072FF] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Microsecond latency trading
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#0072FF] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         API-first design architecture
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#0072FF] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Seamless integration capabilities
                       </li>
                     </ul>
