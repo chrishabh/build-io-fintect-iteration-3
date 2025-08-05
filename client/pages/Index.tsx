@@ -897,44 +897,45 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12 px-6">
-        <div className="container mx-auto">
+      <footer className="bg-gradient-to-br from-blue-950 via-purple-950 to-indigo-950 text-white py-12 px-6 relative z-10">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-indigo-900/20"></div>
+        <div className="container mx-auto relative z-10">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg">
                   <span className="text-white font-bold text-sm">FT</span>
                 </div>
-                <span className="text-xl font-bold">New Fintek Technologies</span>
+                <span className="text-xl font-bold text-white">New Fintek Technologies</span>
               </div>
-              <p className="text-slate-400">
+              <p className="text-blue-200">
                 Leading provider of integrated fintech solutions for modern financial institutions.
               </p>
             </div>
-            
+
             <div>
-              <h4 className="font-semibold mb-4">Solutions</h4>
-              <ul className="space-y-2 text-slate-400">
-                <li><a href="#" className="hover:text-white transition-colors">Client Systems</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Back Office</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Data Analytics</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Compliance</a></li>
+              <h4 className="font-semibold mb-4 text-white">Solutions</h4>
+              <ul className="space-y-2 text-blue-200">
+                <li><a href="#" className="hover:text-cyan-400 transition-colors">Client Systems</a></li>
+                <li><a href="#" className="hover:text-cyan-400 transition-colors">Back Office</a></li>
+                <li><a href="#" className="hover:text-cyan-400 transition-colors">Data Analytics</a></li>
+                <li><a href="#" className="hover:text-cyan-400 transition-colors">Compliance</a></li>
               </ul>
             </div>
-            
+
             <div>
-              <h4 className="font-semibold mb-4">Services</h4>
-              <ul className="space-y-2 text-slate-400">
-                <li><a href="#" className="hover:text-white transition-colors">Investment Banking</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Wealth Management</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Credit Unions</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Consulting</a></li>
+              <h4 className="font-semibold mb-4 text-white">Services</h4>
+              <ul className="space-y-2 text-blue-200">
+                <li><a href="#" className="hover:text-purple-400 transition-colors">Investment Banking</a></li>
+                <li><a href="#" className="hover:text-purple-400 transition-colors">Wealth Management</a></li>
+                <li><a href="#" className="hover:text-purple-400 transition-colors">Credit Unions</a></li>
+                <li><a href="#" className="hover:text-purple-400 transition-colors">Consulting</a></li>
               </ul>
             </div>
-            
+
             <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
-              <ul className="space-y-2 text-slate-400">
+              <h4 className="font-semibold mb-4 text-white">Contact</h4>
+              <ul className="space-y-2 text-blue-200">
                 <li>+1 (555) 123-4567</li>
                 <li>info@newfintektech.com</li>
                 <li>123 Financial District</li>
@@ -942,8 +943,8 @@ export default function Index() {
               </ul>
             </div>
           </div>
-          
-          <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
+
+          <div className="border-t border-white/20 mt-8 pt-8 text-center text-blue-200">
             <p>&copy; 2024 New Fintek Technologies. All rights reserved.</p>
           </div>
         </div>
