@@ -238,6 +238,19 @@ export default function Index() {
         <div className="absolute bottom-20 left-1/4 w-40 h-40 border border-indigo-400/20 rounded-full animate-pulse delay-2000"></div>
         <div className="absolute bottom-10 right-10 w-16 h-16 border border-cyan-400/30 rounded-full animate-pulse delay-500"></div>
         <div className="absolute top-1/2 left-1/2 w-64 h-64 border border-purple-400/10 rounded-full transform -translate-x-1/2 -translate-y-1/2 animate-pulse delay-1500"></div>
+
+        {/* Floating Dollar Signs */}
+        <div className="absolute top-20 left-20 text-4xl text-green-400/20 animate-bounce delay-300">$</div>
+        <div className="absolute top-40 right-32 text-3xl text-yellow-400/20 animate-bounce delay-700">$</div>
+        <div className="absolute bottom-32 left-16 text-5xl text-emerald-400/15 animate-bounce delay-1100">$</div>
+        <div className="absolute bottom-40 right-20 text-2xl text-cyan-400/25 animate-bounce delay-1500">$</div>
+        <div className="absolute top-60 left-1/3 text-3xl text-purple-400/20 animate-bounce delay-1900">$</div>
+        <div className="absolute bottom-60 right-1/3 text-4xl text-blue-400/15 animate-bounce delay-2300">$</div>
+
+        {/* Floating Financial Icons */}
+        <div className="absolute top-32 right-40 text-2xl text-white/10 animate-spin" style={{animationDuration: '8s'}}>📊</div>
+        <div className="absolute bottom-48 left-32 text-3xl text-white/10 animate-spin" style={{animationDuration: '10s'}}>📈</div>
+        <div className="absolute top-48 left-40 text-2xl text-white/10 animate-spin" style={{animationDuration: '12s'}}>💰</div>
       </div>
       {/* Header */}
       <header className="bg-white/10 backdrop-blur-md border-b border-white/20 sticky top-0 z-50 relative">
