@@ -359,25 +359,153 @@ export default function Index() {
       </section>
 
       {/* Platform Capabilities */}
-      <section id="platform" className="py-20 px-6 bg-white">
+      <section id="platform" className="py-20 px-6 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-800 mb-4">Platform Capabilities</h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Built on enterprise-grade infrastructure with modern architecture principles
+            <h2 className="text-4xl font-bold text-slate-800 mb-4">Comprehensive Platform Capabilities</h2>
+            <p className="text-xl text-slate-600 max-w-4xl mx-auto">
+              Enterprise-grade fintech infrastructure delivering complete trading, CRM, and accounting solutions
+              with advanced automation and regulatory compliance
             </p>
           </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {platformCapabilities.map((capability, index) => (
-              <div key={index} className="text-center group">
-                <div className="mb-6 flex justify-center group-hover:scale-110 transition-transform duration-300">
-                  {capability.icon}
+
+          <div className="space-y-16">
+            {platformCapabilities.map((category, categoryIndex) => (
+              <div key={categoryIndex} className="group">
+                {/* Category Header */}
+                <div className="text-center mb-12">
+                  <div className="flex justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    {category.icon}
+                  </div>
+                  <h3 className="text-3xl font-bold text-slate-800 mb-3">{category.category}</h3>
+                  <div className={`w-24 h-1 mx-auto rounded-full bg-gradient-to-r ${
+                    category.color === 'blue' ? 'from-blue-500 to-cyan-500' :
+                    category.color === 'purple' ? 'from-purple-500 to-pink-500' :
+                    'from-green-500 to-emerald-500'
+                  }`}></div>
                 </div>
-                <h3 className="text-xl font-semibold text-slate-800 mb-3">{capability.title}</h3>
-                <p className="text-slate-600">{capability.description}</p>
+
+                {/* Capabilities Grid */}
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                  {category.capabilities.map((capability, capIndex) => (
+                    <Card key={capIndex} className="border-slate-200 hover:shadow-xl transition-all duration-300 group/card bg-white/80 backdrop-blur-sm">
+                      <CardContent className="p-6">
+                        <div className="flex items-start space-x-3">
+                          <div className={`w-3 h-3 rounded-full mt-2 flex-shrink-0 ${
+                            category.color === 'blue' ? 'bg-blue-500' :
+                            category.color === 'purple' ? 'bg-purple-500' :
+                            'bg-green-500'
+                          }`}></div>
+                          <div className="flex-1">
+                            <h4 className={`font-semibold mb-2 group-hover/card:${
+                              category.color === 'blue' ? 'text-blue-600' :
+                              category.color === 'purple' ? 'text-purple-600' :
+                              'text-green-600'
+                            } transition-colors`}>
+                              {capability.name}
+                            </h4>
+                            <p className="text-sm text-slate-600 leading-relaxed">
+                              {capability.description}
+                            </p>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+
+                {/* Enhanced Features Banner */}
+                {categoryIndex === 0 && (
+                  <div className="mt-12 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl p-8 text-white">
+                    <div className="grid md:grid-cols-3 gap-6 text-center">
+                      <div>
+                        <div className="text-3xl font-bold mb-2">Real-time</div>
+                        <div className="text-blue-100">Trade Execution</div>
+                      </div>
+                      <div>
+                        <div className="text-3xl font-bold mb-2">Multi-Asset</div>
+                        <div className="text-blue-100">Trading Platform</div>
+                      </div>
+                      <div>
+                        <div className="text-3xl font-bold mb-2">Risk Management</div>
+                        <div className="text-blue-100">& Compliance</div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {categoryIndex === 1 && (
+                  <div className="mt-12 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-8 text-white">
+                    <div className="grid md:grid-cols-3 gap-6 text-center">
+                      <div>
+                        <div className="text-3xl font-bold mb-2">360° View</div>
+                        <div className="text-purple-100">Client Intelligence</div>
+                      </div>
+                      <div>
+                        <div className="text-3xl font-bold mb-2">Automated</div>
+                        <div className="text-purple-100">Campaign Management</div>
+                      </div>
+                      <div>
+                        <div className="text-3xl font-bold mb-2">Advanced</div>
+                        <div className="text-purple-100">Analytics Dashboard</div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {categoryIndex === 2 && (
+                  <div className="mt-12 bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl p-8 text-white">
+                    <div className="grid md:grid-cols-3 gap-6 text-center">
+                      <div>
+                        <div className="text-3xl font-bold mb-2">Automated</div>
+                        <div className="text-green-100">Journal Entries</div>
+                      </div>
+                      <div>
+                        <div className="text-3xl font-bold mb-2">Regulatory</div>
+                        <div className="text-green-100">Compliance Ready</div>
+                      </div>
+                      <div>
+                        <div className="text-3xl font-bold mb-2">Real-time</div>
+                        <div className="text-green-100">Financial Reporting</div>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
             ))}
+          </div>
+
+          {/* Technical Excellence Banner */}
+          <div className="mt-20 bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl p-12 text-white">
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold mb-4">Technical Excellence & Security</h3>
+              <p className="text-slate-300 max-w-3xl mx-auto">
+                Built on enterprise-grade infrastructure with 99.9% uptime, bank-level security,
+                and seamless integration capabilities
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="text-center">
+                <Shield className="w-12 h-12 text-blue-400 mx-auto mb-3" />
+                <div className="font-semibold mb-1">Bank-Level Security</div>
+                <div className="text-sm text-slate-400">End-to-end encryption</div>
+              </div>
+              <div className="text-center">
+                <Zap className="w-12 h-12 text-yellow-400 mx-auto mb-3" />
+                <div className="font-semibold mb-1">High Performance</div>
+                <div className="text-sm text-slate-400">Microsecond latency</div>
+              </div>
+              <div className="text-center">
+                <Globe className="w-12 h-12 text-green-400 mx-auto mb-3" />
+                <div className="font-semibold mb-1">Global Compliance</div>
+                <div className="text-sm text-slate-400">Multi-jurisdiction ready</div>
+              </div>
+              <div className="text-center">
+                <Layers className="w-12 h-12 text-purple-400 mx-auto mb-3" />
+                <div className="font-semibold mb-1">API-First Design</div>
+                <div className="text-sm text-slate-400">Seamless integrations</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
