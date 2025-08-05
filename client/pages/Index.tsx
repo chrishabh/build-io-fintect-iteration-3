@@ -1534,6 +1534,186 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Mobile & Web Platform Showcase */}
+      <section className="py-20 px-6 bg-white relative z-10">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-[#333333] mb-4">
+              Experience Across All Platforms
+            </h2>
+            <p className="text-xl text-[#666666] max-w-3xl mx-auto">
+              Seamless financial services whether you're on mobile, tablet, or desktop.
+              Our platform delivers consistent excellence across all devices.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
+            {/* Mobile Experience */}
+            <div className="text-center lg:text-left">
+              <div className="mb-8">
+                <Badge className="mb-4 bg-[#00A3E1]/10 text-[#00A3E1] border-[#00A3E1]/30">
+                  Mobile First
+                </Badge>
+                <h3 className="text-3xl font-bold text-[#333333] mb-4">
+                  Banking in Your Pocket
+                </h3>
+                <p className="text-lg text-[#666666] mb-6">
+                  Complete banking functionality optimized for mobile devices.
+                  Trade, monitor portfolios, and manage accounts on-the-go with our native mobile apps.
+                </p>
+                <ul className="space-y-3 text-left">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-[#00A3E1] mr-3" />
+                    <span className="text-[#666666]">Real-time portfolio tracking</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-[#00A3E1] mr-3" />
+                    <span className="text-[#666666]">Biometric authentication</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-[#00A3E1] mr-3" />
+                    <span className="text-[#666666]">Push notifications for trades</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-[#00A3E1] mr-3" />
+                    <span className="text-[#666666]">Offline mode capabilities</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="relative max-w-sm mx-auto lg:mx-0">
+                <div className="absolute inset-0 bg-gradient-to-r from-[#00A3E1]/20 to-[#0072FF]/20 rounded-3xl blur-2xl"></div>
+                <img
+                  src="https://images.pexels.com/photos/6279105/pexels-photo-6279105.jpeg"
+                  alt="Hand holding smartphone with modern banking app interface"
+                  className="relative w-full h-96 object-cover rounded-3xl shadow-2xl"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-3xl"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-sm font-semibold text-[#333333]">Portfolio Value</span>
+                      <span className="text-lg font-bold text-[#00A3E1]">$124,560</span>
+                    </div>
+                    <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
+                      <div className="h-full bg-gradient-to-r from-[#00A3E1] to-[#0072FF] rounded-full w-3/4"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Web Experience */}
+            <div className="text-center lg:text-left">
+              <div className="mb-8">
+                <Badge className="mb-4 bg-[#0072FF]/10 text-[#0072FF] border-[#0072FF]/30">
+                  Web Platform
+                </Badge>
+                <h3 className="text-3xl font-bold text-[#333333] mb-4">
+                  Advanced Web Dashboard
+                </h3>
+                <p className="text-lg text-[#666666] mb-6">
+                  Powerful web-based platform for comprehensive financial management.
+                  Advanced analytics, detailed reporting, and institutional-grade tools.
+                </p>
+                <ul className="space-y-3 text-left">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-[#0072FF] mr-3" />
+                    <span className="text-[#666666]">Advanced charting & analytics</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-[#0072FF] mr-3" />
+                    <span className="text-[#666666]">Multi-monitor support</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-[#0072FF] mr-3" />
+                    <span className="text-[#666666]">Customizable dashboards</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-[#0072FF] mr-3" />
+                    <span className="text-[#666666]">Bulk operations & reporting</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-[#0072FF]/20 to-[#00C6FF]/20 rounded-2xl blur-2xl"></div>
+                <img
+                  src="https://images.pexels.com/photos/577195/pexels-photo-577195.jpeg"
+                  alt="Laptop displaying comprehensive financial dashboard with charts and analytics"
+                  className="relative w-full h-80 object-cover rounded-2xl shadow-2xl"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4">
+                    <div className="grid grid-cols-3 gap-4 text-center">
+                      <div>
+                        <div className="text-lg font-bold text-[#0072FF]">$2.4M</div>
+                        <div className="text-xs text-[#666666]">Total Assets</div>
+                      </div>
+                      <div>
+                        <div className="text-lg font-bold text-[#00C6FF]">+12.5%</div>
+                        <div className="text-xs text-[#666666]">Monthly Growth</div>
+                      </div>
+                      <div>
+                        <div className="text-lg font-bold text-[#00E6E6]">156</div>
+                        <div className="text-xs text-[#666666]">Active Trades</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Cross-Platform Features */}
+          <div className="mt-20 bg-gradient-to-r from-[#F5F7FA] via-white to-[#F5F7FA] rounded-3xl p-12">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-bold text-[#333333] mb-4">
+                Unified Experience Across All Devices
+              </h3>
+              <p className="text-lg text-[#666666] max-w-3xl mx-auto">
+                Your data, preferences, and workflows sync seamlessly across all platforms
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-4 gap-8 text-center">
+              <div className="bg-white rounded-xl p-6 border border-[#00A3E1]/20 shadow-sm">
+                <div className="w-12 h-12 bg-gradient-to-r from-[#00A3E1] to-[#0072FF] rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <Phone className="w-6 h-6 text-white" />
+                </div>
+                <h4 className="font-semibold text-[#333333] mb-2">Mobile Apps</h4>
+                <p className="text-sm text-[#666666]">iOS & Android native applications</p>
+              </div>
+
+              <div className="bg-white rounded-xl p-6 border border-[#0072FF]/20 shadow-sm">
+                <div className="w-12 h-12 bg-gradient-to-r from-[#0072FF] to-[#00C6FF] rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <Globe className="w-6 h-6 text-white" />
+                </div>
+                <h4 className="font-semibold text-[#333333] mb-2">Web Platform</h4>
+                <p className="text-sm text-[#666666]">Advanced browser-based dashboard</p>
+              </div>
+
+              <div className="bg-white rounded-xl p-6 border border-[#00C6FF]/20 shadow-sm">
+                <div className="w-12 h-12 bg-gradient-to-r from-[#00C6FF] to-[#00E6E6] rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <Database className="w-6 h-6 text-white" />
+                </div>
+                <h4 className="font-semibold text-[#333333] mb-2">Cloud Sync</h4>
+                <p className="text-sm text-[#666666]">Real-time data synchronization</p>
+              </div>
+
+              <div className="bg-white rounded-xl p-6 border border-[#00E6E6]/20 shadow-sm">
+                <div className="w-12 h-12 bg-gradient-to-r from-[#00E6E6] to-[#00A3E1] rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <Settings className="w-6 h-6 text-white" />
+                </div>
+                <h4 className="font-semibold text-[#333333] mb-2">Preferences</h4>
+                <p className="text-sm text-[#666666]">Unified settings across devices</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="py-20 px-6 bg-gradient-to-br from-[#F5F7FA] via-white to-[#F5F7FA] relative z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-[#00A3E1]/5 via-[#00C6FF]/5 to-[#00E6E6]/5"></div>
