@@ -1118,21 +1118,21 @@ export default function Index() {
           </div>
 
           {/* Technical Excellence & Security */}
-          <div className="mt-20 bg-gradient-to-br from-blue-900 via-purple-900 to-blue-800 rounded-3xl p-12 text-white relative overflow-hidden">
+          <div className="mt-20 bg-gradient-to-br from-white via-[#F5F7FA] to-white rounded-3xl p-12 relative overflow-hidden border border-[#00A3E1]/20">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-10">
-              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500/20 to-purple-500/20"></div>
-              <div className="absolute top-4 left-4 w-32 h-32 border border-blue-400/30 rounded-full"></div>
-              <div className="absolute bottom-4 right-4 w-24 h-24 border border-purple-400/30 rounded-full"></div>
-              <div className="absolute top-1/2 left-1/2 w-40 h-40 border border-cyan-400/20 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
+              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-[#00A3E1]/10 to-[#00C6FF]/10"></div>
+              <div className="absolute top-4 left-4 w-32 h-32 border border-[#00A3E1]/20 rounded-full"></div>
+              <div className="absolute bottom-4 right-4 w-24 h-24 border border-[#00C6FF]/20 rounded-full"></div>
+              <div className="absolute top-1/2 left-1/2 w-40 h-40 border border-[#00E6E6]/20 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
             </div>
 
             <div className="relative z-10">
               <div className="text-center mb-12">
-                <h3 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-200 to-purple-200 bg-clip-text text-transparent">
+                <h3 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#00A3E1] to-[#00C6FF] bg-clip-text text-transparent">
                   Technical Excellence & Security
                 </h3>
-                <p className="text-blue-100 max-w-4xl mx-auto text-lg">
+                <p className="text-[#666666] max-w-4xl mx-auto text-lg">
                   Enterprise-grade security infrastructure with comprehensive
                   protection, compliance, and monitoring capabilities built for
                   modern financial services
