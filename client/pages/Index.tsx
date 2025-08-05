@@ -304,26 +304,26 @@ export default function Index() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <Card key={index} className="border-slate-200 hover:shadow-lg transition-all duration-300 group">
+              <Card key={index} className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/15 hover:shadow-xl transition-all duration-300 group">
                 <CardHeader>
                   <div className="mb-4">{feature.icon}</div>
-                  <CardTitle className="text-xl group-hover:text-blue-600 transition-colors">
+                  <CardTitle className="text-xl text-white group-hover:text-cyan-400 transition-colors">
                     {feature.title}
                   </CardTitle>
-                  <CardDescription className="text-slate-600">
+                  <CardDescription className="text-blue-200">
                     {feature.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2">
                     {feature.features.map((item, idx) => (
-                      <li key={idx} className="flex items-center text-sm text-slate-600">
-                        <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                      <li key={idx} className="flex items-center text-sm text-blue-100">
+                        <CheckCircle className="w-4 h-4 text-cyan-400 mr-2 flex-shrink-0" />
                         {item}
                       </li>
                     ))}
                   </ul>
-                  <Button variant="outline" className="w-full mt-4 border-blue-200 text-blue-700 hover:bg-blue-50">
+                  <Button variant="outline" className="w-full mt-4 border-white/30 text-white hover:bg-white/10 backdrop-blur-sm">
                     Learn More
                     <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
