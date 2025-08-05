@@ -116,6 +116,25 @@ export default function Index() {
 
   const platformCapabilities = [
     {
+      category: "Client-Facing Solutions & Management",
+      icon: <Users className="w-12 h-12 text-indigo-600" />,
+      color: "indigo",
+      capabilities: [
+        { name: "Client Portal Dashboard", description: "Secure authentication with real-time account value and portfolio allocation" },
+        { name: "Mobile Application", description: "Native mobile experience with trading interface and notifications" },
+        { name: "Performance Analytics", description: "Real-time graphs, KYC data view, and portfolio insights" },
+        { name: "Document Management", description: "View & download contract notes, statements, and trade history" },
+        { name: "Multi-Asset Trading", description: "Cambio (FX), Equity, Loans, Margin, Repo, Bonds interface" },
+        { name: "Payment Processing", description: "Bank lodgements, journal entries, and internal transfers" },
+        { name: "Onboarding Workflow", description: "Multi-step guided flow with OCR, biometric verification" },
+        { name: "Digital Signatures", description: "DocuSign, Adobe Sign integration with auto-save progress" },
+        { name: "Admin Portal", description: "Application management with third-party verification tools" },
+        { name: "Client Management", description: "Comprehensive portfolios, trade execution, and compliance checks" },
+        { name: "Audit & Compliance", description: "Complete audit trails and regulatory reporting capabilities" },
+        { name: "Notification System", description: "Email, push alerts, and internal team communications" }
+      ]
+    },
+    {
       category: "Trading & Investment Platform",
       icon: <TrendingUp className="w-12 h-12 text-blue-600" />,
       color: "blue",
