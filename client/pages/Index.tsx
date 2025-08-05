@@ -982,36 +982,36 @@ export default function Index() {
                   {category.capabilities.map((capability, capIndex) => (
                     <Card
                       key={capIndex}
-                      className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/15 hover:shadow-xl transition-all duration-300 group/card"
+                      className="bg-white border-[#00A3E1]/10 hover:bg-[#F5F7FA] hover:shadow-xl hover:border-[#00A3E1]/30 transition-all duration-300 group/card"
                     >
                       <CardContent className="p-6">
                         <div className="flex items-start space-x-3">
                           <div
                             className={`w-3 h-3 rounded-full mt-2 flex-shrink-0 ${
                               category.color === "indigo"
-                                ? "bg-indigo-400"
+                                ? "bg-[#00A3E1]"
                                 : category.color === "blue"
-                                  ? "bg-blue-400"
+                                  ? "bg-[#0072FF]"
                                   : category.color === "purple"
-                                    ? "bg-purple-400"
-                                    : "bg-green-400"
+                                    ? "bg-[#00C6FF]"
+                                    : "bg-[#00E6E6]"
                             }`}
                           ></div>
                           <div className="flex-1">
                             <h4
-                              className={`font-semibold mb-2 text-white group-hover/card:${
+                              className={`font-semibold mb-2 text-[#333333] group-hover/card:${
                                 category.color === "indigo"
-                                  ? "text-indigo-400"
+                                  ? "text-[#00A3E1]"
                                   : category.color === "blue"
-                                    ? "text-blue-400"
+                                    ? "text-[#0072FF]"
                                     : category.color === "purple"
-                                      ? "text-purple-400"
-                                      : "text-green-400"
+                                      ? "text-[#00C6FF]"
+                                      : "text-[#00E6E6]"
                               } transition-colors`}
                             >
                               {capability.name}
                             </h4>
-                            <p className="text-sm text-blue-200 leading-relaxed">
+                            <p className="text-sm text-[#666666] leading-relaxed">
                               {capability.description}
                             </p>
                           </div>
