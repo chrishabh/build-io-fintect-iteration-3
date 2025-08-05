@@ -851,9 +851,9 @@ export default function Index() {
                   <div
                     className={`relative ${index % 2 === 1 ? "lg:col-start-1" : ""}`}
                   >
-                    <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-2xl rounded-3xl p-8 border border-white/20 hover:border-cyan-400/30 transition-all duration-700 group">
+                    <div className="relative bg-white backdrop-blur-2xl rounded-3xl p-8 border border-[#00A3E1]/20 hover:border-[#00A3E1]/40 transition-all duration-700 group shadow-lg">
                       {/* Visual Background */}
-                      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-transparent to-purple-500/5 rounded-3xl group-hover:from-cyan-500/10 group-hover:to-purple-500/10 transition-all duration-700"></div>
+                      <div className="absolute inset-0 bg-gradient-to-br from-[#00A3E1]/5 via-transparent to-[#00C6FF]/5 rounded-3xl group-hover:from-[#00A3E1]/10 group-hover:to-[#00C6FF]/10 transition-all duration-700"></div>
 
                       {/* Mock Dashboard/Interface */}
                       <div className="relative space-y-6">
@@ -863,42 +863,42 @@ export default function Index() {
                             <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
                             <div className="w-3 h-3 bg-green-400 rounded-full"></div>
                           </div>
-                          <div className="text-xs text-slate-400 font-mono">
+                          <div className="text-xs text-[#666666] font-mono">
                             dashboard.fieldtech.com
                           </div>
                         </div>
 
                         <div className="space-y-4">
-                          <div className="h-4 bg-gradient-to-r from-cyan-400/30 to-transparent rounded-full"></div>
-                          <div className="h-4 bg-gradient-to-r from-purple-400/30 to-transparent rounded-full w-3/4"></div>
-                          <div className="h-4 bg-gradient-to-r from-blue-400/30 to-transparent rounded-full w-1/2"></div>
+                          <div className="h-4 bg-gradient-to-r from-[#00A3E1]/30 to-transparent rounded-full"></div>
+                          <div className="h-4 bg-gradient-to-r from-[#0072FF]/30 to-transparent rounded-full w-3/4"></div>
+                          <div className="h-4 bg-gradient-to-r from-[#00C6FF]/30 to-transparent rounded-full w-1/2"></div>
                         </div>
 
                         <div className="grid grid-cols-3 gap-4">
-                          <div className="bg-cyan-400/10 rounded-lg p-4 border border-cyan-400/20">
-                            <div className="text-2xl font-bold text-cyan-400 mb-1">
+                          <div className="bg-[#00A3E1]/10 rounded-lg p-4 border border-[#00A3E1]/20">
+                            <div className="text-2xl font-bold text-[#00A3E1] mb-1">
                               $2.4M
                             </div>
-                            <div className="text-xs text-slate-400">
+                            <div className="text-xs text-[#666666]">
                               Revenue
                             </div>
                           </div>
-                          <div className="bg-purple-400/10 rounded-lg p-4 border border-purple-400/20">
-                            <div className="text-2xl font-bold text-purple-400 mb-1">
+                          <div className="bg-[#0072FF]/10 rounded-lg p-4 border border-[#0072FF]/20">
+                            <div className="text-2xl font-bold text-[#0072FF] mb-1">
                               18.5K
                             </div>
-                            <div className="text-xs text-slate-400">Users</div>
+                            <div className="text-xs text-[#666666]">Users</div>
                           </div>
-                          <div className="bg-green-400/10 rounded-lg p-4 border border-green-400/20">
-                            <div className="text-2xl font-bold text-green-400 mb-1">
+                          <div className="bg-[#00E6E6]/10 rounded-lg p-4 border border-[#00E6E6]/20">
+                            <div className="text-2xl font-bold text-[#00E6E6] mb-1">
                               +12%
                             </div>
-                            <div className="text-xs text-slate-400">Growth</div>
+                            <div className="text-xs text-[#666666]">Growth</div>
                           </div>
                         </div>
 
-                        <div className="h-32 bg-gradient-to-br from-slate-800/50 to-slate-700/50 rounded-lg border border-white/10 flex items-center justify-center">
-                          <div className="text-4xl text-cyan-400/30">📈</div>
+                        <div className="h-32 bg-gradient-to-br from-[#F5F7FA] to-[#F5F7FA] rounded-lg border border-[#00A3E1]/10 flex items-center justify-center">
+                          <div className="text-4xl text-[#00A3E1]/30">📈</div>
                         </div>
                       </div>
                     </div>
