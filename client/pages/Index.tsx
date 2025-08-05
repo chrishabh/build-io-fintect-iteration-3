@@ -1453,15 +1453,15 @@ export default function Index() {
                 </p>
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white px-8 py-3 shadow-lg border-0"
+                  className="bg-gradient-to-r from-[#0072FF] to-[#00C6FF] hover:from-[#00A3E1] hover:to-[#00E6E6] text-white px-8 py-3 shadow-lg border-0"
                 >
                   Send Us a Message
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
-                <h3 className="text-2xl font-bold mb-6 text-white">
+              <div className="bg-white backdrop-blur-md rounded-2xl p-8 border border-[#00A3E1]/20 shadow-lg">
+                <h3 className="text-2xl font-bold mb-6 text-[#333333]">
                   Multiple Ways to Connect
                 </h3>
                 <div className="space-y-6">
