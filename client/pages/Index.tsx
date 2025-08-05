@@ -939,14 +939,14 @@ export default function Index() {
       {/* Platform Capabilities */}
       <section
         id="platform"
-        className="py-20 px-6 bg-gradient-to-br from-blue-900/50 to-purple-900/50 backdrop-blur-sm relative z-10"
+        className="py-20 px-6 bg-gradient-to-br from-[#F5F7FA] to-white relative z-10"
       >
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">
+            <h2 className="text-4xl font-bold text-[#333333] mb-4">
               Comprehensive Platform Capabilities
             </h2>
-            <p className="text-xl text-blue-100 max-w-4xl mx-auto">
+            <p className="text-xl text-[#666666] max-w-4xl mx-auto">
               Enterprise-grade fintech infrastructure delivering complete
               trading, CRM, and accounting solutions with advanced automation
               and regulatory compliance
