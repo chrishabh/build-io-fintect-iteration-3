@@ -220,22 +220,22 @@ export default function Index() {
         <div className="absolute top-1/2 left-1/2 w-64 h-64 border border-purple-400/10 rounded-full transform -translate-x-1/2 -translate-y-1/2 animate-pulse delay-1500"></div>
       </div>
       {/* Header */}
-      <header className="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
+      <header className="bg-white/10 backdrop-blur-md border-b border-white/20 sticky top-0 z-50 relative">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg">
                 <span className="text-white font-bold text-sm">FT</span>
               </div>
-              <span className="text-xl font-bold text-slate-800">New Fintek Technologies</span>
+              <span className="text-xl font-bold text-white">New Fintek Technologies</span>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
-              <a href="#solutions" className="text-slate-600 hover:text-blue-600 transition-colors">Solutions</a>
-              <a href="#services" className="text-slate-600 hover:text-blue-600 transition-colors">Services</a>
-              <a href="#platform" className="text-slate-600 hover:text-blue-600 transition-colors">Platform</a>
-              <a href="#contact" className="text-slate-600 hover:text-blue-600 transition-colors">Contact</a>
+              <a href="#solutions" className="text-blue-200 hover:text-white transition-colors">Solutions</a>
+              <a href="#services" className="text-blue-200 hover:text-white transition-colors">Services</a>
+              <a href="#platform" className="text-blue-200 hover:text-white transition-colors">Platform</a>
+              <a href="#contact" className="text-blue-200 hover:text-white transition-colors">Contact</a>
             </nav>
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+            <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white shadow-lg border-0">
               Schedule Demo
             </Button>
           </div>
