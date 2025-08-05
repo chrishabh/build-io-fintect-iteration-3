@@ -820,11 +820,11 @@ export default function Index() {
                       {service.features.map((feature, idx) => (
                         <div
                           key={idx}
-                          className="group bg-white/5 backdrop-blur-xl rounded-xl p-4 border border-white/10 hover:border-cyan-400/30 transition-all duration-500 hover:bg-white/10"
+                          className="group bg-white/80 backdrop-blur-xl rounded-xl p-4 border border-[#00A3E1]/10 hover:border-[#00A3E1]/30 transition-all duration-500 hover:bg-white shadow-sm"
                         >
                           <div className="flex items-start space-x-3">
-                            <div className="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full mt-2 flex-shrink-0 group-hover:scale-150 transition-transform"></div>
-                            <span className="text-slate-300 group-hover:text-white transition-colors font-medium text-sm leading-relaxed">
+                            <div className="w-2 h-2 bg-gradient-to-r from-[#00A3E1] to-[#00C6FF] rounded-full mt-2 flex-shrink-0 group-hover:scale-150 transition-transform"></div>
+                            <span className="text-[#666666] group-hover:text-[#333333] transition-colors font-medium text-sm leading-relaxed">
                               {feature}
                             </span>
                           </div>
@@ -834,13 +834,13 @@ export default function Index() {
 
                     {/* Action Buttons */}
                     <div className="flex flex-wrap gap-4">
-                      <Button className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white border-0 px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-cyan-500/25 transition-all duration-500">
+                      <Button className="bg-gradient-to-r from-[#0072FF] to-[#00C6FF] hover:from-[#00A3E1] hover:to-[#00E6E6] text-white border-0 px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-[#00A3E1]/25 transition-all duration-500">
                         Explore {service.title}
                         <ArrowRight className="ml-2 w-5 h-5" />
                       </Button>
                       <Button
                         variant="outline"
-                        className="border-white/20 text-white hover:bg-white/10 hover:border-cyan-400/50 px-8 py-4 text-lg font-semibold backdrop-blur-xl"
+                        className="border-[#00A3E1]/20 text-[#00A3E1] hover:bg-[#00A3E1]/10 hover:border-[#00A3E1]/50 px-8 py-4 text-lg font-semibold"
                       >
                         Request Demo
                       </Button>
