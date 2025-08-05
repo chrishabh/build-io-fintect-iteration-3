@@ -746,138 +746,68 @@ export default function Index() {
             </div>
           </div>
 
-          {/* Enhanced Carousel Container */}
-          <div className="relative max-w-7xl mx-auto">
-            <div
-              ref={carouselRef}
-              className="overflow-hidden rounded-3xl bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-xl border border-white/20 shadow-2xl"
-              onMouseEnter={() => setIsAutoPlay(false)}
-              onMouseLeave={() => setIsAutoPlay(true)}
-            >
-              <div
-                className="flex transition-all duration-1000 ease-out"
-                style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-              >
-                {enterpriseServices.map((service, index) => (
-                  <div key={index} className="w-full flex-shrink-0 p-8">
-                    <Card className="bg-gradient-to-br from-white/10 via-white/5 to-white/10 backdrop-blur-2xl border-white/30 hover:border-cyan-400/50 hover:bg-white/15 hover:shadow-3xl transition-all duration-700 h-full transform hover:scale-[1.02] hover:-translate-y-2 group relative overflow-hidden">
-                      {/* Card Background Pattern */}
-                      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                      <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-cyan-400/10 to-purple-400/10 rounded-full blur-2xl transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-700"></div>
+          {/* Services Grid */}
+          <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {enterpriseServices.map((service, index) => (
+              <Card key={index} className="bg-gradient-to-br from-white/10 via-white/5 to-white/10 backdrop-blur-2xl border-white/30 hover:border-cyan-400/50 hover:bg-white/15 hover:shadow-3xl transition-all duration-700 h-full transform hover:scale-[1.02] hover:-translate-y-2 group relative overflow-hidden">
+                {/* Card Background Pattern */}
+                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-cyan-400/10 to-purple-400/10 rounded-full blur-2xl transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-700"></div>
 
-                      <CardHeader className="text-center relative z-10 pb-8">
-                        <div className="mb-8 flex justify-center relative">
-                          <div className="relative">
-                            <div className="w-20 h-20 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-2xl flex items-center justify-center transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg shadow-cyan-500/25">
-                              {service.icon}
-                            </div>
-                            <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400/20 to-purple-400/20 rounded-3xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                          </div>
-                        </div>
-                        <CardTitle className="text-3xl md:text-4xl font-bold text-white mb-6 group-hover:text-cyan-300 transition-colors duration-500">
-                          {service.title}
-                        </CardTitle>
-                        <CardDescription className="text-blue-200 text-lg md:text-xl leading-relaxed group-hover:text-blue-100 transition-colors duration-500">
-                          {service.description}
-                        </CardDescription>
-                      </CardHeader>
-
-                      <CardContent className="relative z-10">
-                        <div className="space-y-6 mb-10">
-                          {service.features.map((feature, idx) => (
-                            <div
-                              key={idx}
-                              className="flex items-start text-blue-100 transform hover:translate-x-4 transition-all duration-300 group/item"
-                              style={{
-                                animationDelay: `${idx * 100}ms`,
-                              }}
-                            >
-                              <div className="relative mr-4 mt-1 flex-shrink-0">
-                                <div className="w-4 h-4 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full flex items-center justify-center">
-                                  <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-                                </div>
-                                <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400/30 to-purple-400/30 rounded-full blur-sm opacity-0 group-hover/item:opacity-100 transition-opacity duration-300"></div>
-                              </div>
-                              <span className="text-base md:text-lg font-medium leading-relaxed group-hover/item:text-white transition-colors duration-300">
-                                {feature}
-                              </span>
-                            </div>
-                          ))}
-                        </div>
-
-                        <div className="flex gap-4">
-                          <Button
-                            variant="outline"
-                            className="flex-1 border-white/30 text-white hover:bg-gradient-to-r hover:from-cyan-500/20 hover:to-purple-500/20 hover:border-cyan-400/50 backdrop-blur-sm transition-all duration-500 py-4 text-lg font-semibold group/btn"
-                          >
-                            Learn More
-                            <ArrowRight className="ml-2 w-5 h-5 group-hover/btn:translate-x-2 transition-transform duration-300" />
-                          </Button>
-                          <Button
-                            className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white shadow-lg border-0 px-8 py-4 text-lg font-semibold"
-                          >
-                            Demo
-                          </Button>
-                        </div>
-                      </CardContent>
-                    </Card>
+                <CardHeader className="text-center relative z-10 pb-8">
+                  <div className="mb-8 flex justify-center relative">
+                    <div className="relative">
+                      <div className="w-20 h-20 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-2xl flex items-center justify-center transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg shadow-cyan-500/25">
+                        {service.icon}
+                      </div>
+                      <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400/20 to-purple-400/20 rounded-3xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    </div>
                   </div>
-                ))}
-              </div>
-            </div>
+                  <CardTitle className="text-2xl md:text-3xl font-bold text-white mb-6 group-hover:text-cyan-300 transition-colors duration-500">
+                    {service.title}
+                  </CardTitle>
+                  <CardDescription className="text-blue-200 text-lg leading-relaxed group-hover:text-blue-100 transition-colors duration-500">
+                    {service.description}
+                  </CardDescription>
+                </CardHeader>
 
-            {/* Enhanced Navigation */}
-            <button
-              onClick={prevSlide}
-              className="absolute left-6 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/30 text-white p-4 rounded-2xl hover:bg-gradient-to-r hover:from-cyan-500/20 hover:to-purple-500/20 hover:border-cyan-400/50 transition-all duration-500 hover:scale-110 group shadow-lg"
-            >
-              <ArrowRight className="w-7 h-7 rotate-180 group-hover:scale-110 transition-transform duration-300" />
-            </button>
-            <button
-              onClick={nextSlide}
-              className="absolute right-6 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/30 text-white p-4 rounded-2xl hover:bg-gradient-to-r hover:from-cyan-500/20 hover:to-purple-500/20 hover:border-cyan-400/50 transition-all duration-500 hover:scale-110 group shadow-lg"
-            >
-              <ArrowRight className="w-7 h-7 group-hover:scale-110 transition-transform duration-300" />
-            </button>
+                <CardContent className="relative z-10">
+                  <div className="space-y-4 mb-8">
+                    {service.features.map((feature, idx) => (
+                      <div
+                        key={idx}
+                        className="flex items-start text-blue-100 transform hover:translate-x-2 transition-all duration-300 group/item"
+                      >
+                        <div className="relative mr-3 mt-1 flex-shrink-0">
+                          <div className="w-3 h-3 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full flex items-center justify-center">
+                            <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse"></div>
+                          </div>
+                          <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400/30 to-purple-400/30 rounded-full blur-sm opacity-0 group-hover/item:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <span className="text-sm md:text-base font-medium leading-relaxed group-hover/item:text-white transition-colors duration-300">
+                          {feature}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
 
-            {/* Enhanced Progress Indicators */}
-            <div className="flex justify-center mt-12 space-x-4">
-              {enterpriseServices.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentSlide(index)}
-                  className={`relative transition-all duration-500 group ${
-                    index === currentSlide
-                      ? "w-12 h-4"
-                      : "w-4 h-4 hover:w-6"
-                  }`}
-                >
-                  <div
-                    className={`w-full h-full rounded-full transition-all duration-500 ${
-                      index === currentSlide
-                        ? "bg-gradient-to-r from-cyan-400 to-purple-400 shadow-lg shadow-cyan-500/25"
-                        : "bg-white/30 hover:bg-white/50 group-hover:shadow-lg group-hover:shadow-white/25"
-                    }`}
-                  />
-                  {index === currentSlide && (
-                    <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/50 to-purple-400/50 rounded-full blur-sm animate-pulse"></div>
-                  )}
-                </button>
-              ))}
-            </div>
-
-            {/* Service Counter */}
-            <div className="text-center mt-8">
-              <div className="inline-flex items-center space-x-3 bg-white/10 backdrop-blur-md rounded-2xl px-6 py-3 border border-white/20">
-                <span className="text-cyan-400 font-semibold text-lg">
-                  {currentSlide + 1}
-                </span>
-                <div className="w-12 h-0.5 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full"></div>
-                <span className="text-white/70 text-lg">
-                  {enterpriseServices.length}
-                </span>
-              </div>
-            </div>
+                  <div className="flex gap-3">
+                    <Button
+                      variant="outline"
+                      className="flex-1 border-white/30 text-white hover:bg-gradient-to-r hover:from-cyan-500/20 hover:to-purple-500/20 hover:border-cyan-400/50 backdrop-blur-sm transition-all duration-500 py-3 text-sm font-semibold group/btn"
+                    >
+                      Learn More
+                      <ArrowRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
+                    </Button>
+                    <Button
+                      className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white shadow-lg border-0 px-6 py-3 text-sm font-semibold"
+                    >
+                      Demo
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
 
           {/* Enhanced Feature Highlights */}
