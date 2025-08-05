@@ -36,45 +36,54 @@ export default function Index() {
     {
       icon: <Users className="w-8 h-8 text-blue-600" />,
       title: "Client Portal (User-facing Dashboard) & Mobile application",
-      description: "Clean overview dashboard with cards and charts",
+      description: "Secure client authentication (web & mobile) with comprehensive dashboard",
       features: [
-        "Client demographic info (KYC, personal data, financial profile)",
-        "View/download statements, contract notes",
-        "Trading capabilities: Cambio, Equity, Loans, Margin, Repo, Bonds, Asset Management",
-        "Bank Lodgement, Payments, Journal"
+        "Dashboard with real-time account value and portfolio allocation (Cambio, Equity, Loans, etc.)",
+        "Performance graphs and KYC & demographic data view",
+        "View & download contract notes, statements, and trade history",
+        "Trading interface for Cambio (FX), Equity (stocks), Loans, Margin, Repo, Bonds",
+        "Asset management products and payment capabilities",
+        "Bank lodgements, journal entries, and internal transfers",
+        "Notifications and alerts (email, push)"
       ]
     },
     {
       icon: <CheckCircle className="w-8 h-8 text-green-600" />,
       title: "Client Onboarding Application (Self-Service)",
-      description: "Step-by-step digital KYC onboarding wizard",
+      description: "Multi-step guided onboarding flow (mobile/web optimized)",
       features: [
-        "Upload documents, verify TRN, and digitally sign",
-        "Choose investment services during onboarding",
-        "Automated compliance checks",
-        "Real-time status tracking"
+        "Real-time TRN validation and credit check integrations",
+        "OCR & biometric document upload and verification",
+        "Digital signature integration (DocuSign, Adobe Sign)",
+        "Investment product selection and risk profile mapping",
+        "Auto-save progress and resume capability",
+        "Status tracking post-submission"
       ]
     },
     {
       icon: <Shield className="w-8 h-8 text-purple-600" />,
       title: "Onboarding Admin Portal",
-      description: "View incoming onboarding applications",
+      description: "Dashboard to manage all incoming applications",
       features: [
-        "Third-party verification integrations (TRN, address, credit score)",
-        "Approve, reject, or send back for revision",
-        "Upon approval, auto-create client account and assign unique ID",
-        "Compliance workflow management"
+        "Integrated third-party verification tools: TRN, address verification",
+        "Credit score lookups and action workflows",
+        "Approve / Reject / Request Revision capabilities",
+        "Audit trail of actions per application",
+        "Account provisioning (auto-assign unique client IDs)",
+        "Notification system to applicants and internal teams"
       ]
     },
     {
       icon: <BarChart3 className="w-8 h-8 text-blue-600" />,
       title: "Client Management Portal (Back Office)",
-      description: "Monitor and manage client portfolios and trades",
+      description: "Comprehensive client list with filters (status, asset value, etc.)",
       features: [
-        "Generate trade reports, P&L, commissions",
-        "Audit logs of client activities and orders",
-        "Bulk export and compliance reporting features",
-        "Portfolio performance analytics"
+        "View and manage all client portfolios",
+        "Execute trades on behalf of clients (if required)",
+        "Generate P&L Reports, Commission breakdowns, Trade summaries",
+        "Trade compliance checks and bulk export for auditors/regulators",
+        "Log of user and client actions",
+        "Portfolio performance analytics and risk management"
       ]
     },
     {
@@ -82,22 +91,25 @@ export default function Index() {
       title: "CRM Portal",
       description: "360° Client View (interaction logs, portfolio snapshot, preferences)",
       features: [
-        "Lead Management with pipelines",
-        "Ticket Management for client queries",
-        "Target Management for sales teams",
-        "Mass Email Campaign Builder + Templates",
-        "Survey Management with analytics"
+        "Lead management with funnel/pipeline view",
+        "Mass Email Campaigns: Templates, scheduling, analytics",
+        "Target management: Sales target setting and performance tracking",
+        "Ticket management: Client query system with internal assignment and resolution",
+        "Survey management with analytics dashboards",
+        "Integrations with platforms like HubSpot, Salesforce (optional)"
       ]
     },
     {
       icon: <DollarSign className="w-8 h-8 text-green-600" />,
       title: "Accounting System",
-      description: "Journal entries per trade (automated)",
+      description: "Automated journal entries linked to every trade",
       features: [
-        "Trial Balance, Ledger, Balance Sheet",
-        "Month-end and year-end reports",
-        "Tax-ready financial statements and audit trail",
-        "Automated reconciliation processes"
+        "Trial balance, general ledger, sub-ledger views",
+        "Month-end & year-end closure flows with audit logs for regulators",
+        "Tax-ready exports (CSV, XBRL, etc.) and balance sheet, income statement",
+        "Reconciliation tools (bank, GL vs. trades)",
+        "Approval workflows for entries and reports",
+        "Automated compliance and regulatory reporting"
       ]
     }
   ];
