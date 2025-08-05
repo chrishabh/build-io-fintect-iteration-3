@@ -825,68 +825,69 @@ export default function Index() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 px-6 bg-gradient-to-br from-blue-900 via-blue-800 to-cyan-800 text-white">
-        <div className="container mx-auto">
+      <section className="py-20 px-6 bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-white relative z-10">
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-blue-500/10 to-indigo-500/10"></div>
+        <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-4xl font-bold mb-6">
                   Ready to Transform Your
                   <br />
-                  <span className="text-cyan-300">Financial Operations?</span>
+                  <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">Financial Operations?</span>
                 </h2>
                 <p className="text-xl text-blue-100 mb-8">
-                  Let's discuss how our integrated fintech solutions can drive your business forward. Our 
+                  Let's discuss how our integrated fintech solutions can drive your business forward. Our
                   experts are ready to demonstrate exceptional digital architecture.
                 </p>
-                <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50 px-8 py-3">
+                <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white px-8 py-3 shadow-lg border-0">
                   Send Us a Message
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </div>
-              
+
               <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
-                <h3 className="text-2xl font-bold mb-6">Multiple Ways to Connect</h3>
+                <h3 className="text-2xl font-bold mb-6 text-white">Multiple Ways to Connect</h3>
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
                       <Phone className="w-6 h-6" />
                     </div>
                     <div>
-                      <div className="font-semibold">Sales Executive</div>
+                      <div className="font-semibold text-white">Sales Executive</div>
                       <div className="text-blue-200">Call directly for immediate assistance</div>
                       <div className="text-cyan-300">+1 (555) 123-4567</div>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-cyan-600 rounded-lg flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center">
                       <Mail className="w-6 h-6" />
                     </div>
                     <div>
-                      <div className="font-semibold">Technical Support</div>
+                      <div className="font-semibold text-white">Technical Support</div>
                       <div className="text-blue-200">Get technical assistance and demos</div>
                       <div className="text-cyan-300">support@newfintektech.com</div>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-600 rounded-lg flex items-center justify-center">
                       <MapPin className="w-6 h-6" />
                     </div>
                     <div>
-                      <div className="font-semibold">Schedule Demos</div>
+                      <div className="font-semibold text-white">Schedule Demos</div>
                       <div className="text-blue-200">Book a personalized platform demonstration</div>
                       <div className="text-cyan-300">Live Chat 24/7</div>
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="mt-8 pt-6 border-t border-white/20">
                   <div className="text-center">
                     <div className="text-sm text-blue-200 mb-2">Business Hours</div>
-                    <div className="font-semibold">Mon - Fri: 8:00 AM - 6:00 PM</div>
-                    <div className="font-semibold">Sat - Sun: 9:00 AM - 4:00 PM</div>
+                    <div className="font-semibold text-white">Mon - Fri: 8:00 AM - 6:00 PM</div>
+                    <div className="font-semibold text-white">Sat - Sun: 9:00 AM - 4:00 PM</div>
                   </div>
                 </div>
               </div>
