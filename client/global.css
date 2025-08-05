@@ -9,60 +9,60 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    --background: 0 0% 100%;
-    --foreground: 218 11% 12%;
+    --background: 217 32% 97%;
+    --foreground: 0 0% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 218 11% 12%;
+    --card-foreground: 0 0% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 218 11% 12%;
+    --popover-foreground: 0 0% 20%;
 
-    --primary: 217 91% 60%;
+    --primary: 194 100% 44%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 218 11% 12%;
+    --secondary: 217 32% 97%;
+    --secondary-foreground: 0 0% 20%;
 
-    --muted: 210 40% 98%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 217 32% 97%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 217 91% 60%;
+    --accent: 180 100% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 217 91% 60%;
+    --border: 217 32% 91%;
+    --input: 217 32% 91%;
+    --ring: 194 100% 44%;
 
     --radius: 0.75rem;
 
-    --fintech-primary: 217 91% 60%;
-    --fintech-secondary: 214 100% 73%;
-    --fintech-accent: 199 89% 48%;
-    --fintech-dark: 218 11% 12%;
+    --fintech-primary: 194 100% 44%;
+    --fintech-secondary: 210 100% 60%;
+    --fintech-accent: 180 100% 45%;
+    --fintech-dark: 0 0% 20%;
     --fintech-success: 142 76% 36%;
     --fintech-warning: 45 93% 47%;
-    --fintech-gradient-start: 217 91% 60%;
-    --fintech-gradient-end: 199 89% 48%;
+    --fintech-gradient-start: 210 100% 50%;
+    --fintech-gradient-end: 195 100% 50%;
 
     --sidebar-background: 0 0% 98%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-foreground: 0 0% 20%;
 
-    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary: 194 100% 44%;
 
-    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-primary-foreground: 0 0% 100%;
 
-    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent: 217 32% 97%;
 
-    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-accent-foreground: 0 0% 20%;
 
-    --sidebar-border: 220 13% 91%;
+    --sidebar-border: 217 32% 91%;
 
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 194 100% 44%;
   }
 
   .dark {
