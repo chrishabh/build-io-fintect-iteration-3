@@ -499,7 +499,7 @@ export default function Index() {
                 Contact
               </a>
             </nav>
-            <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white shadow-lg border-0">
+            <Button className="bg-gradient-to-r from-[#0072FF] to-[#00C6FF] hover:from-[#00A3E1] hover:to-[#00E6E6] text-white shadow-lg border-0">
               Schedule Demo
             </Button>
           </div>
