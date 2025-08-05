@@ -1178,7 +1178,7 @@ export default function Index() {
                 <Card className="bg-white border-[#0072FF]/20 hover:bg-[#F5F7FA] hover:border-[#0072FF]/40 shadow-sm transition-all duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
-                      <Lock className="w-8 h-8 text-purple-300 mr-3" />
+                      <Lock className="w-8 h-8 text-[#0072FF] mr-3" />
                       <h4 className="text-lg font-semibold text-purple-100">
                         Data Encryption
                       </h4>
@@ -1242,7 +1242,7 @@ export default function Index() {
                 <Card className="bg-white border-[#0072FF]/20 hover:bg-[#F5F7FA] hover:border-[#0072FF]/40 shadow-sm transition-all duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
-                      <CheckCircle className="w-8 h-8 text-purple-300 mr-3" />
+                      <CheckCircle className="w-8 h-8 text-[#0072FF] mr-3" />
                       <h4 className="text-lg font-semibold text-purple-100">
                         Compliance & Regulatory
                       </h4>
@@ -1306,7 +1306,7 @@ export default function Index() {
                 <Card className="bg-white border-[#0072FF]/20 hover:bg-[#F5F7FA] hover:border-[#0072FF]/40 shadow-sm transition-all duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
-                      <Activity className="w-8 h-8 text-purple-300 mr-3" />
+                      <Activity className="w-8 h-8 text-[#0072FF] mr-3" />
                       <h4 className="text-lg font-semibold text-purple-100">
                         Monitoring & Incident Response
                       </h4>
@@ -1370,7 +1370,7 @@ export default function Index() {
                 <Card className="bg-white border-[#0072FF]/20 hover:bg-[#F5F7FA] hover:border-[#0072FF]/40 shadow-sm transition-all duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
-                      <Globe className="w-8 h-8 text-purple-300 mr-3" />
+                      <Globe className="w-8 h-8 text-[#0072FF] mr-3" />
                       <h4 className="text-lg font-semibold text-purple-100">
                         Performance & Architecture
                       </h4>
@@ -1412,7 +1412,7 @@ export default function Index() {
                   <div className="text-3xl font-bold text-purple-200 mb-2">
                     &lt;1ms
                   </div>
-                  <div className="text-purple-300">Authentication Response</div>
+                  <div className="text-[#0072FF]">Authentication Response</div>
                   <div className="text-xs text-purple-400 mt-1">
                     Lightning-fast security
                   </div>
