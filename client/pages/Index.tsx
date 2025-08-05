@@ -1433,20 +1433,20 @@ export default function Index() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 px-6 bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-white relative z-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-blue-500/10 to-indigo-500/10"></div>
+      <section className="py-20 px-6 bg-gradient-to-br from-[#F5F7FA] via-white to-[#F5F7FA] relative z-10">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#00A3E1]/5 via-[#00C6FF]/5 to-[#00E6E6]/5"></div>
         <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-4xl font-bold mb-6">
+                <h2 className="text-4xl font-bold mb-6 text-[#333333]">
                   Ready to Transform Your
                   <br />
-                  <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-[#00A3E1] to-[#00E6E6] bg-clip-text text-transparent">
                     Financial Operations?
                   </span>
                 </h2>
-                <p className="text-xl text-blue-100 mb-8">
+                <p className="text-xl text-[#666666] mb-8">
                   Let's discuss how our integrated fintech solutions can drive
                   your business forward. Our experts are ready to demonstrate
                   exceptional digital architecture.
