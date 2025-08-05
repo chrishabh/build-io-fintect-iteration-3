@@ -466,7 +466,11 @@ export default function Index() {
           <div className="flex items-center justify-between">
             <div className="flex items-center">
               <div className="h-8 w-auto">
-                <img src="https://cdn.builder.io/api/v1/image/assets%2F707c836443464c7fa6c9a69898b9d1aa%2Faee5c1d251d34f649a5872377b653239?format=webp&width=800" alt="New Field Technologies" className="h-full w-auto object-contain" />
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F707c836443464c7fa6c9a69898b9d1aa%2Faee5c1d251d34f649a5872377b653239?format=webp&width=800"
+                  alt="New Field Technologies"
+                  className="h-full w-auto object-contain"
+                />
               </div>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
@@ -730,9 +734,15 @@ export default function Index() {
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[32rem] h-[32rem] bg-gradient-to-r from-indigo-500/5 to-cyan-500/5 rounded-full blur-3xl animate-floating delay-2000"></div>
 
           {/* Financial Icons Floating */}
-          <div className="absolute top-32 right-32 text-6xl text-cyan-400/10 animate-bounce delay-300">📊</div>
-          <div className="absolute bottom-40 left-40 text-5xl text-purple-400/10 animate-bounce delay-700">💹</div>
-          <div className="absolute top-2/3 right-1/4 text-4xl text-blue-400/10 animate-bounce delay-1100">💰</div>
+          <div className="absolute top-32 right-32 text-6xl text-cyan-400/10 animate-bounce delay-300">
+            📊
+          </div>
+          <div className="absolute bottom-40 left-40 text-5xl text-purple-400/10 animate-bounce delay-700">
+            💹
+          </div>
+          <div className="absolute top-2/3 right-1/4 text-4xl text-blue-400/10 animate-bounce delay-1100">
+            💰
+          </div>
         </div>
 
         <div className="container mx-auto relative z-10">
@@ -742,7 +752,9 @@ export default function Index() {
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/20 via-purple-400/20 to-pink-400/20 rounded-3xl blur-2xl animate-pulse"></div>
               <div className="relative bg-gradient-to-r from-cyan-400 to-purple-400 p-1 rounded-3xl">
                 <div className="bg-slate-900 rounded-[calc(1.5rem-4px)] px-8 py-4">
-                  <span className="text-white font-semibold text-lg">Enterprise Platform Solutions</span>
+                  <span className="text-white font-semibold text-lg">
+                    Enterprise Platform Solutions
+                  </span>
                 </div>
               </div>
             </div>
@@ -760,7 +772,8 @@ export default function Index() {
             </h2>
 
             <p className="text-2xl text-slate-300 max-w-5xl mx-auto leading-relaxed mb-24">
-              Revolutionary fintech infrastructure powering the next generation of financial institutions.
+              Revolutionary fintech infrastructure powering the next generation
+              of financial institutions.
               <span className="block mt-4 text-cyan-300 font-semibold text-xl">
                 Trusted by 500+ financial leaders worldwide
               </span>
@@ -772,9 +785,14 @@ export default function Index() {
             {/* Services Showcase */}
             <div className="space-y-20">
               {enterpriseServices.map((service, index) => (
-                <div key={index} className={`grid lg:grid-cols-2 gap-16 items-center ${index % 2 === 1 ? 'lg:grid-flow-dense' : ''}`}>
+                <div
+                  key={index}
+                  className={`grid lg:grid-cols-2 gap-16 items-center ${index % 2 === 1 ? "lg:grid-flow-dense" : ""}`}
+                >
                   {/* Service Content */}
-                  <div className={`space-y-8 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
+                  <div
+                    className={`space-y-8 ${index % 2 === 1 ? "lg:col-start-2" : ""}`}
+                  >
                     <div className="space-y-6">
                       <div className="flex items-center space-x-4">
                         <div className="relative">
@@ -800,7 +818,10 @@ export default function Index() {
                     {/* Features Grid */}
                     <div className="grid sm:grid-cols-2 gap-4">
                       {service.features.map((feature, idx) => (
-                        <div key={idx} className="group bg-white/5 backdrop-blur-xl rounded-xl p-4 border border-white/10 hover:border-cyan-400/30 transition-all duration-500 hover:bg-white/10">
+                        <div
+                          key={idx}
+                          className="group bg-white/5 backdrop-blur-xl rounded-xl p-4 border border-white/10 hover:border-cyan-400/30 transition-all duration-500 hover:bg-white/10"
+                        >
                           <div className="flex items-start space-x-3">
                             <div className="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full mt-2 flex-shrink-0 group-hover:scale-150 transition-transform"></div>
                             <span className="text-slate-300 group-hover:text-white transition-colors font-medium text-sm leading-relaxed">
@@ -817,14 +838,19 @@ export default function Index() {
                         Explore {service.title}
                         <ArrowRight className="ml-2 w-5 h-5" />
                       </Button>
-                      <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 hover:border-cyan-400/50 px-8 py-4 text-lg font-semibold backdrop-blur-xl">
+                      <Button
+                        variant="outline"
+                        className="border-white/20 text-white hover:bg-white/10 hover:border-cyan-400/50 px-8 py-4 text-lg font-semibold backdrop-blur-xl"
+                      >
                         Request Demo
                       </Button>
                     </div>
                   </div>
 
                   {/* Service Visual */}
-                  <div className={`relative ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
+                  <div
+                    className={`relative ${index % 2 === 1 ? "lg:col-start-1" : ""}`}
+                  >
                     <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-2xl rounded-3xl p-8 border border-white/20 hover:border-cyan-400/30 transition-all duration-700 group">
                       {/* Visual Background */}
                       <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-transparent to-purple-500/5 rounded-3xl group-hover:from-cyan-500/10 group-hover:to-purple-500/10 transition-all duration-700"></div>
@@ -837,7 +863,9 @@ export default function Index() {
                             <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
                             <div className="w-3 h-3 bg-green-400 rounded-full"></div>
                           </div>
-                          <div className="text-xs text-slate-400 font-mono">dashboard.fieldtech.com</div>
+                          <div className="text-xs text-slate-400 font-mono">
+                            dashboard.fieldtech.com
+                          </div>
                         </div>
 
                         <div className="space-y-4">
@@ -848,15 +876,23 @@ export default function Index() {
 
                         <div className="grid grid-cols-3 gap-4">
                           <div className="bg-cyan-400/10 rounded-lg p-4 border border-cyan-400/20">
-                            <div className="text-2xl font-bold text-cyan-400 mb-1">$2.4M</div>
-                            <div className="text-xs text-slate-400">Revenue</div>
+                            <div className="text-2xl font-bold text-cyan-400 mb-1">
+                              $2.4M
+                            </div>
+                            <div className="text-xs text-slate-400">
+                              Revenue
+                            </div>
                           </div>
                           <div className="bg-purple-400/10 rounded-lg p-4 border border-purple-400/20">
-                            <div className="text-2xl font-bold text-purple-400 mb-1">18.5K</div>
+                            <div className="text-2xl font-bold text-purple-400 mb-1">
+                              18.5K
+                            </div>
                             <div className="text-xs text-slate-400">Users</div>
                           </div>
                           <div className="bg-green-400/10 rounded-lg p-4 border border-green-400/20">
-                            <div className="text-2xl font-bold text-green-400 mb-1">+12%</div>
+                            <div className="text-2xl font-bold text-green-400 mb-1">
+                              +12%
+                            </div>
                             <div className="text-xs text-slate-400">Growth</div>
                           </div>
                         </div>
@@ -880,14 +916,18 @@ export default function Index() {
                 </span>
               </h3>
               <p className="text-xl text-slate-300 mb-12 max-w-3xl mx-auto">
-                Join the hundreds of financial institutions already leveraging our enterprise platform to drive innovation and growth.
+                Join the hundreds of financial institutions already leveraging
+                our enterprise platform to drive innovation and growth.
               </p>
               <div className="flex flex-wrap justify-center gap-6">
                 <Button className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white border-0 px-10 py-5 text-xl font-semibold shadow-2xl hover:shadow-cyan-500/25 transition-all duration-500">
                   Schedule Platform Demo
                   <ArrowRight className="ml-3 w-6 h-6" />
                 </Button>
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 hover:border-cyan-400/50 px-10 py-5 text-xl font-semibold backdrop-blur-xl">
+                <Button
+                  variant="outline"
+                  className="border-white/20 text-white hover:bg-white/10 hover:border-cyan-400/50 px-10 py-5 text-xl font-semibold backdrop-blur-xl"
+                >
                   Download Whitepaper
                 </Button>
               </div>
@@ -1500,7 +1540,11 @@ export default function Index() {
             <div>
               <div className="flex items-center mb-4">
                 <div className="h-8 w-auto">
-                  <img src="https://cdn.builder.io/api/v1/image/assets%2F707c836443464c7fa6c9a69898b9d1aa%2Faee5c1d251d34f649a5872377b653239?format=webp&width=800" alt="New Field Technologies" className="h-full w-auto object-contain" />
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F707c836443464c7fa6c9a69898b9d1aa%2Faee5c1d251d34f649a5872377b653239?format=webp&width=800"
+                    alt="New Field Technologies"
+                    className="h-full w-auto object-contain"
+                  />
                 </div>
               </div>
               <p className="text-blue-200">
