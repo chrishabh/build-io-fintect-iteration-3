@@ -1213,7 +1213,7 @@ export default function Index() {
                         Infrastructure Security
                       </h4>
                     </div>
-                    <ul className="space-y-2 text-sm text-blue-200">
+                    <ul className="space-y-2 text-sm text-[#666666]">
                       <li className="flex items-start">
                         <div className="w-2 h-2 bg-[#00A3E1] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Zero-trust architecture
@@ -1277,7 +1277,7 @@ export default function Index() {
                         Application Security
                       </h4>
                     </div>
-                    <ul className="space-y-2 text-sm text-blue-200">
+                    <ul className="space-y-2 text-sm text-[#666666]">
                       <li className="flex items-start">
                         <div className="w-2 h-2 bg-[#00A3E1] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         OWASP Top 10 mitigation
@@ -1345,7 +1345,7 @@ export default function Index() {
                         User Education & Controls
                       </h4>
                     </div>
-                    <ul className="space-y-2 text-sm text-blue-200">
+                    <ul className="space-y-2 text-sm text-[#666666]">
                       <li className="flex items-start">
                         <div className="w-2 h-2 bg-[#00A3E1] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Security awareness training
@@ -1400,7 +1400,7 @@ export default function Index() {
               {/* Security Metrics */}
               <div className="grid md:grid-cols-3 gap-8 text-center">
                 <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-blue-300/20">
-                  <div className="text-3xl font-bold text-blue-200 mb-2">
+                  <div className="text-3xl font-bold text-[#666666] mb-2">
                     99.9%
                   </div>
                   <div className="text-blue-300">Security Uptime</div>
@@ -1418,7 +1418,7 @@ export default function Index() {
                   </div>
                 </div>
                 <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-blue-300/20">
-                  <div className="text-3xl font-bold text-blue-200 mb-2">
+                  <div className="text-3xl font-bold text-[#666666] mb-2">
                     100%
                   </div>
                   <div className="text-blue-300">Compliance Ready</div>
@@ -1473,7 +1473,7 @@ export default function Index() {
                       <div className="font-semibold text-white">
                         Sales Executive
                       </div>
-                      <div className="text-blue-200">
+                      <div className="text-[#666666]">
                         Call directly for immediate assistance
                       </div>
                       <div className="text-cyan-300">+1 (555) 123-4567</div>
@@ -1488,7 +1488,7 @@ export default function Index() {
                       <div className="font-semibold text-white">
                         Technical Support
                       </div>
-                      <div className="text-blue-200">
+                      <div className="text-[#666666]">
                         Get technical assistance and demos
                       </div>
                       <div className="text-cyan-300">
@@ -1505,7 +1505,7 @@ export default function Index() {
                       <div className="font-semibold text-white">
                         Schedule Demos
                       </div>
-                      <div className="text-blue-200">
+                      <div className="text-[#666666]">
                         Book a personalized platform demonstration
                       </div>
                       <div className="text-cyan-300">Live Chat 24/7</div>
@@ -1515,7 +1515,7 @@ export default function Index() {
 
                 <div className="mt-8 pt-6 border-t border-white/20">
                   <div className="text-center">
-                    <div className="text-sm text-blue-200 mb-2">
+                    <div className="text-sm text-[#666666] mb-2">
                       Business Hours
                     </div>
                     <div className="font-semibold text-white">
