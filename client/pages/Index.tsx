@@ -1399,30 +1399,30 @@ export default function Index() {
 
               {/* Security Metrics */}
               <div className="grid md:grid-cols-3 gap-8 text-center">
-                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-blue-300/20">
-                  <div className="text-3xl font-bold text-[#666666] mb-2">
+                <div className="bg-white backdrop-blur-sm rounded-xl p-6 border border-[#00A3E1]/20 shadow-sm">
+                  <div className="text-3xl font-bold text-[#00A3E1] mb-2">
                     99.9%
                   </div>
-                  <div className="text-blue-300">Security Uptime</div>
-                  <div className="text-xs text-blue-400 mt-1">
+                  <div className="text-[#333333]">Security Uptime</div>
+                  <div className="text-xs text-[#666666] mt-1">
                     Enterprise SLA guaranteed
                   </div>
                 </div>
-                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-purple-300/20">
-                  <div className="text-3xl font-bold text-[#666666] mb-2">
+                <div className="bg-white backdrop-blur-sm rounded-xl p-6 border border-[#0072FF]/20 shadow-sm">
+                  <div className="text-3xl font-bold text-[#0072FF] mb-2">
                     &lt;1ms
                   </div>
-                  <div className="text-[#0072FF]">Authentication Response</div>
-                  <div className="text-xs text-purple-400 mt-1">
+                  <div className="text-[#333333]">Authentication Response</div>
+                  <div className="text-xs text-[#666666] mt-1">
                     Lightning-fast security
                   </div>
                 </div>
-                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-blue-300/20">
-                  <div className="text-3xl font-bold text-[#666666] mb-2">
+                <div className="bg-white backdrop-blur-sm rounded-xl p-6 border border-[#00E6E6]/20 shadow-sm">
+                  <div className="text-3xl font-bold text-[#00E6E6] mb-2">
                     100%
                   </div>
-                  <div className="text-blue-300">Compliance Ready</div>
-                  <div className="text-xs text-blue-400 mt-1">
+                  <div className="text-[#333333]">Compliance Ready</div>
+                  <div className="text-xs text-[#666666] mt-1">
                     Multi-jurisdiction approved
                   </div>
                 </div>
