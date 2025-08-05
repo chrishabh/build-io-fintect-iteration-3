@@ -272,17 +272,27 @@ export default function Index() {
 
             {/* Stats */}
             <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
-              <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                <div className="text-4xl font-bold text-cyan-400 mb-2">500+</div>
-                <div className="text-blue-200">Financial Institutions</div>
+              <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-500 transform hover:scale-105 group">
+                <div className="text-4xl font-bold text-cyan-400 mb-2 animate-pulse">500+</div>
+                <div className="text-blue-200 group-hover:text-white transition-colors">Financial Institutions</div>
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
-              <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                <div className="text-4xl font-bold text-purple-400 mb-2">$50B+</div>
-                <div className="text-blue-200">Assets Under Management</div>
+              <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-500 transform hover:scale-105 group relative overflow-hidden">
+                <div className="text-4xl font-bold text-purple-400 mb-2 flex items-center justify-center">
+                  <span className="animate-bounce">$</span>
+                  <span className="animate-pulse">50B+</span>
+                </div>
+                <div className="text-blue-200 group-hover:text-white transition-colors">Assets Under Management</div>
+                {/* Floating dollar signs */}
+                <div className="absolute top-2 left-2 text-green-400/30 animate-ping">$</div>
+                <div className="absolute top-4 right-4 text-yellow-400/30 animate-ping delay-1000">$</div>
+                <div className="absolute bottom-2 left-4 text-emerald-400/30 animate-ping delay-2000">$</div>
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
-              <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                <div className="text-4xl font-bold text-cyan-400 mb-2">99.9%</div>
-                <div className="text-blue-200">System Uptime</div>
+              <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-500 transform hover:scale-105 group">
+                <div className="text-4xl font-bold text-cyan-400 mb-2 animate-pulse">99.9%</div>
+                <div className="text-blue-200 group-hover:text-white transition-colors">System Uptime</div>
+                <div className="absolute inset-0 bg-gradient-to-r from-green-500/10 to-cyan-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             </div>
           </div>
