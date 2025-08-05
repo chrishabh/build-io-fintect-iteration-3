@@ -461,7 +461,7 @@ export default function Index() {
         </div>
       </div>
       {/* Header */}
-      <header className="bg-white/10 backdrop-blur-md border-b border-white/20 sticky top-0 z-50 relative">
+      <header className="bg-white/95 backdrop-blur-md border-b border-[#00A3E1]/20 sticky top-0 z-50 relative shadow-sm">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
