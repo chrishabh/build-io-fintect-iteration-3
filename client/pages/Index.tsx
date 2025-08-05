@@ -323,27 +323,51 @@ export default function Index() {
 
             {/* Stats */}
             <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
-              <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-500 transform hover:scale-105 group">
-                <div className="text-4xl font-bold text-cyan-400 mb-2 animate-pulse">500+</div>
-                <div className="text-blue-200 group-hover:text-white transition-colors">Financial Institutions</div>
+              {/* Rotating Statistic */}
+              <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-500 transform hover:scale-105 group relative overflow-hidden">
+                <div className={`text-4xl font-bold mb-2 transition-all duration-500 ${rotatingStats[currentStatIndex].color} animate-floating`}>
+                  {rotatingStats[currentStatIndex].value}
+                </div>
+                <div className="text-blue-200 group-hover:text-white transition-colors min-h-[20px]">
+                  {rotatingStats[currentStatIndex].label}
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                {/* Progress indicator */}
+                <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1">
+                  {rotatingStats.map((_, index) => (
+                    <div
+                      key={index}
+                      className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                        index === currentStatIndex ? 'bg-cyan-400 scale-125' : 'bg-white/30'
+                      }`}
+                    />
+                  ))}
+                </div>
               </div>
+
+              {/* Assets Under Management with Dollar Animation */}
               <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-500 transform hover:scale-105 group relative overflow-hidden">
                 <div className="text-4xl font-bold text-purple-400 mb-2 flex items-center justify-center">
-                  <span className="animate-bounce">$</span>
+                  <span className="animate-bounce animate-dollar-float">$</span>
                   <span className="animate-pulse">50B+</span>
                 </div>
                 <div className="text-blue-200 group-hover:text-white transition-colors">Assets Under Management</div>
-                {/* Floating dollar signs */}
-                <div className="absolute top-2 left-2 text-green-400/30 animate-ping">$</div>
-                <div className="absolute top-4 right-4 text-yellow-400/30 animate-ping delay-1000">$</div>
-                <div className="absolute bottom-2 left-4 text-emerald-400/30 animate-ping delay-2000">$</div>
+                {/* Floating dollar signs with enhanced animation */}
+                <div className="absolute top-2 left-2 text-green-400/30 animate-ping animate-dollar-float">$</div>
+                <div className="absolute top-4 right-4 text-yellow-400/30 animate-ping animate-dollar-float delay-1000">$</div>
+                <div className="absolute bottom-2 left-4 text-emerald-400/30 animate-ping animate-dollar-float delay-2000">$</div>
+                <div className="absolute top-3 right-2 text-cyan-400/20 animate-bounce delay-500">💰</div>
+                <div className="absolute bottom-3 right-3 text-green-400/20 animate-bounce delay-1500">💎</div>
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
-              <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-500 transform hover:scale-105 group">
-                <div className="text-4xl font-bold text-cyan-400 mb-2 animate-pulse">99.9%</div>
+
+              {/* System Uptime */}
+              <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-500 transform hover:scale-105 group relative">
+                <div className="text-4xl font-bold text-cyan-400 mb-2 animate-pulse animate-floating">99.9%</div>
                 <div className="text-blue-200 group-hover:text-white transition-colors">System Uptime</div>
                 <div className="absolute inset-0 bg-gradient-to-r from-green-500/10 to-cyan-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                {/* Uptime indicator */}
+                <div className="absolute top-2 right-2 w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
               </div>
             </div>
           </div>
