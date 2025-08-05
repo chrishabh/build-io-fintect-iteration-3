@@ -1628,7 +1628,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="border-t border-white/20 mt-8 pt-8 text-center text-blue-200">
+          <div className="border-t border-[#00A3E1]/20 mt-8 pt-8 text-center text-[#666666]">
             <p>&copy; 2024 New Field Technologies. All rights reserved.</p>
           </div>
         </div>
