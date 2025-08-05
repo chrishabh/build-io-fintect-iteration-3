@@ -898,7 +898,7 @@ export default function Index() {
                         </div>
 
                         <div className="h-32 bg-gradient-to-br from-[#F5F7FA] to-[#F5F7FA] rounded-lg border border-[#00A3E1]/10 flex items-center justify-center">
-                          <div className="text-4xl text-[#00A3E1]/30">📈</div>
+                          <div className="text-4xl text-[#00A3E1]/30">����</div>
                         </div>
                       </div>
                     </div>
@@ -1023,67 +1023,67 @@ export default function Index() {
 
                 {/* Enhanced Features Banner */}
                 {categoryIndex === 0 && (
-                  <div className="mt-12 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-8 text-white">
+                  <div className="mt-12 bg-gradient-to-r from-[#00A3E1] to-[#0072FF] rounded-2xl p-8 text-white">
                     <div className="grid md:grid-cols-3 gap-6 text-center">
                       <div>
                         <div className="text-3xl font-bold mb-2">Unified</div>
-                        <div className="text-indigo-100">Client Experience</div>
+                        <div className="text-white/80">Client Experience</div>
                       </div>
                       <div>
                         <div className="text-3xl font-bold mb-2">
                           Mobile-First
                         </div>
-                        <div className="text-indigo-100">Design</div>
+                        <div className="text-white/80">Design</div>
                       </div>
                       <div>
                         <div className="text-3xl font-bold mb-2">Complete</div>
-                        <div className="text-indigo-100">Onboarding Flow</div>
+                        <div className="text-white/80">Onboarding Flow</div>
                       </div>
                     </div>
                   </div>
                 )}
 
                 {categoryIndex === 1 && (
-                  <div className="mt-12 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl p-8 text-white">
+                  <div className="mt-12 bg-gradient-to-r from-[#0072FF] to-[#00C6FF] rounded-2xl p-8 text-white">
                     <div className="grid md:grid-cols-3 gap-6 text-center">
                       <div>
                         <div className="text-3xl font-bold mb-2">Real-time</div>
-                        <div className="text-blue-100">Trade Execution</div>
+                        <div className="text-white/80">Trade Execution</div>
                       </div>
                       <div>
                         <div className="text-3xl font-bold mb-2">
                           Multi-Asset
                         </div>
-                        <div className="text-blue-100">Trading Platform</div>
+                        <div className="text-white/80">Trading Platform</div>
                       </div>
                       <div>
                         <div className="text-3xl font-bold mb-2">
                           Risk Management
                         </div>
-                        <div className="text-blue-100">& Compliance</div>
+                        <div className="text-white/80">& Compliance</div>
                       </div>
                     </div>
                   </div>
                 )}
 
                 {categoryIndex === 2 && (
-                  <div className="mt-12 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-8 text-white">
+                  <div className="mt-12 bg-gradient-to-r from-[#00C6FF] to-[#00E6E6] rounded-2xl p-8 text-white">
                     <div className="grid md:grid-cols-3 gap-6 text-center">
                       <div>
                         <div className="text-3xl font-bold mb-2">360° View</div>
-                        <div className="text-purple-100">
+                        <div className="text-white/80">
                           Client Intelligence
                         </div>
                       </div>
                       <div>
                         <div className="text-3xl font-bold mb-2">Automated</div>
-                        <div className="text-purple-100">
+                        <div className="text-white/80">
                           Campaign Management
                         </div>
                       </div>
                       <div>
                         <div className="text-3xl font-bold mb-2">Advanced</div>
-                        <div className="text-purple-100">
+                        <div className="text-white/80">
                           Analytics Dashboard
                         </div>
                       </div>
@@ -1092,21 +1092,21 @@ export default function Index() {
                 )}
 
                 {categoryIndex === 3 && (
-                  <div className="mt-12 bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl p-8 text-white">
+                  <div className="mt-12 bg-gradient-to-r from-[#00A3E1] to-[#00E6E6] rounded-2xl p-8 text-white">
                     <div className="grid md:grid-cols-3 gap-6 text-center">
                       <div>
                         <div className="text-3xl font-bold mb-2">Automated</div>
-                        <div className="text-green-100">Journal Entries</div>
+                        <div className="text-white/80">Journal Entries</div>
                       </div>
                       <div>
                         <div className="text-3xl font-bold mb-2">
                           Regulatory
                         </div>
-                        <div className="text-green-100">Compliance Ready</div>
+                        <div className="text-white/80">Compliance Ready</div>
                       </div>
                       <div>
                         <div className="text-3xl font-bold mb-2">Real-time</div>
-                        <div className="text-green-100">
+                        <div className="text-white/80">
                           Financial Reporting
                         </div>
                       </div>
