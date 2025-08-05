@@ -466,7 +466,7 @@ export default function Index() {
           <div className="flex items-center justify-between">
             <div className="flex items-center">
               <div className="h-8 w-auto">
-                <img src="https://cdn.builder.io/api/v1/image/assets%2F707c836443464c7fa6c9a69898b9d1aa%2F42321a80e0194a41ba4427b5671cf748?format=webp&width=800" alt="New Field Technologies" className="h-full w-auto object-contain" />
+                <img src="https://cdn.builder.io/api/v1/image/assets%2F707c836443464c7fa6c9a69898b9d1aa%2Faee5c1d251d34f649a5872377b653239?format=webp&width=800" alt="New Field Technologies" className="h-full w-auto object-contain" />
               </div>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
@@ -1500,7 +1500,7 @@ export default function Index() {
             <div>
               <div className="flex items-center mb-4">
                 <div className="h-8 w-auto">
-                  <img src="https://cdn.builder.io/api/v1/image/assets%2F707c836443464c7fa6c9a69898b9d1aa%2F42321a80e0194a41ba4427b5671cf748?format=webp&width=800" alt="New Field Technologies" className="h-full w-auto object-contain" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets%2F707c836443464c7fa6c9a69898b9d1aa%2Faee5c1d251d34f649a5872377b653239?format=webp&width=800" alt="New Field Technologies" className="h-full w-auto object-contain" />
                 </div>
               </div>
               <p className="text-blue-200">
