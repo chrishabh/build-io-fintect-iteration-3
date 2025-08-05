@@ -749,32 +749,32 @@ export default function Index() {
           {/* Hero Header */}
           <div className="text-center mb-24">
             <div className="relative inline-block mb-8">
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/20 via-purple-400/20 to-pink-400/20 rounded-3xl blur-2xl animate-pulse"></div>
-              <div className="relative bg-gradient-to-r from-cyan-400 to-purple-400 p-1 rounded-3xl">
-                <div className="bg-slate-900 rounded-[calc(1.5rem-4px)] px-8 py-4">
-                  <span className="text-white font-semibold text-lg">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#00A3E1]/20 via-[#0072FF]/20 to-[#00C6FF]/20 rounded-3xl blur-2xl animate-pulse"></div>
+              <div className="relative bg-gradient-to-r from-[#00A3E1] to-[#00C6FF] p-1 rounded-3xl">
+                <div className="bg-white rounded-[calc(1.5rem-4px)] px-8 py-4">
+                  <span className="text-[#333333] font-semibold text-lg">
                     Enterprise Platform Solutions
                   </span>
                 </div>
               </div>
             </div>
 
-            <h2 className="text-6xl md:text-8xl font-black text-white mb-8 leading-tight">
-              <span className="bg-gradient-to-r from-cyan-300 via-blue-300 to-purple-300 bg-clip-text text-transparent">
+            <h2 className="text-6xl md:text-8xl font-black text-[#333333] mb-8 leading-tight">
+              <span className="bg-gradient-to-r from-[#00A3E1] via-[#0072FF] to-[#00C6FF] bg-clip-text text-transparent">
                 Financial
               </span>
               <br />
-              <span className="text-white">Service</span>
+              <span className="text-[#333333]">Service</span>
               <br />
-              <span className="bg-gradient-to-r from-purple-300 via-pink-300 to-cyan-300 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#0072FF] via-[#00C6FF] to-[#00E6E6] bg-clip-text text-transparent">
                 Excellence
               </span>
             </h2>
 
-            <p className="text-2xl text-slate-300 max-w-5xl mx-auto leading-relaxed mb-24">
+            <p className="text-2xl text-[#666666] max-w-5xl mx-auto leading-relaxed mb-24">
               Revolutionary fintech infrastructure powering the next generation
               of financial institutions.
-              <span className="block mt-4 text-cyan-300 font-semibold text-xl">
+              <span className="block mt-4 text-[#00A3E1] font-semibold text-xl">
                 Trusted by 500+ financial leaders worldwide
               </span>
             </p>
