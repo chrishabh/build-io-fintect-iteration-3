@@ -549,6 +549,53 @@ export default function Index() {
               </Button>
             </div>
 
+            {/* Hero Visual Showcase */}
+            <div className="mt-12 mb-16">
+              <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                {/* Mobile App Showcase */}
+                <div className="relative group">
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#00A3E1]/20 to-[#00C6FF]/20 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
+                  <div className="relative bg-white/90 backdrop-blur-sm rounded-3xl p-8 border border-[#00A3E1]/20 hover:border-[#00A3E1]/40 transition-all duration-500 shadow-xl">
+                    <div className="text-center mb-6">
+                      <h3 className="text-2xl font-bold text-[#333333] mb-2">Mobile Trading App</h3>
+                      <p className="text-[#666666]">Real-time portfolio management on-the-go</p>
+                    </div>
+                    <img
+                      src="https://images.pexels.com/photos/28682352/pexels-photo-28682352.jpeg"
+                      alt="Mobile trading app interface showing financial charts and portfolio management"
+                      className="w-full h-64 object-cover rounded-2xl shadow-lg"
+                    />
+                    <div className="mt-4 flex justify-center space-x-2">
+                      <div className="w-2 h-2 bg-[#00A3E1] rounded-full animate-pulse"></div>
+                      <div className="w-2 h-2 bg-[#0072FF] rounded-full animate-pulse delay-150"></div>
+                      <div className="w-2 h-2 bg-[#00C6FF] rounded-full animate-pulse delay-300"></div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Web Dashboard Showcase */}
+                <div className="relative group">
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#0072FF]/20 to-[#00E6E6]/20 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
+                  <div className="relative bg-white/90 backdrop-blur-sm rounded-3xl p-8 border border-[#0072FF]/20 hover:border-[#0072FF]/40 transition-all duration-500 shadow-xl">
+                    <div className="text-center mb-6">
+                      <h3 className="text-2xl font-bold text-[#333333] mb-2">Web Dashboard</h3>
+                      <p className="text-[#666666]">Comprehensive analytics and reporting</p>
+                    </div>
+                    <img
+                      src="https://images.pexels.com/photos/577195/pexels-photo-577195.jpeg"
+                      alt="Financial dashboard on laptop showing data visualizations and analytics charts"
+                      className="w-full h-64 object-cover rounded-2xl shadow-lg"
+                    />
+                    <div className="mt-4 flex justify-center space-x-2">
+                      <div className="w-2 h-2 bg-[#0072FF] rounded-full animate-pulse"></div>
+                      <div className="w-2 h-2 bg-[#00C6FF] rounded-full animate-pulse delay-150"></div>
+                      <div className="w-2 h-2 bg-[#00E6E6] rounded-full animate-pulse delay-300"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Stats */}
             <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
               {/* Rotating Statistic */}
