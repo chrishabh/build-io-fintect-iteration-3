@@ -476,25 +476,25 @@ export default function Index() {
             <nav className="hidden md:flex items-center space-x-8">
               <a
                 href="#solutions"
-                className="text-blue-200 hover:text-white transition-colors"
+                className="text-[#666666] hover:text-[#00A3E1] transition-colors font-medium"
               >
                 Solutions
               </a>
               <a
                 href="#services"
-                className="text-blue-200 hover:text-white transition-colors"
+                className="text-[#666666] hover:text-[#00A3E1] transition-colors font-medium"
               >
                 Services
               </a>
               <a
                 href="#platform"
-                className="text-blue-200 hover:text-white transition-colors"
+                className="text-[#666666] hover:text-[#00A3E1] transition-colors font-medium"
               >
                 Platform
               </a>
               <a
                 href="#contact"
-                className="text-blue-200 hover:text-white transition-colors"
+                className="text-[#666666] hover:text-[#00A3E1] transition-colors font-medium"
               >
                 Contact
               </a>
