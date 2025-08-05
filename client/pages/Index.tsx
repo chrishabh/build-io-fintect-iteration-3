@@ -442,19 +442,19 @@ export default function Index() {
 
         {/* Floating Financial Icons */}
         <div
-          className="absolute top-32 right-40 text-2xl text-white/10 animate-spin"
+          className="absolute top-32 right-40 text-2xl text-[#00A3E1]/10 animate-spin"
           style={{ animationDuration: "8s" }}
         >
           📊
         </div>
         <div
-          className="absolute bottom-48 left-32 text-3xl text-white/10 animate-spin"
+          className="absolute bottom-48 left-32 text-3xl text-[#0072FF]/10 animate-spin"
           style={{ animationDuration: "10s" }}
         >
           📈
         </div>
         <div
-          className="absolute top-48 left-40 text-2xl text-white/10 animate-spin"
+          className="absolute top-48 left-40 text-2xl text-[#00E6E6]/10 animate-spin"
           style={{ animationDuration: "12s" }}
         >
           💰
