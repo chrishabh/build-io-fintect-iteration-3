@@ -53,6 +53,14 @@ export default function Index() {
     return () => clearInterval(interval);
   }, [isAutoPlay]);
 
+  // Auto-rotate first statistic
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentStatIndex((prev) => (prev + 1) % rotatingStats.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % enterpriseServices.length);
   };
