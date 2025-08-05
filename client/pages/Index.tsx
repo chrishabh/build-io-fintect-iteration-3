@@ -720,65 +720,105 @@ export default function Index() {
       {/* Enterprise Services */}
       <section
         id="services"
-        className="py-20 px-6 bg-gradient-to-br from-white/5 to-purple-900/20 relative z-10"
+        className="py-24 px-6 bg-gradient-to-br from-white/5 via-blue-900/10 to-purple-900/20 relative z-10 overflow-hidden"
       >
-        <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">
+        {/* Background Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-20 left-20 w-64 h-64 bg-gradient-to-r from-cyan-500/5 to-blue-500/5 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-r from-purple-500/5 to-pink-500/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-128 h-128 bg-gradient-to-r from-indigo-500/3 to-cyan-500/3 rounded-full blur-3xl animate-pulse delay-2000"></div>
+        </div>
+
+        <div className="container mx-auto relative z-10">
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-2xl mb-6 animate-pulse">
+              <TrendingUp className="w-8 h-8 text-white" />
+            </div>
+            <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 bg-gradient-to-r from-white via-cyan-200 to-purple-200 bg-clip-text text-transparent">
               Enterprise Financial Service Platform
             </h2>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Comprehensive solutions designed for the modern financial
-              landscape. Trusted by leading institutions to power their digital
-              transformation.
+            <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto leading-relaxed">
+              Next-generation solutions designed for the modern financial landscape.
+              <span className="text-cyan-300 font-semibold"> Trusted by leading institutions</span> to power their digital transformation.
             </p>
+            <div className="mt-8 flex justify-center">
+              <div className="w-32 h-1 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 rounded-full"></div>
+            </div>
           </div>
 
-          {/* Carousel Container */}
-          <div className="relative max-w-6xl mx-auto">
+          {/* Enhanced Carousel Container */}
+          <div className="relative max-w-7xl mx-auto">
             <div
               ref={carouselRef}
-              className="overflow-hidden rounded-2xl"
+              className="overflow-hidden rounded-3xl bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-xl border border-white/20 shadow-2xl"
               onMouseEnter={() => setIsAutoPlay(false)}
               onMouseLeave={() => setIsAutoPlay(true)}
             >
               <div
-                className="flex transition-transform duration-700 ease-in-out"
+                className="flex transition-all duration-1000 ease-out"
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
               >
                 {enterpriseServices.map((service, index) => (
-                  <div key={index} className="w-full flex-shrink-0 px-4">
-                    <Card className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/15 hover:shadow-2xl transition-all duration-500 h-full transform hover:scale-105">
-                      <CardHeader className="text-center">
-                        <div className="mb-6 flex justify-center transform hover:rotate-12 transition-transform duration-300">
-                          {service.icon}
+                  <div key={index} className="w-full flex-shrink-0 p-8">
+                    <Card className="bg-gradient-to-br from-white/10 via-white/5 to-white/10 backdrop-blur-2xl border-white/30 hover:border-cyan-400/50 hover:bg-white/15 hover:shadow-3xl transition-all duration-700 h-full transform hover:scale-[1.02] hover:-translate-y-2 group relative overflow-hidden">
+                      {/* Card Background Pattern */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                      <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-cyan-400/10 to-purple-400/10 rounded-full blur-2xl transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-700"></div>
+
+                      <CardHeader className="text-center relative z-10 pb-8">
+                        <div className="mb-8 flex justify-center relative">
+                          <div className="relative">
+                            <div className="w-20 h-20 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-2xl flex items-center justify-center transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg shadow-cyan-500/25">
+                              {service.icon}
+                            </div>
+                            <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400/20 to-purple-400/20 rounded-3xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                          </div>
                         </div>
-                        <CardTitle className="text-2xl text-white mb-4">
+                        <CardTitle className="text-3xl md:text-4xl font-bold text-white mb-6 group-hover:text-cyan-300 transition-colors duration-500">
                           {service.title}
                         </CardTitle>
-                        <CardDescription className="text-blue-200 text-lg">
+                        <CardDescription className="text-blue-200 text-lg md:text-xl leading-relaxed group-hover:text-blue-100 transition-colors duration-500">
                           {service.description}
                         </CardDescription>
                       </CardHeader>
-                      <CardContent>
-                        <ul className="space-y-4 mb-8">
+
+                      <CardContent className="relative z-10">
+                        <div className="space-y-6 mb-10">
                           {service.features.map((feature, idx) => (
-                            <li
+                            <div
                               key={idx}
-                              className="flex items-start text-blue-100 transform hover:translate-x-2 transition-transform duration-300"
+                              className="flex items-start text-blue-100 transform hover:translate-x-4 transition-all duration-300 group/item"
+                              style={{
+                                animationDelay: `${idx * 100}ms`,
+                              }}
                             >
-                              <div className="w-3 h-3 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full mr-4 mt-2 flex-shrink-0 animate-pulse"></div>
-                              <span className="text-base">{feature}</span>
-                            </li>
+                              <div className="relative mr-4 mt-1 flex-shrink-0">
+                                <div className="w-4 h-4 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full flex items-center justify-center">
+                                  <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                                </div>
+                                <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400/30 to-purple-400/30 rounded-full blur-sm opacity-0 group-hover/item:opacity-100 transition-opacity duration-300"></div>
+                              </div>
+                              <span className="text-base md:text-lg font-medium leading-relaxed group-hover/item:text-white transition-colors duration-300">
+                                {feature}
+                              </span>
+                            </div>
                           ))}
-                        </ul>
-                        <Button
-                          variant="outline"
-                          className="w-full border-white/30 text-white hover:bg-gradient-to-r hover:from-cyan-500/20 hover:to-purple-500/20 backdrop-blur-sm transition-all duration-300 py-3"
-                        >
-                          Learn More
-                          <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                        </Button>
+                        </div>
+
+                        <div className="flex gap-4">
+                          <Button
+                            variant="outline"
+                            className="flex-1 border-white/30 text-white hover:bg-gradient-to-r hover:from-cyan-500/20 hover:to-purple-500/20 hover:border-cyan-400/50 backdrop-blur-sm transition-all duration-500 py-4 text-lg font-semibold group/btn"
+                          >
+                            Learn More
+                            <ArrowRight className="ml-2 w-5 h-5 group-hover/btn:translate-x-2 transition-transform duration-300" />
+                          </Button>
+                          <Button
+                            className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white shadow-lg border-0 px-8 py-4 text-lg font-semibold"
+                          >
+                            Demo
+                          </Button>
+                        </div>
                       </CardContent>
                     </Card>
                   </div>
@@ -786,33 +826,96 @@ export default function Index() {
               </div>
             </div>
 
-            {/* Carousel Navigation */}
+            {/* Enhanced Navigation */}
             <button
               onClick={prevSlide}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/10 backdrop-blur-md border border-white/20 text-white p-3 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110"
+              className="absolute left-6 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/30 text-white p-4 rounded-2xl hover:bg-gradient-to-r hover:from-cyan-500/20 hover:to-purple-500/20 hover:border-cyan-400/50 transition-all duration-500 hover:scale-110 group shadow-lg"
             >
-              <ArrowRight className="w-6 h-6 rotate-180" />
+              <ArrowRight className="w-7 h-7 rotate-180 group-hover:scale-110 transition-transform duration-300" />
             </button>
             <button
               onClick={nextSlide}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/10 backdrop-blur-md border border-white/20 text-white p-3 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110"
+              className="absolute right-6 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/30 text-white p-4 rounded-2xl hover:bg-gradient-to-r hover:from-cyan-500/20 hover:to-purple-500/20 hover:border-cyan-400/50 transition-all duration-500 hover:scale-110 group shadow-lg"
             >
-              <ArrowRight className="w-6 h-6" />
+              <ArrowRight className="w-7 h-7 group-hover:scale-110 transition-transform duration-300" />
             </button>
 
-            {/* Carousel Indicators */}
-            <div className="flex justify-center mt-8 space-x-3">
+            {/* Enhanced Progress Indicators */}
+            <div className="flex justify-center mt-12 space-x-4">
               {enterpriseServices.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  className={`relative transition-all duration-500 group ${
                     index === currentSlide
-                      ? "bg-gradient-to-r from-cyan-400 to-purple-400 scale-125"
-                      : "bg-white/30 hover:bg-white/50"
+                      ? "w-12 h-4"
+                      : "w-4 h-4 hover:w-6"
                   }`}
-                />
+                >
+                  <div
+                    className={`w-full h-full rounded-full transition-all duration-500 ${
+                      index === currentSlide
+                        ? "bg-gradient-to-r from-cyan-400 to-purple-400 shadow-lg shadow-cyan-500/25"
+                        : "bg-white/30 hover:bg-white/50 group-hover:shadow-lg group-hover:shadow-white/25"
+                    }`}
+                  />
+                  {index === currentSlide && (
+                    <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/50 to-purple-400/50 rounded-full blur-sm animate-pulse"></div>
+                  )}
+                </button>
               ))}
+            </div>
+
+            {/* Service Counter */}
+            <div className="text-center mt-8">
+              <div className="inline-flex items-center space-x-3 bg-white/10 backdrop-blur-md rounded-2xl px-6 py-3 border border-white/20">
+                <span className="text-cyan-400 font-semibold text-lg">
+                  {currentSlide + 1}
+                </span>
+                <div className="w-12 h-0.5 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full"></div>
+                <span className="text-white/70 text-lg">
+                  {enterpriseServices.length}
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Enhanced Feature Highlights */}
+          <div className="mt-20 grid md:grid-cols-3 gap-8">
+            <div className="text-center group">
+              <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-2xl mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                <Shield className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-cyan-300 transition-colors duration-300">
+                Enterprise Security
+              </h3>
+              <p className="text-blue-200 leading-relaxed">
+                Bank-grade security with end-to-end encryption, multi-factor authentication, and regulatory compliance.
+              </p>
+            </div>
+
+            <div className="text-center group">
+              <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-500 rounded-2xl mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                <Zap className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors duration-300">
+                Lightning Performance
+              </h3>
+              <p className="text-blue-200 leading-relaxed">
+                Ultra-fast transaction processing with microsecond latency and 99.9% uptime guarantee.
+              </p>
+            </div>
+
+            <div className="text-center group">
+              <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-emerald-500 rounded-2xl mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                <Globe className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-green-300 transition-colors duration-300">
+                Global Scale
+              </h3>
+              <p className="text-blue-200 leading-relaxed">
+                Multi-jurisdiction compliance with global reach, serving 150+ countries worldwide.
+              </p>
             </div>
           </div>
         </div>
