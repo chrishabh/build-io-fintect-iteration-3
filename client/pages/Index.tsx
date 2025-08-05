@@ -762,28 +762,12 @@ export default function Index() {
               </span>
             </h2>
 
-            <p className="text-2xl text-slate-300 max-w-5xl mx-auto leading-relaxed mb-12">
+            <p className="text-2xl text-slate-300 max-w-5xl mx-auto leading-relaxed mb-24">
               Revolutionary fintech infrastructure powering the next generation of financial institutions.
               <span className="block mt-4 text-cyan-300 font-semibold text-xl">
                 Trusted by 500+ financial leaders worldwide
               </span>
             </p>
-
-            {/* Stats Row */}
-            <div className="flex flex-wrap justify-center gap-8 mb-16">
-              <div className="bg-white/5 backdrop-blur-xl rounded-2xl px-8 py-6 border border-white/10 hover:border-cyan-400/30 transition-all duration-500 group">
-                <div className="text-4xl font-bold text-cyan-400 mb-2 group-hover:scale-110 transition-transform">$50B+</div>
-                <div className="text-slate-300 text-sm font-medium">Assets Managed</div>
-              </div>
-              <div className="bg-white/5 backdrop-blur-xl rounded-2xl px-8 py-6 border border-white/10 hover:border-purple-400/30 transition-all duration-500 group">
-                <div className="text-4xl font-bold text-purple-400 mb-2 group-hover:scale-110 transition-transform">150+</div>
-                <div className="text-slate-300 text-sm font-medium">Countries</div>
-              </div>
-              <div className="bg-white/5 backdrop-blur-xl rounded-2xl px-8 py-6 border border-white/10 hover:border-green-400/30 transition-all duration-500 group">
-                <div className="text-4xl font-bold text-green-400 mb-2 group-hover:scale-110 transition-transform">99.9%</div>
-                <div className="text-slate-300 text-sm font-medium">Uptime</div>
-              </div>
-            </div>
           </div>
 
           {/* Main Content Area */}
