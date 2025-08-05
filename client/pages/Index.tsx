@@ -467,7 +467,7 @@ export default function Index() {
             <div className="flex items-center">
               <div className="h-8 w-auto">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F707c836443464c7fa6c9a69898b9d1aa%2Faee5c1d251d34f649a5872377b653239?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F27f9da6458624353b422c0c3747c5ddb%2Faf00cb7ca44e4a828cc42340588ab7ff?format=webp&width=800"
                   alt="New Field Technologies"
                   className="h-full w-auto object-contain"
                 />
@@ -1530,7 +1530,7 @@ export default function Index() {
               <div className="flex items-center mb-4">
                 <div className="h-8 w-auto">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F707c836443464c7fa6c9a69898b9d1aa%2Faee5c1d251d34f649a5872377b653239?format=webp&width=800"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F27f9da6458624353b422c0c3747c5ddb%2Faf00cb7ca44e4a828cc42340588ab7ff?format=webp&width=800"
                     alt="New Field Technologies"
                     className="h-full w-auto object-contain"
                   />
