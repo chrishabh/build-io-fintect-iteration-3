@@ -961,18 +961,18 @@ export default function Index() {
                   <div className="flex justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     {category.icon}
                   </div>
-                  <h3 className="text-3xl font-bold text-white mb-3">
+                  <h3 className="text-3xl font-bold text-[#333333] mb-3">
                     {category.category}
                   </h3>
                   <div
                     className={`w-24 h-1 mx-auto rounded-full bg-gradient-to-r ${
                       category.color === "indigo"
-                        ? "from-indigo-500 to-purple-500"
+                        ? "from-[#00A3E1] to-[#0072FF]"
                         : category.color === "blue"
-                          ? "from-blue-500 to-cyan-500"
+                          ? "from-[#0072FF] to-[#00C6FF]"
                           : category.color === "purple"
-                            ? "from-purple-500 to-pink-500"
-                            : "from-green-500 to-emerald-500"
+                            ? "from-[#00C6FF] to-[#00E6E6]"
+                            : "from-[#00A3E1] to-[#00E6E6]"
                     }`}
                   ></div>
                 </div>
