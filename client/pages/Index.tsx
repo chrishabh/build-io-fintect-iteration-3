@@ -243,46 +243,46 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-6 relative z-10">
         <div className="container mx-auto text-center">
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <Badge className="mb-6 bg-blue-100 text-blue-700 border-blue-200">
+            <Badge className="mb-6 bg-white/10 text-cyan-300 border-cyan-400/30 backdrop-blur-sm">
               Advanced Fintech Financial Technology
             </Badge>
-            <h1 className="text-5xl md:text-7xl font-bold text-slate-800 mb-6 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               Integrated Fintech
               <br />
-              <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
                 Solution Architecture
               </span>
             </h1>
-            <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Comprehensive financial technology solutions built for the modern digital infrastructure. 
+            <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+              Comprehensive financial technology solutions built for the modern digital infrastructure.
               From Client Systems, Back Office Management, and Financial Operations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
+              <Button size="lg" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 shadow-lg border-0">
                 Explore Solutions
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
-              <Button size="lg" variant="outline" className="border-blue-200 text-blue-700 px-8 py-3">
+              <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 px-8 py-3 backdrop-blur-sm">
                 Schedule Demo
               </Button>
             </div>
-            
+
             {/* Stats */}
             <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
-              <div className="text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">500+</div>
-                <div className="text-slate-600">Financial Institutions</div>
+              <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+                <div className="text-4xl font-bold text-cyan-400 mb-2">500+</div>
+                <div className="text-blue-200">Financial Institutions</div>
               </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">$50B+</div>
-                <div className="text-slate-600">Assets Under Management</div>
+              <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+                <div className="text-4xl font-bold text-purple-400 mb-2">$50B+</div>
+                <div className="text-blue-200">Assets Under Management</div>
               </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">99.9%</div>
-                <div className="text-slate-600">System Uptime</div>
+              <div className="text-center bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+                <div className="text-4xl font-bold text-cyan-400 mb-2">99.9%</div>
+                <div className="text-blue-200">System Uptime</div>
               </div>
             </div>
           </div>
