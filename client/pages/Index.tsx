@@ -690,27 +690,27 @@ export default function Index() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-r from-purple-900 via-blue-900 to-indigo-900 text-white relative z-10">
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-blue-500/10"></div>
+      <section className="py-20 px-6 bg-gradient-to-r from-[#F5F7FA] via-white to-[#F5F7FA] relative z-10">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#00A3E1]/5 to-[#00C6FF]/5"></div>
         <div className="container mx-auto text-center relative z-10">
-          <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-[#00A3E1] to-[#00E6E6] bg-clip-text text-transparent">
             Ready to Transform Your Financial Operations?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-[#666666] mb-8 max-w-2xl mx-auto">
             Discover how our integrated solutions can streamline your processes
             and accelerate your digital transformation journey.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-3 shadow-lg border-0"
+              className="bg-gradient-to-r from-[#0072FF] to-[#00C6FF] hover:from-[#00A3E1] hover:to-[#00E6E6] text-white px-8 py-3 shadow-lg border-0"
             >
               Schedule Assessment Review
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-white/30 text-white hover:bg-white/10 px-8 py-3 backdrop-blur-sm"
+              className="border-[#00A3E1]/30 text-[#00A3E1] hover:bg-[#00A3E1]/10 px-8 py-3"
             >
               Download Whitepaper
             </Button>
