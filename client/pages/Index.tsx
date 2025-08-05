@@ -1141,7 +1141,7 @@ export default function Index() {
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
                 {/* Authentication & Identity */}
-                <Card className="bg-white/10 backdrop-blur-md border-blue-300/20 hover:bg-white/15 transition-all duration-300">
+                <Card className="bg-white border-[#00A3E1]/20 hover:bg-[#F5F7FA] hover:border-[#00A3E1]/40 transition-all duration-300 shadow-sm">
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
                       <Shield className="w-8 h-8 text-blue-300 mr-3" />
