@@ -399,32 +399,76 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
-            {enterpriseServices.map((service, index) => (
-              <Card key={index} className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/15 hover:shadow-xl transition-all duration-300">
-                <CardHeader>
-                  <div className="mb-4">{service.icon}</div>
-                  <CardTitle className="text-xl text-white">{service.title}</CardTitle>
-                  <CardDescription className="text-blue-200">
-                    {service.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-3 mb-6">
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start text-sm text-blue-100">
-                        <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                  <Button variant="outline" className="w-full border-white/30 text-white hover:bg-white/10 backdrop-blur-sm">
-                    Learn More
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
+          {/* Carousel Container */}
+          <div className="relative max-w-6xl mx-auto">
+            <div
+              ref={carouselRef}
+              className="overflow-hidden rounded-2xl"
+              onMouseEnter={() => setIsAutoPlay(false)}
+              onMouseLeave={() => setIsAutoPlay(true)}
+            >
+              <div
+                className="flex transition-transform duration-700 ease-in-out"
+                style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+              >
+                {enterpriseServices.map((service, index) => (
+                  <div key={index} className="w-full flex-shrink-0 px-4">
+                    <Card className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/15 hover:shadow-2xl transition-all duration-500 h-full transform hover:scale-105">
+                      <CardHeader className="text-center">
+                        <div className="mb-6 flex justify-center transform hover:rotate-12 transition-transform duration-300">{service.icon}</div>
+                        <CardTitle className="text-2xl text-white mb-4">{service.title}</CardTitle>
+                        <CardDescription className="text-blue-200 text-lg">
+                          {service.description}
+                        </CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <ul className="space-y-4 mb-8">
+                          {service.features.map((feature, idx) => (
+                            <li key={idx} className="flex items-start text-blue-100 transform hover:translate-x-2 transition-transform duration-300">
+                              <div className="w-3 h-3 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full mr-4 mt-2 flex-shrink-0 animate-pulse"></div>
+                              <span className="text-base">{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                        <Button variant="outline" className="w-full border-white/30 text-white hover:bg-gradient-to-r hover:from-cyan-500/20 hover:to-purple-500/20 backdrop-blur-sm transition-all duration-300 py-3">
+                          Learn More
+                          <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                        </Button>
+                      </CardContent>
+                    </Card>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Carousel Navigation */}
+            <button
+              onClick={prevSlide}
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/10 backdrop-blur-md border border-white/20 text-white p-3 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110"
+            >
+              <ArrowRight className="w-6 h-6 rotate-180" />
+            </button>
+            <button
+              onClick={nextSlide}
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/10 backdrop-blur-md border border-white/20 text-white p-3 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110"
+            >
+              <ArrowRight className="w-6 h-6" />
+            </button>
+
+            {/* Carousel Indicators */}
+            <div className="flex justify-center mt-8 space-x-3">
+              {enterpriseServices.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentSlide(index)}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                    index === currentSlide
+                      ? 'bg-gradient-to-r from-cyan-400 to-purple-400 scale-125'
+                      : 'bg-white/30 hover:bg-white/50'
+                  }`}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>
