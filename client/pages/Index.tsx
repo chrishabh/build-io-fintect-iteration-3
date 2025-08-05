@@ -421,22 +421,22 @@ export default function Index() {
         <div className="absolute top-1/2 left-1/2 w-64 h-64 border border-[#00A3E1]/10 rounded-full transform -translate-x-1/2 -translate-y-1/2 animate-pulse delay-1500"></div>
 
         {/* Floating Dollar Signs */}
-        <div className="absolute top-20 left-20 text-4xl text-green-400/20 animate-bounce delay-300">
+        <div className="absolute top-20 left-20 text-4xl text-[#00A3E1]/20 animate-bounce delay-300">
           $
         </div>
-        <div className="absolute top-40 right-32 text-3xl text-yellow-400/20 animate-bounce delay-700">
+        <div className="absolute top-40 right-32 text-3xl text-[#00E6E6]/20 animate-bounce delay-700">
           $
         </div>
-        <div className="absolute bottom-32 left-16 text-5xl text-emerald-400/15 animate-bounce delay-1100">
+        <div className="absolute bottom-32 left-16 text-5xl text-[#0072FF]/15 animate-bounce delay-1100">
           $
         </div>
-        <div className="absolute bottom-40 right-20 text-2xl text-cyan-400/25 animate-bounce delay-1500">
+        <div className="absolute bottom-40 right-20 text-2xl text-[#00C6FF]/25 animate-bounce delay-1500">
           $
         </div>
-        <div className="absolute top-60 left-1/3 text-3xl text-purple-400/20 animate-bounce delay-1900">
+        <div className="absolute top-60 left-1/3 text-3xl text-[#00A3E1]/20 animate-bounce delay-1900">
           $
         </div>
-        <div className="absolute bottom-60 right-1/3 text-4xl text-blue-400/15 animate-bounce delay-2300">
+        <div className="absolute bottom-60 right-1/3 text-4xl text-[#0072FF]/15 animate-bounce delay-2300">
           $
         </div>
 
