@@ -413,12 +413,12 @@ export default function Index() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 relative overflow-hidden">
       {/* Digital Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-indigo-500/20"></div>
-        <div className="absolute top-10 left-10 w-32 h-32 border border-blue-400/30 rounded-full animate-pulse"></div>
-        <div className="absolute top-1/4 right-20 w-24 h-24 border border-purple-400/30 rounded-full animate-pulse delay-1000"></div>
-        <div className="absolute bottom-20 left-1/4 w-40 h-40 border border-indigo-400/20 rounded-full animate-pulse delay-2000"></div>
-        <div className="absolute bottom-10 right-10 w-16 h-16 border border-cyan-400/30 rounded-full animate-pulse delay-500"></div>
-        <div className="absolute top-1/2 left-1/2 w-64 h-64 border border-purple-400/10 rounded-full transform -translate-x-1/2 -translate-y-1/2 animate-pulse delay-1500"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#00A3E1]/20 via-[#0072FF]/20 to-[#00C6FF]/20"></div>
+        <div className="absolute top-10 left-10 w-32 h-32 border border-[#00A3E1]/30 rounded-full animate-pulse"></div>
+        <div className="absolute top-1/4 right-20 w-24 h-24 border border-[#00E6E6]/30 rounded-full animate-pulse delay-1000"></div>
+        <div className="absolute bottom-20 left-1/4 w-40 h-40 border border-[#0072FF]/20 rounded-full animate-pulse delay-2000"></div>
+        <div className="absolute bottom-10 right-10 w-16 h-16 border border-[#00C6FF]/30 rounded-full animate-pulse delay-500"></div>
+        <div className="absolute top-1/2 left-1/2 w-64 h-64 border border-[#00A3E1]/10 rounded-full transform -translate-x-1/2 -translate-y-1/2 animate-pulse delay-1500"></div>
 
         {/* Floating Dollar Signs */}
         <div className="absolute top-20 left-20 text-4xl text-green-400/20 animate-bounce delay-300">
