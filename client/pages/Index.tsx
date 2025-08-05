@@ -557,8 +557,12 @@ export default function Index() {
                   <div className="absolute inset-0 bg-gradient-to-r from-[#00A3E1]/20 to-[#00C6FF]/20 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
                   <div className="relative bg-white/90 backdrop-blur-sm rounded-3xl p-8 border border-[#00A3E1]/20 hover:border-[#00A3E1]/40 transition-all duration-500 shadow-xl">
                     <div className="text-center mb-6">
-                      <h3 className="text-2xl font-bold text-[#333333] mb-2">Mobile Trading App</h3>
-                      <p className="text-[#666666]">Real-time portfolio management on-the-go</p>
+                      <h3 className="text-2xl font-bold text-[#333333] mb-2">
+                        Mobile Trading App
+                      </h3>
+                      <p className="text-[#666666]">
+                        Real-time portfolio management on-the-go
+                      </p>
                     </div>
                     <img
                       src="https://images.pexels.com/photos/28682352/pexels-photo-28682352.jpeg"
@@ -578,8 +582,12 @@ export default function Index() {
                   <div className="absolute inset-0 bg-gradient-to-r from-[#0072FF]/20 to-[#00E6E6]/20 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
                   <div className="relative bg-white/90 backdrop-blur-sm rounded-3xl p-8 border border-[#0072FF]/20 hover:border-[#0072FF]/40 transition-all duration-500 shadow-xl">
                     <div className="text-center mb-6">
-                      <h3 className="text-2xl font-bold text-[#333333] mb-2">Web Dashboard</h3>
-                      <p className="text-[#666666]">Comprehensive analytics and reporting</p>
+                      <h3 className="text-2xl font-bold text-[#333333] mb-2">
+                        Web Dashboard
+                      </h3>
+                      <p className="text-[#666666]">
+                        Comprehensive analytics and reporting
+                      </p>
                     </div>
                     <img
                       src="https://images.pexels.com/photos/577195/pexels-photo-577195.jpeg"
@@ -1156,9 +1164,12 @@ export default function Index() {
           {/* Platform Showcase Gallery */}
           <div className="mt-20 mb-16">
             <div className="text-center mb-12">
-              <h3 className="text-3xl font-bold text-[#333333] mb-4">Platform Showcase</h3>
+              <h3 className="text-3xl font-bold text-[#333333] mb-4">
+                Platform Showcase
+              </h3>
               <p className="text-lg text-[#666666] max-w-2xl mx-auto">
-                See our fintech solutions in action across mobile and web platforms
+                See our fintech solutions in action across mobile and web
+                platforms
               </p>
             </div>
 
@@ -1172,11 +1183,18 @@ export default function Index() {
                     alt="Mobile banking app mockup on smartphone"
                     className="w-full h-64 object-cover rounded-xl mb-4"
                   />
-                  <h4 className="text-xl font-semibold text-[#333333] mb-2">Mobile Banking</h4>
-                  <p className="text-[#666666] text-sm">Complete banking experience on mobile devices with real-time portfolio tracking</p>
+                  <h4 className="text-xl font-semibold text-[#333333] mb-2">
+                    Mobile Banking
+                  </h4>
+                  <p className="text-[#666666] text-sm">
+                    Complete banking experience on mobile devices with real-time
+                    portfolio tracking
+                  </p>
                   <div className="mt-4 flex items-center space-x-2">
                     <div className="w-2 h-2 bg-[#00A3E1] rounded-full"></div>
-                    <span className="text-xs text-[#666666]">iOS & Android</span>
+                    <span className="text-xs text-[#666666]">
+                      iOS & Android
+                    </span>
                   </div>
                 </div>
               </div>
@@ -1190,11 +1208,18 @@ export default function Index() {
                     alt="Trading platform displaying financial charts and data"
                     className="w-full h-64 object-cover rounded-xl mb-4"
                   />
-                  <h4 className="text-xl font-semibold text-[#333333] mb-2">Trading Platform</h4>
-                  <p className="text-[#666666] text-sm">Advanced trading interface with real-time market data and portfolio analytics</p>
+                  <h4 className="text-xl font-semibold text-[#333333] mb-2">
+                    Trading Platform
+                  </h4>
+                  <p className="text-[#666666] text-sm">
+                    Advanced trading interface with real-time market data and
+                    portfolio analytics
+                  </p>
                   <div className="mt-4 flex items-center space-x-2">
                     <div className="w-2 h-2 bg-[#0072FF] rounded-full"></div>
-                    <span className="text-xs text-[#666666]">Real-time Data</span>
+                    <span className="text-xs text-[#666666]">
+                      Real-time Data
+                    </span>
                   </div>
                 </div>
               </div>
@@ -1208,11 +1233,18 @@ export default function Index() {
                     alt="Financial dashboard on laptop showing analytics and reports"
                     className="w-full h-64 object-cover rounded-xl mb-4"
                   />
-                  <h4 className="text-xl font-semibold text-[#333333] mb-2">Analytics Dashboard</h4>
-                  <p className="text-[#666666] text-sm">Comprehensive web dashboard with advanced analytics and reporting tools</p>
+                  <h4 className="text-xl font-semibold text-[#333333] mb-2">
+                    Analytics Dashboard
+                  </h4>
+                  <p className="text-[#666666] text-sm">
+                    Comprehensive web dashboard with advanced analytics and
+                    reporting tools
+                  </p>
                   <div className="mt-4 flex items-center space-x-2">
                     <div className="w-2 h-2 bg-[#00C6FF] rounded-full"></div>
-                    <span className="text-xs text-[#666666]">Advanced Analytics</span>
+                    <span className="text-xs text-[#666666]">
+                      Advanced Analytics
+                    </span>
                   </div>
                 </div>
               </div>
@@ -1542,8 +1574,9 @@ export default function Index() {
               Experience Across All Platforms
             </h2>
             <p className="text-xl text-[#666666] max-w-3xl mx-auto">
-              Seamless financial services whether you're on mobile, tablet, or desktop.
-              Our platform delivers consistent excellence across all devices.
+              Seamless financial services whether you're on mobile, tablet, or
+              desktop. Our platform delivers consistent excellence across all
+              devices.
             </p>
           </div>
 
@@ -1559,24 +1592,33 @@ export default function Index() {
                 </h3>
                 <p className="text-lg text-[#666666] mb-6">
                   Complete banking functionality optimized for mobile devices.
-                  Trade, monitor portfolios, and manage accounts on-the-go with our native mobile apps.
+                  Trade, monitor portfolios, and manage accounts on-the-go with
+                  our native mobile apps.
                 </p>
                 <ul className="space-y-3 text-left">
                   <li className="flex items-center">
                     <CheckCircle className="w-5 h-5 text-[#00A3E1] mr-3" />
-                    <span className="text-[#666666]">Real-time portfolio tracking</span>
+                    <span className="text-[#666666]">
+                      Real-time portfolio tracking
+                    </span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="w-5 h-5 text-[#00A3E1] mr-3" />
-                    <span className="text-[#666666]">Biometric authentication</span>
+                    <span className="text-[#666666]">
+                      Biometric authentication
+                    </span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="w-5 h-5 text-[#00A3E1] mr-3" />
-                    <span className="text-[#666666]">Push notifications for trades</span>
+                    <span className="text-[#666666]">
+                      Push notifications for trades
+                    </span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="w-5 h-5 text-[#00A3E1] mr-3" />
-                    <span className="text-[#666666]">Offline mode capabilities</span>
+                    <span className="text-[#666666]">
+                      Offline mode capabilities
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -1592,8 +1634,12 @@ export default function Index() {
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4">
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm font-semibold text-[#333333]">Portfolio Value</span>
-                      <span className="text-lg font-bold text-[#00A3E1]">$124,560</span>
+                      <span className="text-sm font-semibold text-[#333333]">
+                        Portfolio Value
+                      </span>
+                      <span className="text-lg font-bold text-[#00A3E1]">
+                        $124,560
+                      </span>
                     </div>
                     <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
                       <div className="h-full bg-gradient-to-r from-[#00A3E1] to-[#0072FF] rounded-full w-3/4"></div>
@@ -1613,25 +1659,34 @@ export default function Index() {
                   Advanced Web Dashboard
                 </h3>
                 <p className="text-lg text-[#666666] mb-6">
-                  Powerful web-based platform for comprehensive financial management.
-                  Advanced analytics, detailed reporting, and institutional-grade tools.
+                  Powerful web-based platform for comprehensive financial
+                  management. Advanced analytics, detailed reporting, and
+                  institutional-grade tools.
                 </p>
                 <ul className="space-y-3 text-left">
                   <li className="flex items-center">
                     <CheckCircle className="w-5 h-5 text-[#0072FF] mr-3" />
-                    <span className="text-[#666666]">Advanced charting & analytics</span>
+                    <span className="text-[#666666]">
+                      Advanced charting & analytics
+                    </span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="w-5 h-5 text-[#0072FF] mr-3" />
-                    <span className="text-[#666666]">Multi-monitor support</span>
+                    <span className="text-[#666666]">
+                      Multi-monitor support
+                    </span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="w-5 h-5 text-[#0072FF] mr-3" />
-                    <span className="text-[#666666]">Customizable dashboards</span>
+                    <span className="text-[#666666]">
+                      Customizable dashboards
+                    </span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="w-5 h-5 text-[#0072FF] mr-3" />
-                    <span className="text-[#666666]">Bulk operations & reporting</span>
+                    <span className="text-[#666666]">
+                      Bulk operations & reporting
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -1648,16 +1703,28 @@ export default function Index() {
                   <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4">
                     <div className="grid grid-cols-3 gap-4 text-center">
                       <div>
-                        <div className="text-lg font-bold text-[#0072FF]">$2.4M</div>
-                        <div className="text-xs text-[#666666]">Total Assets</div>
+                        <div className="text-lg font-bold text-[#0072FF]">
+                          $2.4M
+                        </div>
+                        <div className="text-xs text-[#666666]">
+                          Total Assets
+                        </div>
                       </div>
                       <div>
-                        <div className="text-lg font-bold text-[#00C6FF]">+12.5%</div>
-                        <div className="text-xs text-[#666666]">Monthly Growth</div>
+                        <div className="text-lg font-bold text-[#00C6FF]">
+                          +12.5%
+                        </div>
+                        <div className="text-xs text-[#666666]">
+                          Monthly Growth
+                        </div>
                       </div>
                       <div>
-                        <div className="text-lg font-bold text-[#00E6E6]">156</div>
-                        <div className="text-xs text-[#666666]">Active Trades</div>
+                        <div className="text-lg font-bold text-[#00E6E6]">
+                          156
+                        </div>
+                        <div className="text-xs text-[#666666]">
+                          Active Trades
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1673,7 +1740,8 @@ export default function Index() {
                 Unified Experience Across All Devices
               </h3>
               <p className="text-lg text-[#666666] max-w-3xl mx-auto">
-                Your data, preferences, and workflows sync seamlessly across all platforms
+                Your data, preferences, and workflows sync seamlessly across all
+                platforms
               </p>
             </div>
 
@@ -1682,32 +1750,48 @@ export default function Index() {
                 <div className="w-12 h-12 bg-gradient-to-r from-[#00A3E1] to-[#0072FF] rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Phone className="w-6 h-6 text-white" />
                 </div>
-                <h4 className="font-semibold text-[#333333] mb-2">Mobile Apps</h4>
-                <p className="text-sm text-[#666666]">iOS & Android native applications</p>
+                <h4 className="font-semibold text-[#333333] mb-2">
+                  Mobile Apps
+                </h4>
+                <p className="text-sm text-[#666666]">
+                  iOS & Android native applications
+                </p>
               </div>
 
               <div className="bg-white rounded-xl p-6 border border-[#0072FF]/20 shadow-sm">
                 <div className="w-12 h-12 bg-gradient-to-r from-[#0072FF] to-[#00C6FF] rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Globe className="w-6 h-6 text-white" />
                 </div>
-                <h4 className="font-semibold text-[#333333] mb-2">Web Platform</h4>
-                <p className="text-sm text-[#666666]">Advanced browser-based dashboard</p>
+                <h4 className="font-semibold text-[#333333] mb-2">
+                  Web Platform
+                </h4>
+                <p className="text-sm text-[#666666]">
+                  Advanced browser-based dashboard
+                </p>
               </div>
 
               <div className="bg-white rounded-xl p-6 border border-[#00C6FF]/20 shadow-sm">
                 <div className="w-12 h-12 bg-gradient-to-r from-[#00C6FF] to-[#00E6E6] rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Database className="w-6 h-6 text-white" />
                 </div>
-                <h4 className="font-semibold text-[#333333] mb-2">Cloud Sync</h4>
-                <p className="text-sm text-[#666666]">Real-time data synchronization</p>
+                <h4 className="font-semibold text-[#333333] mb-2">
+                  Cloud Sync
+                </h4>
+                <p className="text-sm text-[#666666]">
+                  Real-time data synchronization
+                </p>
               </div>
 
               <div className="bg-white rounded-xl p-6 border border-[#00E6E6]/20 shadow-sm">
                 <div className="w-12 h-12 bg-gradient-to-r from-[#00E6E6] to-[#00A3E1] rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Settings className="w-6 h-6 text-white" />
                 </div>
-                <h4 className="font-semibold text-[#333333] mb-2">Preferences</h4>
-                <p className="text-sm text-[#666666]">Unified settings across devices</p>
+                <h4 className="font-semibold text-[#333333] mb-2">
+                  Preferences
+                </h4>
+                <p className="text-sm text-[#666666]">
+                  Unified settings across devices
+                </p>
               </div>
             </div>
           </div>
