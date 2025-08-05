@@ -721,26 +721,26 @@ export default function Index() {
       {/* Enterprise Financial Service Platform - Redesigned */}
       <section
         id="services"
-        className="py-32 px-6 bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950 relative z-10 overflow-hidden"
+        className="py-32 px-6 bg-gradient-to-br from-[#F5F7FA] via-white to-[#F5F7FA] relative z-10 overflow-hidden"
       >
         {/* Dynamic Background */}
         <div className="absolute inset-0 overflow-hidden">
           {/* Animated Grid Pattern */}
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[size:64px_64px] animate-pulse"></div>
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(0,163,225,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,163,225,0.03)_1px,transparent_1px)] bg-[size:64px_64px] animate-pulse"></div>
 
           {/* Floating Orbs */}
-          <div className="absolute top-20 left-10 w-80 h-80 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-full blur-3xl animate-floating"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-full blur-3xl animate-floating delay-1000"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[32rem] h-[32rem] bg-gradient-to-r from-indigo-500/5 to-cyan-500/5 rounded-full blur-3xl animate-floating delay-2000"></div>
+          <div className="absolute top-20 left-10 w-80 h-80 bg-gradient-to-r from-[#00A3E1]/10 to-[#0072FF]/10 rounded-full blur-3xl animate-floating"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-[#00C6FF]/10 to-[#00E6E6]/10 rounded-full blur-3xl animate-floating delay-1000"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[32rem] h-[32rem] bg-gradient-to-r from-[#00A3E1]/5 to-[#00E6E6]/5 rounded-full blur-3xl animate-floating delay-2000"></div>
 
           {/* Financial Icons Floating */}
-          <div className="absolute top-32 right-32 text-6xl text-cyan-400/10 animate-bounce delay-300">
+          <div className="absolute top-32 right-32 text-6xl text-[#00A3E1]/10 animate-bounce delay-300">
             📊
           </div>
-          <div className="absolute bottom-40 left-40 text-5xl text-purple-400/10 animate-bounce delay-700">
+          <div className="absolute bottom-40 left-40 text-5xl text-[#0072FF]/10 animate-bounce delay-700">
             💹
           </div>
-          <div className="absolute top-2/3 right-1/4 text-4xl text-blue-400/10 animate-bounce delay-1100">
+          <div className="absolute top-2/3 right-1/4 text-4xl text-[#00E6E6]/10 animate-bounce delay-1100">
             💰
           </div>
         </div>
