@@ -424,6 +424,7 @@ export default function Index() {
                       <CardContent className="p-6">
                         <div className="flex items-start space-x-3">
                           <div className={`w-3 h-3 rounded-full mt-2 flex-shrink-0 ${
+                            category.color === 'indigo' ? 'bg-indigo-500' :
                             category.color === 'blue' ? 'bg-blue-500' :
                             category.color === 'purple' ? 'bg-purple-500' :
                             'bg-green-500'
