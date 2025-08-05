@@ -464,13 +464,14 @@ export default function Index() {
       <header className="bg-white/10 backdrop-blur-md border-b border-white/20 sticky top-0 z-50 relative">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-sm">FT</span>
+            <div className="flex items-center">
+              <div className="h-8 w-auto">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F707c836443464c7fa6c9a69898b9d1aa%2Faee5c1d251d34f649a5872377b653239?format=webp&width=800"
+                  alt="New Field Technologies"
+                  className="h-full w-auto object-contain"
+                />
               </div>
-              <span className="text-xl font-bold text-white">
-                New Fintek Technologies
-              </span>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
               <a
@@ -717,102 +718,219 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Enterprise Services */}
+      {/* Enterprise Financial Service Platform - Redesigned */}
       <section
         id="services"
-        className="py-20 px-6 bg-gradient-to-br from-white/5 to-purple-900/20 relative z-10"
+        className="py-32 px-6 bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950 relative z-10 overflow-hidden"
       >
-        <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">
-              Enterprise Financial Service Platform
-            </h2>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Comprehensive solutions designed for the modern financial
-              landscape. Trusted by leading institutions to power their digital
-              transformation.
-            </p>
-          </div>
+        {/* Dynamic Background */}
+        <div className="absolute inset-0 overflow-hidden">
+          {/* Animated Grid Pattern */}
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[size:64px_64px] animate-pulse"></div>
 
-          {/* Carousel Container */}
-          <div className="relative max-w-6xl mx-auto">
-            <div
-              ref={carouselRef}
-              className="overflow-hidden rounded-2xl"
-              onMouseEnter={() => setIsAutoPlay(false)}
-              onMouseLeave={() => setIsAutoPlay(true)}
-            >
-              <div
-                className="flex transition-transform duration-700 ease-in-out"
-                style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-              >
-                {enterpriseServices.map((service, index) => (
-                  <div key={index} className="w-full flex-shrink-0 px-4">
-                    <Card className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/15 hover:shadow-2xl transition-all duration-500 h-full transform hover:scale-105">
-                      <CardHeader className="text-center">
-                        <div className="mb-6 flex justify-center transform hover:rotate-12 transition-transform duration-300">
-                          {service.icon}
-                        </div>
-                        <CardTitle className="text-2xl text-white mb-4">
-                          {service.title}
-                        </CardTitle>
-                        <CardDescription className="text-blue-200 text-lg">
-                          {service.description}
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <ul className="space-y-4 mb-8">
-                          {service.features.map((feature, idx) => (
-                            <li
-                              key={idx}
-                              className="flex items-start text-blue-100 transform hover:translate-x-2 transition-transform duration-300"
-                            >
-                              <div className="w-3 h-3 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full mr-4 mt-2 flex-shrink-0 animate-pulse"></div>
-                              <span className="text-base">{feature}</span>
-                            </li>
-                          ))}
-                        </ul>
-                        <Button
-                          variant="outline"
-                          className="w-full border-white/30 text-white hover:bg-gradient-to-r hover:from-cyan-500/20 hover:to-purple-500/20 backdrop-blur-sm transition-all duration-300 py-3"
-                        >
-                          Learn More
-                          <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                        </Button>
-                      </CardContent>
-                    </Card>
-                  </div>
-                ))}
+          {/* Floating Orbs */}
+          <div className="absolute top-20 left-10 w-80 h-80 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-full blur-3xl animate-floating"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-full blur-3xl animate-floating delay-1000"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[32rem] h-[32rem] bg-gradient-to-r from-indigo-500/5 to-cyan-500/5 rounded-full blur-3xl animate-floating delay-2000"></div>
+
+          {/* Financial Icons Floating */}
+          <div className="absolute top-32 right-32 text-6xl text-cyan-400/10 animate-bounce delay-300">
+            📊
+          </div>
+          <div className="absolute bottom-40 left-40 text-5xl text-purple-400/10 animate-bounce delay-700">
+            💹
+          </div>
+          <div className="absolute top-2/3 right-1/4 text-4xl text-blue-400/10 animate-bounce delay-1100">
+            💰
+          </div>
+        </div>
+
+        <div className="container mx-auto relative z-10">
+          {/* Hero Header */}
+          <div className="text-center mb-24">
+            <div className="relative inline-block mb-8">
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/20 via-purple-400/20 to-pink-400/20 rounded-3xl blur-2xl animate-pulse"></div>
+              <div className="relative bg-gradient-to-r from-cyan-400 to-purple-400 p-1 rounded-3xl">
+                <div className="bg-slate-900 rounded-[calc(1.5rem-4px)] px-8 py-4">
+                  <span className="text-white font-semibold text-lg">
+                    Enterprise Platform Solutions
+                  </span>
+                </div>
               </div>
             </div>
 
-            {/* Carousel Navigation */}
-            <button
-              onClick={prevSlide}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/10 backdrop-blur-md border border-white/20 text-white p-3 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110"
-            >
-              <ArrowRight className="w-6 h-6 rotate-180" />
-            </button>
-            <button
-              onClick={nextSlide}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/10 backdrop-blur-md border border-white/20 text-white p-3 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110"
-            >
-              <ArrowRight className="w-6 h-6" />
-            </button>
+            <h2 className="text-6xl md:text-8xl font-black text-white mb-8 leading-tight">
+              <span className="bg-gradient-to-r from-cyan-300 via-blue-300 to-purple-300 bg-clip-text text-transparent">
+                Financial
+              </span>
+              <br />
+              <span className="text-white">Service</span>
+              <br />
+              <span className="bg-gradient-to-r from-purple-300 via-pink-300 to-cyan-300 bg-clip-text text-transparent">
+                Excellence
+              </span>
+            </h2>
 
-            {/* Carousel Indicators */}
-            <div className="flex justify-center mt-8 space-x-3">
-              {enterpriseServices.map((_, index) => (
-                <button
+            <p className="text-2xl text-slate-300 max-w-5xl mx-auto leading-relaxed mb-24">
+              Revolutionary fintech infrastructure powering the next generation
+              of financial institutions.
+              <span className="block mt-4 text-cyan-300 font-semibold text-xl">
+                Trusted by 500+ financial leaders worldwide
+              </span>
+            </p>
+          </div>
+
+          {/* Main Content Area */}
+          <div className="max-w-7xl mx-auto">
+            {/* Services Showcase */}
+            <div className="space-y-20">
+              {enterpriseServices.map((service, index) => (
+                <div
                   key={index}
-                  onClick={() => setCurrentSlide(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    index === currentSlide
-                      ? "bg-gradient-to-r from-cyan-400 to-purple-400 scale-125"
-                      : "bg-white/30 hover:bg-white/50"
-                  }`}
-                />
+                  className={`grid lg:grid-cols-2 gap-16 items-center ${index % 2 === 1 ? "lg:grid-flow-dense" : ""}`}
+                >
+                  {/* Service Content */}
+                  <div
+                    className={`space-y-8 ${index % 2 === 1 ? "lg:col-start-2" : ""}`}
+                  >
+                    <div className="space-y-6">
+                      <div className="flex items-center space-x-4">
+                        <div className="relative">
+                          <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-2xl flex items-center justify-center transform hover:rotate-12 transition-all duration-500 shadow-lg shadow-cyan-500/25">
+                            {service.icon}
+                          </div>
+                          <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400/20 to-purple-400/20 rounded-3xl blur-lg animate-pulse"></div>
+                        </div>
+                        <div className="text-sm text-cyan-400 font-semibold tracking-widest uppercase">
+                          0{index + 1} / Service
+                        </div>
+                      </div>
+
+                      <h3 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+                        {service.title}
+                      </h3>
+
+                      <p className="text-xl text-slate-300 leading-relaxed">
+                        {service.description}
+                      </p>
+                    </div>
+
+                    {/* Features Grid */}
+                    <div className="grid sm:grid-cols-2 gap-4">
+                      {service.features.map((feature, idx) => (
+                        <div
+                          key={idx}
+                          className="group bg-white/5 backdrop-blur-xl rounded-xl p-4 border border-white/10 hover:border-cyan-400/30 transition-all duration-500 hover:bg-white/10"
+                        >
+                          <div className="flex items-start space-x-3">
+                            <div className="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full mt-2 flex-shrink-0 group-hover:scale-150 transition-transform"></div>
+                            <span className="text-slate-300 group-hover:text-white transition-colors font-medium text-sm leading-relaxed">
+                              {feature}
+                            </span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Action Buttons */}
+                    <div className="flex flex-wrap gap-4">
+                      <Button className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white border-0 px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-cyan-500/25 transition-all duration-500">
+                        Explore {service.title}
+                        <ArrowRight className="ml-2 w-5 h-5" />
+                      </Button>
+                      <Button
+                        variant="outline"
+                        className="border-white/20 text-white hover:bg-white/10 hover:border-cyan-400/50 px-8 py-4 text-lg font-semibold backdrop-blur-xl"
+                      >
+                        Request Demo
+                      </Button>
+                    </div>
+                  </div>
+
+                  {/* Service Visual */}
+                  <div
+                    className={`relative ${index % 2 === 1 ? "lg:col-start-1" : ""}`}
+                  >
+                    <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-2xl rounded-3xl p-8 border border-white/20 hover:border-cyan-400/30 transition-all duration-700 group">
+                      {/* Visual Background */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-transparent to-purple-500/5 rounded-3xl group-hover:from-cyan-500/10 group-hover:to-purple-500/10 transition-all duration-700"></div>
+
+                      {/* Mock Dashboard/Interface */}
+                      <div className="relative space-y-6">
+                        <div className="flex items-center justify-between">
+                          <div className="flex space-x-2">
+                            <div className="w-3 h-3 bg-red-400 rounded-full"></div>
+                            <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                            <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+                          </div>
+                          <div className="text-xs text-slate-400 font-mono">
+                            dashboard.fieldtech.com
+                          </div>
+                        </div>
+
+                        <div className="space-y-4">
+                          <div className="h-4 bg-gradient-to-r from-cyan-400/30 to-transparent rounded-full"></div>
+                          <div className="h-4 bg-gradient-to-r from-purple-400/30 to-transparent rounded-full w-3/4"></div>
+                          <div className="h-4 bg-gradient-to-r from-blue-400/30 to-transparent rounded-full w-1/2"></div>
+                        </div>
+
+                        <div className="grid grid-cols-3 gap-4">
+                          <div className="bg-cyan-400/10 rounded-lg p-4 border border-cyan-400/20">
+                            <div className="text-2xl font-bold text-cyan-400 mb-1">
+                              $2.4M
+                            </div>
+                            <div className="text-xs text-slate-400">
+                              Revenue
+                            </div>
+                          </div>
+                          <div className="bg-purple-400/10 rounded-lg p-4 border border-purple-400/20">
+                            <div className="text-2xl font-bold text-purple-400 mb-1">
+                              18.5K
+                            </div>
+                            <div className="text-xs text-slate-400">Users</div>
+                          </div>
+                          <div className="bg-green-400/10 rounded-lg p-4 border border-green-400/20">
+                            <div className="text-2xl font-bold text-green-400 mb-1">
+                              +12%
+                            </div>
+                            <div className="text-xs text-slate-400">Growth</div>
+                          </div>
+                        </div>
+
+                        <div className="h-32 bg-gradient-to-br from-slate-800/50 to-slate-700/50 rounded-lg border border-white/10 flex items-center justify-center">
+                          <div className="text-4xl text-cyan-400/30">📈</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               ))}
+            </div>
+
+            {/* Bottom CTA Section */}
+            <div className="mt-32 text-center bg-gradient-to-r from-slate-800/50 via-blue-900/50 to-purple-900/50 backdrop-blur-2xl rounded-3xl p-16 border border-white/20">
+              <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                Ready to Transform Your
+                <span className="block bg-gradient-to-r from-cyan-300 to-purple-300 bg-clip-text text-transparent">
+                  Financial Operations?
+                </span>
+              </h3>
+              <p className="text-xl text-slate-300 mb-12 max-w-3xl mx-auto">
+                Join the hundreds of financial institutions already leveraging
+                our enterprise platform to drive innovation and growth.
+              </p>
+              <div className="flex flex-wrap justify-center gap-6">
+                <Button className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white border-0 px-10 py-5 text-xl font-semibold shadow-2xl hover:shadow-cyan-500/25 transition-all duration-500">
+                  Schedule Platform Demo
+                  <ArrowRight className="ml-3 w-6 h-6" />
+                </Button>
+                <Button
+                  variant="outline"
+                  className="border-white/20 text-white hover:bg-white/10 hover:border-cyan-400/50 px-10 py-5 text-xl font-semibold backdrop-blur-xl"
+                >
+                  Download Whitepaper
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -1374,7 +1492,7 @@ export default function Index() {
                         Get technical assistance and demos
                       </div>
                       <div className="text-cyan-300">
-                        support@newfintektech.com
+                        support@newfieldtech.com
                       </div>
                     </div>
                   </div>
@@ -1420,13 +1538,14 @@ export default function Index() {
         <div className="container mx-auto relative z-10">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg">
-                  <span className="text-white font-bold text-sm">FT</span>
+              <div className="flex items-center mb-4">
+                <div className="h-8 w-auto">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F707c836443464c7fa6c9a69898b9d1aa%2Faee5c1d251d34f649a5872377b653239?format=webp&width=800"
+                    alt="New Field Technologies"
+                    className="h-full w-auto object-contain"
+                  />
                 </div>
-                <span className="text-xl font-bold text-white">
-                  New Fintek Technologies
-                </span>
               </div>
               <p className="text-blue-200">
                 Leading provider of integrated fintech solutions for modern
@@ -1502,7 +1621,7 @@ export default function Index() {
               <h4 className="font-semibold mb-4 text-white">Contact</h4>
               <ul className="space-y-2 text-blue-200">
                 <li>+1 (555) 123-4567</li>
-                <li>info@newfintektech.com</li>
+                <li>info@newfieldtech.com</li>
                 <li>123 Financial District</li>
                 <li>New York, NY 10013</li>
               </ul>
@@ -1510,7 +1629,7 @@ export default function Index() {
           </div>
 
           <div className="border-t border-white/20 mt-8 pt-8 text-center text-blue-200">
-            <p>&copy; 2024 New Fintek Technologies. All rights reserved.</p>
+            <p>&copy; 2024 New Field Technologies. All rights reserved.</p>
           </div>
         </div>
       </footer>
