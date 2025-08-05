@@ -80,7 +80,7 @@ export default function Index() {
 
   const features = [
     {
-      icon: <Users className="w-8 h-8 text-blue-600" />,
+      icon: <Users className="w-8 h-8 text-[#00A3E1]" />,
       title: "Client Portal (User-facing Dashboard) & Mobile application",
       description:
         "Secure client authentication (web & mobile) with comprehensive dashboard",
@@ -121,7 +121,7 @@ export default function Index() {
       ],
     },
     {
-      icon: <BarChart3 className="w-8 h-8 text-blue-600" />,
+      icon: <BarChart3 className="w-8 h-8 text-[#00A3E1]" />,
       title: "Client Management Portal (Back Office)",
       description:
         "Comprehensive client list with filters (status, asset value, etc.)",
@@ -232,7 +232,7 @@ export default function Index() {
     },
     {
       category: "Trading & Investment Platform",
-      icon: <TrendingUp className="w-12 h-12 text-blue-600" />,
+      icon: <TrendingUp className="w-12 h-12 text-[#00A3E1]" />,
       color: "blue",
       capabilities: [
         {
@@ -369,7 +369,7 @@ export default function Index() {
 
   const enterpriseServices = [
     {
-      icon: <CreditCard className="w-8 h-8 text-blue-600" />,
+      icon: <CreditCard className="w-8 h-8 text-[#00A3E1]" />,
       title: "Investment Banking",
       description:
         "Complete suite for elite trading systems and investment portfolio optimization.",
@@ -395,7 +395,7 @@ export default function Index() {
       ],
     },
     {
-      icon: <BarChart3 className="w-8 h-8 text-blue-600" />,
+      icon: <BarChart3 className="w-8 h-8 text-[#00A3E1]" />,
       title: "Wealth Management",
       description:
         "Comprehensive platform for asset management and wealth advisory services.",
