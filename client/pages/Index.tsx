@@ -796,21 +796,21 @@ export default function Index() {
                     <div className="space-y-6">
                       <div className="flex items-center space-x-4">
                         <div className="relative">
-                          <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-2xl flex items-center justify-center transform hover:rotate-12 transition-all duration-500 shadow-lg shadow-cyan-500/25">
+                          <div className="w-16 h-16 bg-gradient-to-r from-[#00A3E1] to-[#00C6FF] rounded-2xl flex items-center justify-center transform hover:rotate-12 transition-all duration-500 shadow-lg shadow-[#00A3E1]/25">
                             {service.icon}
                           </div>
-                          <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400/20 to-purple-400/20 rounded-3xl blur-lg animate-pulse"></div>
+                          <div className="absolute -inset-2 bg-gradient-to-r from-[#00A3E1]/20 to-[#00C6FF]/20 rounded-3xl blur-lg animate-pulse"></div>
                         </div>
-                        <div className="text-sm text-cyan-400 font-semibold tracking-widest uppercase">
+                        <div className="text-sm text-[#00A3E1] font-semibold tracking-widest uppercase">
                           0{index + 1} / Service
                         </div>
                       </div>
 
-                      <h3 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+                      <h3 className="text-4xl md:text-5xl font-bold text-[#333333] leading-tight">
                         {service.title}
                       </h3>
 
-                      <p className="text-xl text-slate-300 leading-relaxed">
+                      <p className="text-xl text-[#666666] leading-relaxed">
                         {service.description}
                       </p>
                     </div>
