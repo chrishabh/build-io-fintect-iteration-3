@@ -464,13 +464,10 @@ export default function Index() {
       <header className="bg-white/10 backdrop-blur-md border-b border-white/20 sticky top-0 z-50 relative">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 rounded-lg overflow-hidden shadow-lg">
-                <img src="https://cdn.builder.io/api/v1/image/assets%2F707c836443464c7fa6c9a69898b9d1aa%2Ff09e0d6342f64c2c9c141597b834874b?format=webp&width=800" alt="New Field Technologies" className="w-full h-full object-contain" />
+            <div className="flex items-center">
+              <div className="h-8 w-auto">
+                <img src="https://cdn.builder.io/api/v1/image/assets%2F707c836443464c7fa6c9a69898b9d1aa%2F42321a80e0194a41ba4427b5671cf748?format=webp&width=800" alt="New Field Technologies" className="h-full w-auto object-contain" />
               </div>
-              <span className="text-xl font-bold text-white">
-                New Field Technologies
-              </span>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
               <a
@@ -599,7 +596,7 @@ export default function Index() {
                   💰
                 </div>
                 <div className="absolute bottom-3 right-3 text-green-400/20 animate-bounce delay-1500">
-                  💎
+                  ���
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
