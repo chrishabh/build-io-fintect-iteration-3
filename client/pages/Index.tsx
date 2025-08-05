@@ -431,6 +431,7 @@ export default function Index() {
                           }`}></div>
                           <div className="flex-1">
                             <h4 className={`font-semibold mb-2 group-hover/card:${
+                              category.color === 'indigo' ? 'text-indigo-600' :
                               category.color === 'blue' ? 'text-blue-600' :
                               category.color === 'purple' ? 'text-purple-600' :
                               'text-green-600'
