@@ -512,10 +512,10 @@ export default function Index() {
           <div
             className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
           >
-            <Badge className="mb-6 bg-white/10 text-cyan-300 border-cyan-400/30 backdrop-blur-sm">
+            <Badge className="mb-6 bg-[#00A3E1]/10 text-[#00A3E1] border-[#00A3E1]/30 backdrop-blur-sm">
               Advanced Fintech Financial Technology
             </Badge>
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold text-[#333333] mb-6 leading-tight">
               <span className="inline-block animate-fade-in-up">
                 Integrated
               </span>{" "}
@@ -523,11 +523,11 @@ export default function Index() {
                 Fintech
               </span>
               <br />
-              <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent inline-block animate-fade-in-up delay-500">
+              <span className="bg-gradient-to-r from-[#00A3E1] to-[#00E6E6] bg-clip-text text-transparent inline-block animate-fade-in-up delay-500">
                 Solution Architecture
               </span>
             </h1>
-            <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-[#666666] mb-8 max-w-3xl mx-auto leading-relaxed">
               Comprehensive financial technology solutions built for the modern
               digital infrastructure. From Client Systems, Back Office
               Management, and Financial Operations.
