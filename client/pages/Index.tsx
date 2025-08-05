@@ -717,135 +717,199 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Enterprise Services */}
+      {/* Enterprise Financial Service Platform - Redesigned */}
       <section
         id="services"
-        className="py-24 px-6 bg-gradient-to-br from-white/5 via-blue-900/10 to-purple-900/20 relative z-10 overflow-hidden"
+        className="py-32 px-6 bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950 relative z-10 overflow-hidden"
       >
-        {/* Background Elements */}
+        {/* Dynamic Background */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-20 w-64 h-64 bg-gradient-to-r from-cyan-500/5 to-blue-500/5 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-r from-purple-500/5 to-pink-500/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-128 h-128 bg-gradient-to-r from-indigo-500/3 to-cyan-500/3 rounded-full blur-3xl animate-pulse delay-2000"></div>
+          {/* Animated Grid Pattern */}
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[size:64px_64px] animate-pulse"></div>
+
+          {/* Floating Orbs */}
+          <div className="absolute top-20 left-10 w-80 h-80 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-full blur-3xl animate-floating"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-full blur-3xl animate-floating delay-1000"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[32rem] h-[32rem] bg-gradient-to-r from-indigo-500/5 to-cyan-500/5 rounded-full blur-3xl animate-floating delay-2000"></div>
+
+          {/* Financial Icons Floating */}
+          <div className="absolute top-32 right-32 text-6xl text-cyan-400/10 animate-bounce delay-300">📊</div>
+          <div className="absolute bottom-40 left-40 text-5xl text-purple-400/10 animate-bounce delay-700">💹</div>
+          <div className="absolute top-2/3 right-1/4 text-4xl text-blue-400/10 animate-bounce delay-1100">💰</div>
         </div>
 
         <div className="container mx-auto relative z-10">
-          <div className="text-center mb-20">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-2xl mb-6 animate-pulse">
-              <TrendingUp className="w-8 h-8 text-white" />
+          {/* Hero Header */}
+          <div className="text-center mb-24">
+            <div className="relative inline-block mb-8">
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/20 via-purple-400/20 to-pink-400/20 rounded-3xl blur-2xl animate-pulse"></div>
+              <div className="relative bg-gradient-to-r from-cyan-400 to-purple-400 p-1 rounded-3xl">
+                <div className="bg-slate-900 rounded-[calc(1.5rem-4px)] px-8 py-4">
+                  <span className="text-white font-semibold text-lg">Enterprise Platform Solutions</span>
+                </div>
+              </div>
             </div>
-            <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 bg-gradient-to-r from-white via-cyan-200 to-purple-200 bg-clip-text text-transparent">
-              Enterprise Financial Service Platform
+
+            <h2 className="text-6xl md:text-8xl font-black text-white mb-8 leading-tight">
+              <span className="bg-gradient-to-r from-cyan-300 via-blue-300 to-purple-300 bg-clip-text text-transparent">
+                Financial
+              </span>
+              <br />
+              <span className="text-white">Service</span>
+              <br />
+              <span className="bg-gradient-to-r from-purple-300 via-pink-300 to-cyan-300 bg-clip-text text-transparent">
+                Excellence
+              </span>
             </h2>
-            <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto leading-relaxed">
-              Next-generation solutions designed for the modern financial landscape.
-              <span className="text-cyan-300 font-semibold"> Trusted by leading institutions</span> to power their digital transformation.
+
+            <p className="text-2xl text-slate-300 max-w-5xl mx-auto leading-relaxed mb-12">
+              Revolutionary fintech infrastructure powering the next generation of financial institutions.
+              <span className="block mt-4 text-cyan-300 font-semibold text-xl">
+                Trusted by 500+ financial leaders worldwide
+              </span>
             </p>
-            <div className="mt-8 flex justify-center">
-              <div className="w-32 h-1 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 rounded-full"></div>
+
+            {/* Stats Row */}
+            <div className="flex flex-wrap justify-center gap-8 mb-16">
+              <div className="bg-white/5 backdrop-blur-xl rounded-2xl px-8 py-6 border border-white/10 hover:border-cyan-400/30 transition-all duration-500 group">
+                <div className="text-4xl font-bold text-cyan-400 mb-2 group-hover:scale-110 transition-transform">$50B+</div>
+                <div className="text-slate-300 text-sm font-medium">Assets Managed</div>
+              </div>
+              <div className="bg-white/5 backdrop-blur-xl rounded-2xl px-8 py-6 border border-white/10 hover:border-purple-400/30 transition-all duration-500 group">
+                <div className="text-4xl font-bold text-purple-400 mb-2 group-hover:scale-110 transition-transform">150+</div>
+                <div className="text-slate-300 text-sm font-medium">Countries</div>
+              </div>
+              <div className="bg-white/5 backdrop-blur-xl rounded-2xl px-8 py-6 border border-white/10 hover:border-green-400/30 transition-all duration-500 group">
+                <div className="text-4xl font-bold text-green-400 mb-2 group-hover:scale-110 transition-transform">99.9%</div>
+                <div className="text-slate-300 text-sm font-medium">Uptime</div>
+              </div>
             </div>
           </div>
 
-          {/* Services Grid */}
-          <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {enterpriseServices.map((service, index) => (
-              <Card key={index} className="bg-gradient-to-br from-white/10 via-white/5 to-white/10 backdrop-blur-2xl border-white/30 hover:border-cyan-400/50 hover:bg-white/15 hover:shadow-3xl transition-all duration-700 h-full transform hover:scale-[1.02] hover:-translate-y-2 group relative overflow-hidden">
-                {/* Card Background Pattern */}
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-cyan-400/10 to-purple-400/10 rounded-full blur-2xl transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-700"></div>
-
-                <CardHeader className="text-center relative z-10 pb-8">
-                  <div className="mb-8 flex justify-center relative">
-                    <div className="relative">
-                      <div className="w-20 h-20 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-2xl flex items-center justify-center transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg shadow-cyan-500/25">
-                        {service.icon}
+          {/* Main Content Area */}
+          <div className="max-w-7xl mx-auto">
+            {/* Services Showcase */}
+            <div className="space-y-20">
+              {enterpriseServices.map((service, index) => (
+                <div key={index} className={`grid lg:grid-cols-2 gap-16 items-center ${index % 2 === 1 ? 'lg:grid-flow-dense' : ''}`}>
+                  {/* Service Content */}
+                  <div className={`space-y-8 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
+                    <div className="space-y-6">
+                      <div className="flex items-center space-x-4">
+                        <div className="relative">
+                          <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-2xl flex items-center justify-center transform hover:rotate-12 transition-all duration-500 shadow-lg shadow-cyan-500/25">
+                            {service.icon}
+                          </div>
+                          <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400/20 to-purple-400/20 rounded-3xl blur-lg animate-pulse"></div>
+                        </div>
+                        <div className="text-sm text-cyan-400 font-semibold tracking-widest uppercase">
+                          0{index + 1} / Service
+                        </div>
                       </div>
-                      <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400/20 to-purple-400/20 rounded-3xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                      <h3 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+                        {service.title}
+                      </h3>
+
+                      <p className="text-xl text-slate-300 leading-relaxed">
+                        {service.description}
+                      </p>
+                    </div>
+
+                    {/* Features Grid */}
+                    <div className="grid sm:grid-cols-2 gap-4">
+                      {service.features.map((feature, idx) => (
+                        <div key={idx} className="group bg-white/5 backdrop-blur-xl rounded-xl p-4 border border-white/10 hover:border-cyan-400/30 transition-all duration-500 hover:bg-white/10">
+                          <div className="flex items-start space-x-3">
+                            <div className="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full mt-2 flex-shrink-0 group-hover:scale-150 transition-transform"></div>
+                            <span className="text-slate-300 group-hover:text-white transition-colors font-medium text-sm leading-relaxed">
+                              {feature}
+                            </span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Action Buttons */}
+                    <div className="flex flex-wrap gap-4">
+                      <Button className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white border-0 px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-cyan-500/25 transition-all duration-500">
+                        Explore {service.title}
+                        <ArrowRight className="ml-2 w-5 h-5" />
+                      </Button>
+                      <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 hover:border-cyan-400/50 px-8 py-4 text-lg font-semibold backdrop-blur-xl">
+                        Request Demo
+                      </Button>
                     </div>
                   </div>
-                  <CardTitle className="text-2xl md:text-3xl font-bold text-white mb-6 group-hover:text-cyan-300 transition-colors duration-500">
-                    {service.title}
-                  </CardTitle>
-                  <CardDescription className="text-blue-200 text-lg leading-relaxed group-hover:text-blue-100 transition-colors duration-500">
-                    {service.description}
-                  </CardDescription>
-                </CardHeader>
 
-                <CardContent className="relative z-10">
-                  <div className="space-y-4 mb-8">
-                    {service.features.map((feature, idx) => (
-                      <div
-                        key={idx}
-                        className="flex items-start text-blue-100 transform hover:translate-x-2 transition-all duration-300 group/item"
-                      >
-                        <div className="relative mr-3 mt-1 flex-shrink-0">
-                          <div className="w-3 h-3 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full flex items-center justify-center">
-                            <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse"></div>
+                  {/* Service Visual */}
+                  <div className={`relative ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
+                    <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-2xl rounded-3xl p-8 border border-white/20 hover:border-cyan-400/30 transition-all duration-700 group">
+                      {/* Visual Background */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-transparent to-purple-500/5 rounded-3xl group-hover:from-cyan-500/10 group-hover:to-purple-500/10 transition-all duration-700"></div>
+
+                      {/* Mock Dashboard/Interface */}
+                      <div className="relative space-y-6">
+                        <div className="flex items-center justify-between">
+                          <div className="flex space-x-2">
+                            <div className="w-3 h-3 bg-red-400 rounded-full"></div>
+                            <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                            <div className="w-3 h-3 bg-green-400 rounded-full"></div>
                           </div>
-                          <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400/30 to-purple-400/30 rounded-full blur-sm opacity-0 group-hover/item:opacity-100 transition-opacity duration-300"></div>
+                          <div className="text-xs text-slate-400 font-mono">dashboard.fintek.com</div>
                         </div>
-                        <span className="text-sm md:text-base font-medium leading-relaxed group-hover/item:text-white transition-colors duration-300">
-                          {feature}
-                        </span>
+
+                        <div className="space-y-4">
+                          <div className="h-4 bg-gradient-to-r from-cyan-400/30 to-transparent rounded-full"></div>
+                          <div className="h-4 bg-gradient-to-r from-purple-400/30 to-transparent rounded-full w-3/4"></div>
+                          <div className="h-4 bg-gradient-to-r from-blue-400/30 to-transparent rounded-full w-1/2"></div>
+                        </div>
+
+                        <div className="grid grid-cols-3 gap-4">
+                          <div className="bg-cyan-400/10 rounded-lg p-4 border border-cyan-400/20">
+                            <div className="text-2xl font-bold text-cyan-400 mb-1">$2.4M</div>
+                            <div className="text-xs text-slate-400">Revenue</div>
+                          </div>
+                          <div className="bg-purple-400/10 rounded-lg p-4 border border-purple-400/20">
+                            <div className="text-2xl font-bold text-purple-400 mb-1">18.5K</div>
+                            <div className="text-xs text-slate-400">Users</div>
+                          </div>
+                          <div className="bg-green-400/10 rounded-lg p-4 border border-green-400/20">
+                            <div className="text-2xl font-bold text-green-400 mb-1">+12%</div>
+                            <div className="text-xs text-slate-400">Growth</div>
+                          </div>
+                        </div>
+
+                        <div className="h-32 bg-gradient-to-br from-slate-800/50 to-slate-700/50 rounded-lg border border-white/10 flex items-center justify-center">
+                          <div className="text-4xl text-cyan-400/30">📈</div>
+                        </div>
                       </div>
-                    ))}
+                    </div>
                   </div>
-
-                  <div className="flex gap-3">
-                    <Button
-                      variant="outline"
-                      className="flex-1 border-white/30 text-white hover:bg-gradient-to-r hover:from-cyan-500/20 hover:to-purple-500/20 hover:border-cyan-400/50 backdrop-blur-sm transition-all duration-500 py-3 text-sm font-semibold group/btn"
-                    >
-                      Learn More
-                      <ArrowRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
-                    </Button>
-                    <Button
-                      className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white shadow-lg border-0 px-6 py-3 text-sm font-semibold"
-                    >
-                      Demo
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          {/* Enhanced Feature Highlights */}
-          <div className="mt-20 grid md:grid-cols-3 gap-8">
-            <div className="text-center group">
-              <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-2xl mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                <Shield className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-cyan-300 transition-colors duration-300">
-                Enterprise Security
-              </h3>
-              <p className="text-blue-200 leading-relaxed">
-                Bank-grade security with end-to-end encryption, multi-factor authentication, and regulatory compliance.
-              </p>
+                </div>
+              ))}
             </div>
 
-            <div className="text-center group">
-              <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-500 rounded-2xl mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                <Zap className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors duration-300">
-                Lightning Performance
+            {/* Bottom CTA Section */}
+            <div className="mt-32 text-center bg-gradient-to-r from-slate-800/50 via-blue-900/50 to-purple-900/50 backdrop-blur-2xl rounded-3xl p-16 border border-white/20">
+              <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                Ready to Transform Your
+                <span className="block bg-gradient-to-r from-cyan-300 to-purple-300 bg-clip-text text-transparent">
+                  Financial Operations?
+                </span>
               </h3>
-              <p className="text-blue-200 leading-relaxed">
-                Ultra-fast transaction processing with microsecond latency and 99.9% uptime guarantee.
+              <p className="text-xl text-slate-300 mb-12 max-w-3xl mx-auto">
+                Join the hundreds of financial institutions already leveraging our enterprise platform to drive innovation and growth.
               </p>
-            </div>
-
-            <div className="text-center group">
-              <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-emerald-500 rounded-2xl mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                <Globe className="w-8 h-8 text-white" />
+              <div className="flex flex-wrap justify-center gap-6">
+                <Button className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white border-0 px-10 py-5 text-xl font-semibold shadow-2xl hover:shadow-cyan-500/25 transition-all duration-500">
+                  Schedule Platform Demo
+                  <ArrowRight className="ml-3 w-6 h-6" />
+                </Button>
+                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 hover:border-cyan-400/50 px-10 py-5 text-xl font-semibold backdrop-blur-xl">
+                  Download Whitepaper
+                </Button>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-green-300 transition-colors duration-300">
-                Global Scale
-              </h3>
-              <p className="text-blue-200 leading-relaxed">
-                Multi-jurisdiction compliance with global reach, serving 150+ countries worldwide.
-              </p>
             </div>
           </div>
         </div>
