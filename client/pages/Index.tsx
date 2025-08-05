@@ -1155,19 +1155,19 @@ export default function Index() {
                         Multi-Factor Authentication (MFA) for all users
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#00A3E1] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Single Sign-On (SSO) via SAML, OAuth
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#00A3E1] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Role-Based Access Control (RBAC)
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#00A3E1] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Biometric verification (Face ID, fingerprint)
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#00A3E1] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Session expiration & device trust management
                       </li>
                     </ul>
@@ -1215,23 +1215,23 @@ export default function Index() {
                     </div>
                     <ul className="space-y-2 text-sm text-blue-200">
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#00A3E1] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Zero-trust architecture
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#00A3E1] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Isolated environments (dev, staging, prod)
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#00A3E1] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Cloud-native firewall & DDoS protection
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#00A3E1] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         IP whitelisting for admin portals
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#00A3E1] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Hardened containers & vulnerability scanning
                       </li>
                     </ul>
@@ -1279,23 +1279,23 @@ export default function Index() {
                     </div>
                     <ul className="space-y-2 text-sm text-blue-200">
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#00A3E1] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         OWASP Top 10 mitigation
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#00A3E1] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Input validation & sanitization
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#00A3E1] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Rate limiting & bot protection
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#00A3E1] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         CSRF protection for forms
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#00A3E1] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         JWT token-based API authentication
                       </li>
                     </ul>
@@ -1347,19 +1347,19 @@ export default function Index() {
                     </div>
                     <ul className="space-y-2 text-sm text-blue-200">
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#00A3E1] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Security awareness training
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#00A3E1] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Login history visibility for clients
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#00A3E1] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Access token revocation controls
                       </li>
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#00A3E1] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Session management options
                       </li>
                     </ul>
