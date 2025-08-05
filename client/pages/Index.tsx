@@ -1533,8 +1533,8 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gradient-to-br from-blue-950 via-purple-950 to-indigo-950 text-white py-12 px-6 relative z-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-indigo-900/20"></div>
+      <footer className="bg-gradient-to-br from-[#F5F7FA] via-white to-[#F5F7FA] py-12 px-6 relative z-10 border-t border-[#00A3E1]/20">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#00A3E1]/5 via-[#00C6FF]/5 to-[#00E6E6]/5"></div>
         <div className="container mx-auto relative z-10">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
