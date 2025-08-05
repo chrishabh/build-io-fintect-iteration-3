@@ -840,7 +840,7 @@ export default function Index() {
                             <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
                             <div className="w-3 h-3 bg-green-400 rounded-full"></div>
                           </div>
-                          <div className="text-xs text-slate-400 font-mono">dashboard.fintek.com</div>
+                          <div className="text-xs text-slate-400 font-mono">dashboard.fieldtech.com</div>
                         </div>
 
                         <div className="space-y-4">
@@ -1455,7 +1455,7 @@ export default function Index() {
                         Get technical assistance and demos
                       </div>
                       <div className="text-cyan-300">
-                        support@newfintektech.com
+                        support@newfieldtech.com
                       </div>
                     </div>
                   </div>
@@ -1583,7 +1583,7 @@ export default function Index() {
               <h4 className="font-semibold mb-4 text-white">Contact</h4>
               <ul className="space-y-2 text-blue-200">
                 <li>+1 (555) 123-4567</li>
-                <li>info@newfintektech.com</li>
+                <li>info@newfieldtech.com</li>
                 <li>123 Financial District</li>
                 <li>New York, NY 10013</li>
               </ul>
