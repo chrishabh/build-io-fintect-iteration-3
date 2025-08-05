@@ -1547,32 +1547,32 @@ export default function Index() {
                   />
                 </div>
               </div>
-              <p className="text-blue-200">
+              <p className="text-[#666666]">
                 Leading provider of integrated fintech solutions for modern
                 financial institutions.
               </p>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4 text-white">Solutions</h4>
-              <ul className="space-y-2 text-blue-200">
+              <h4 className="font-semibold mb-4 text-[#333333]">Solutions</h4>
+              <ul className="space-y-2 text-[#666666]">
                 <li>
-                  <a href="#" className="hover:text-cyan-400 transition-colors">
+                  <a href="#" className="hover:text-[#00A3E1] transition-colors">
                     Client Systems
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-cyan-400 transition-colors">
+                  <a href="#" className="hover:text-[#00A3E1] transition-colors">
                     Back Office
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-cyan-400 transition-colors">
+                  <a href="#" className="hover:text-[#00A3E1] transition-colors">
                     Data Analytics
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-cyan-400 transition-colors">
+                  <a href="#" className="hover:text-[#00A3E1] transition-colors">
                     Compliance
                   </a>
                 </li>
@@ -1580,12 +1580,12 @@ export default function Index() {
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4 text-white">Services</h4>
-              <ul className="space-y-2 text-blue-200">
+              <h4 className="font-semibold mb-4 text-[#333333]">Services</h4>
+              <ul className="space-y-2 text-[#666666]">
                 <li>
                   <a
                     href="#"
-                    className="hover:text-purple-400 transition-colors"
+                    className="hover:text-[#00A3E1] transition-colors"
                   >
                     Investment Banking
                   </a>
@@ -1593,7 +1593,7 @@ export default function Index() {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-purple-400 transition-colors"
+                    className="hover:text-[#00A3E1] transition-colors"
                   >
                     Wealth Management
                   </a>
@@ -1601,7 +1601,7 @@ export default function Index() {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-purple-400 transition-colors"
+                    className="hover:text-[#00A3E1] transition-colors"
                   >
                     Credit Unions
                   </a>
@@ -1609,7 +1609,7 @@ export default function Index() {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-purple-400 transition-colors"
+                    className="hover:text-[#00A3E1] transition-colors"
                   >
                     Consulting
                   </a>
@@ -1618,8 +1618,8 @@ export default function Index() {
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4 text-white">Contact</h4>
-              <ul className="space-y-2 text-blue-200">
+              <h4 className="font-semibold mb-4 text-[#333333]">Contact</h4>
+              <ul className="space-y-2 text-[#666666]">
                 <li>+1 (555) 123-4567</li>
                 <li>info@newfieldtech.com</li>
                 <li>123 Financial District</li>
