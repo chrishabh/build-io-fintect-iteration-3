@@ -528,35 +528,286 @@ export default function Index() {
             ))}
           </div>
 
-          {/* Technical Excellence Banner */}
-          <div className="mt-20 bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl p-12 text-white">
-            <div className="text-center mb-8">
-              <h3 className="text-3xl font-bold mb-4">Technical Excellence & Security</h3>
-              <p className="text-slate-300 max-w-3xl mx-auto">
-                Built on enterprise-grade infrastructure with 99.9% uptime, bank-level security,
-                and seamless integration capabilities
-              </p>
+          {/* Technical Excellence & Security */}
+          <div className="mt-20 bg-gradient-to-br from-blue-900 via-purple-900 to-blue-800 rounded-3xl p-12 text-white relative overflow-hidden">
+            {/* Background Pattern */}
+            <div className="absolute inset-0 opacity-10">
+              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500/20 to-purple-500/20"></div>
+              <div className="absolute top-4 left-4 w-32 h-32 border border-blue-400/30 rounded-full"></div>
+              <div className="absolute bottom-4 right-4 w-24 h-24 border border-purple-400/30 rounded-full"></div>
+              <div className="absolute top-1/2 left-1/2 w-40 h-40 border border-cyan-400/20 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="text-center">
-                <Shield className="w-12 h-12 text-blue-400 mx-auto mb-3" />
-                <div className="font-semibold mb-1">Bank-Level Security</div>
-                <div className="text-sm text-slate-400">End-to-end encryption</div>
+
+            <div className="relative z-10">
+              <div className="text-center mb-12">
+                <h3 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-200 to-purple-200 bg-clip-text text-transparent">
+                  Technical Excellence & Security
+                </h3>
+                <p className="text-blue-100 max-w-4xl mx-auto text-lg">
+                  Enterprise-grade security infrastructure with comprehensive protection, compliance,
+                  and monitoring capabilities built for modern financial services
+                </p>
               </div>
-              <div className="text-center">
-                <Zap className="w-12 h-12 text-yellow-400 mx-auto mb-3" />
-                <div className="font-semibold mb-1">High Performance</div>
-                <div className="text-sm text-slate-400">Microsecond latency</div>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
+                {/* Authentication & Identity */}
+                <Card className="bg-white/10 backdrop-blur-md border-blue-300/20 hover:bg-white/15 transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-center mb-4">
+                      <Shield className="w-8 h-8 text-blue-300 mr-3" />
+                      <h4 className="text-lg font-semibold text-blue-100">Authentication & Identity</h4>
+                    </div>
+                    <ul className="space-y-2 text-sm text-blue-200">
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Multi-Factor Authentication (MFA) for all users
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Single Sign-On (SSO) via SAML, OAuth
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Role-Based Access Control (RBAC)
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Biometric verification (Face ID, fingerprint)
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Session expiration & device trust management
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                {/* Data Encryption */}
+                <Card className="bg-white/10 backdrop-blur-md border-purple-300/20 hover:bg-white/15 transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-center mb-4">
+                      <Lock className="w-8 h-8 text-purple-300 mr-3" />
+                      <h4 className="text-lg font-semibold text-purple-100">Data Encryption</h4>
+                    </div>
+                    <ul className="space-y-2 text-sm text-purple-200">
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        End-to-end encryption (TLS 1.3 in transit)
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        AES-256 encryption at rest
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Field-level encryption for sensitive data
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Encrypted file storage for documents
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                {/* Infrastructure Security */}
+                <Card className="bg-white/10 backdrop-blur-md border-blue-300/20 hover:bg-white/15 transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-center mb-4">
+                      <Layers className="w-8 h-8 text-blue-300 mr-3" />
+                      <h4 className="text-lg font-semibold text-blue-100">Infrastructure Security</h4>
+                    </div>
+                    <ul className="space-y-2 text-sm text-blue-200">
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Zero-trust architecture
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Isolated environments (dev, staging, prod)
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Cloud-native firewall & DDoS protection
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        IP whitelisting for admin portals
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Hardened containers & vulnerability scanning
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                {/* Compliance & Regulatory */}
+                <Card className="bg-white/10 backdrop-blur-md border-purple-300/20 hover:bg-white/15 transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-center mb-4">
+                      <CheckCircle className="w-8 h-8 text-purple-300 mr-3" />
+                      <h4 className="text-lg font-semibold text-purple-100">Compliance & Regulatory</h4>
+                    </div>
+                    <ul className="space-y-2 text-sm text-purple-200">
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        KYC/AML checks with third-party APIs
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Immutable audit logs for all actions
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Regulatory export tools (SEC, FSC)
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        GDPR, CCPA & Jamaican DPA compliance
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                {/* Application Security */}
+                <Card className="bg-white/10 backdrop-blur-md border-blue-300/20 hover:bg-white/15 transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-center mb-4">
+                      <Zap className="w-8 h-8 text-blue-300 mr-3" />
+                      <h4 className="text-lg font-semibold text-blue-100">Application Security</h4>
+                    </div>
+                    <ul className="space-y-2 text-sm text-blue-200">
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        OWASP Top 10 mitigation
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Input validation & sanitization
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Rate limiting & bot protection
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        CSRF protection for forms
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        JWT token-based API authentication
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                {/* Monitoring & Incident Response */}
+                <Card className="bg-white/10 backdrop-blur-md border-purple-300/20 hover:bg-white/15 transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-center mb-4">
+                      <Activity className="w-8 h-8 text-purple-300 mr-3" />
+                      <h4 className="text-lg font-semibold text-purple-100">Monitoring & Incident Response</h4>
+                    </div>
+                    <ul className="space-y-2 text-sm text-purple-200">
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Real-time security monitoring
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        SIEM integration (Splunk, Datadog)
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Intrusion Detection Systems (IDS)
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Incident response playbooks
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Disaster Recovery & BCP
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                {/* User Education & Controls */}
+                <Card className="bg-white/10 backdrop-blur-md border-blue-300/20 hover:bg-white/15 transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-center mb-4">
+                      <Users className="w-8 h-8 text-blue-300 mr-3" />
+                      <h4 className="text-lg font-semibold text-blue-100">User Education & Controls</h4>
+                    </div>
+                    <ul className="space-y-2 text-sm text-blue-200">
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Security awareness training
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Login history visibility for clients
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Access token revocation controls
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Session management options
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                {/* Performance & Architecture */}
+                <Card className="bg-white/10 backdrop-blur-md border-purple-300/20 hover:bg-white/15 transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-center mb-4">
+                      <Globe className="w-8 h-8 text-purple-300 mr-3" />
+                      <h4 className="text-lg font-semibold text-purple-100">Performance & Architecture</h4>
+                    </div>
+                    <ul className="space-y-2 text-sm text-purple-200">
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        99.9% uptime SLA guarantee
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Microsecond latency trading
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        API-first design architecture
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        Seamless integration capabilities
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
               </div>
-              <div className="text-center">
-                <Globe className="w-12 h-12 text-green-400 mx-auto mb-3" />
-                <div className="font-semibold mb-1">Global Compliance</div>
-                <div className="text-sm text-slate-400">Multi-jurisdiction ready</div>
-              </div>
-              <div className="text-center">
-                <Layers className="w-12 h-12 text-purple-400 mx-auto mb-3" />
-                <div className="font-semibold mb-1">API-First Design</div>
-                <div className="text-sm text-slate-400">Seamless integrations</div>
+
+              {/* Security Metrics */}
+              <div className="grid md:grid-cols-3 gap-8 text-center">
+                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-blue-300/20">
+                  <div className="text-3xl font-bold text-blue-200 mb-2">99.9%</div>
+                  <div className="text-blue-300">Security Uptime</div>
+                  <div className="text-xs text-blue-400 mt-1">Enterprise SLA guaranteed</div>
+                </div>
+                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-purple-300/20">
+                  <div className="text-3xl font-bold text-purple-200 mb-2">&lt;1ms</div>
+                  <div className="text-purple-300">Authentication Response</div>
+                  <div className="text-xs text-purple-400 mt-1">Lightning-fast security</div>
+                </div>
+                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-blue-300/20">
+                  <div className="text-3xl font-bold text-blue-200 mb-2">100%</div>
+                  <div className="text-blue-300">Compliance Ready</div>
+                  <div className="text-xs text-blue-400 mt-1">Multi-jurisdiction approved</div>
+                </div>
               </div>
             </div>
           </div>
