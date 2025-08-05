@@ -410,6 +410,7 @@ export default function Index() {
                   </div>
                   <h3 className="text-3xl font-bold text-slate-800 mb-3">{category.category}</h3>
                   <div className={`w-24 h-1 mx-auto rounded-full bg-gradient-to-r ${
+                    category.color === 'indigo' ? 'from-indigo-500 to-purple-500' :
                     category.color === 'blue' ? 'from-blue-500 to-cyan-500' :
                     category.color === 'purple' ? 'from-purple-500 to-pink-500' :
                     'from-green-500 to-emerald-500'
