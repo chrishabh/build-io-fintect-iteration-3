@@ -104,34 +104,55 @@ export default function Index() {
 
   const platformCapabilities = [
     {
+      category: "Trading & Investment Platform",
       icon: <TrendingUp className="w-12 h-12 text-blue-600" />,
-      title: "Real-time Processing",
-      description: "Lightning-fast transaction processing and real-time analytics"
+      color: "blue",
+      capabilities: [
+        { name: "Cambio", description: "Foreign exchange trading with real-time rates" },
+        { name: "Equity Trading", description: "Stock market transactions and portfolio management" },
+        { name: "Loans", description: "Loan origination, servicing, and management" },
+        { name: "Margin Trading", description: "Leveraged trading with risk management" },
+        { name: "Repo Transactions", description: "Repurchase agreements and securities lending" },
+        { name: "Bonds", description: "Fixed income securities trading and management" },
+        { name: "Asset Management", description: "Portfolio optimization and asset allocation" },
+        { name: "Bank Lodgement", description: "Secure deposit and withdrawal processing" },
+        { name: "Payments", description: "Multi-currency payment processing" },
+        { name: "Journal Entries", description: "Automated transaction recording" }
+      ]
     },
     {
-      icon: <Shield className="w-12 h-12 text-blue-600" />,
-      title: "99.9% Uptime",
-      description: "Enterprise-grade reliability with guaranteed uptime SLA"
+      category: "CRM & Client Management",
+      icon: <Users className="w-12 h-12 text-purple-600" />,
+      color: "purple",
+      capabilities: [
+        { name: "360° Client Profile", description: "Complete view of history, holdings, and preferences" },
+        { name: "Lead Management", description: "Funnel/pipeline view with conversion tracking" },
+        { name: "Mass Email Campaigns", description: "Templates, scheduling, and analytics" },
+        { name: "Target Management", description: "Sales target setting and performance tracking" },
+        { name: "Ticket Management", description: "Client query system with internal assignment" },
+        { name: "Survey Management", description: "Analytics dashboards and feedback collection" },
+        { name: "HubSpot Integration", description: "Seamless CRM data synchronization" },
+        { name: "Salesforce Integration", description: "Enterprise-grade CRM connectivity" }
+      ]
     },
     {
-      icon: <Lock className="w-12 h-12 text-blue-600" />,
-      title: "Global Compliance",
-      description: "Full regulatory compliance across multiple jurisdictions"
-    },
-    {
-      icon: <Layers className="w-12 h-12 text-blue-600" />,
-      title: "API-first Design",
-      description: "Modern architecture built for integration and scalability"
-    },
-    {
-      icon: <Users className="w-12 h-12 text-blue-600" />,
-      title: "Multi-tenant SaaS",
-      description: "Scalable solution supporting multiple organizations"
-    },
-    {
-      icon: <Zap className="w-12 h-12 text-blue-600" />,
-      title: "AI & ML Powered",
-      description: "Advanced artificial intelligence for fraud detection and insights"
+      category: "Financial Accounting & Compliance",
+      icon: <DollarSign className="w-12 h-12 text-green-600" />,
+      color: "green",
+      capabilities: [
+        { name: "Automated Journal Entries", description: "Trade-linked accounting automation" },
+        { name: "Trial Balance", description: "Real-time balance verification" },
+        { name: "General Ledger", description: "Complete chart of accounts management" },
+        { name: "Sub-ledger Views", description: "Detailed transaction breakdowns" },
+        { name: "Month-end Closure", description: "Automated period-end processes" },
+        { name: "Year-end Closure", description: "Annual financial closing workflows" },
+        { name: "Audit Logs", description: "Comprehensive regulatory compliance trails" },
+        { name: "Tax-ready Exports", description: "CSV, XBRL, and regulatory format exports" },
+        { name: "Balance Sheet", description: "Real-time financial position reporting" },
+        { name: "Income Statement", description: "P&L analysis and reporting" },
+        { name: "Reconciliation Tools", description: "Bank and GL vs. trades matching" },
+        { name: "Approval Workflows", description: "Multi-level entry and report approvals" }
+      ]
     }
   ];
 
