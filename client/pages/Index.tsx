@@ -1175,7 +1175,7 @@ export default function Index() {
                 </Card>
 
                 {/* Data Encryption */}
-                <Card className="bg-white/10 backdrop-blur-md border-purple-300/20 hover:bg-white/15 transition-all duration-300">
+                <Card className="bg-white border-[#0072FF]/20 hover:bg-[#F5F7FA] hover:border-[#0072FF]/40 shadow-sm transition-all duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
                       <Lock className="w-8 h-8 text-purple-300 mr-3" />
@@ -1239,7 +1239,7 @@ export default function Index() {
                 </Card>
 
                 {/* Compliance & Regulatory */}
-                <Card className="bg-white/10 backdrop-blur-md border-purple-300/20 hover:bg-white/15 transition-all duration-300">
+                <Card className="bg-white border-[#0072FF]/20 hover:bg-[#F5F7FA] hover:border-[#0072FF]/40 shadow-sm transition-all duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
                       <CheckCircle className="w-8 h-8 text-purple-300 mr-3" />
@@ -1303,7 +1303,7 @@ export default function Index() {
                 </Card>
 
                 {/* Monitoring & Incident Response */}
-                <Card className="bg-white/10 backdrop-blur-md border-purple-300/20 hover:bg-white/15 transition-all duration-300">
+                <Card className="bg-white border-[#0072FF]/20 hover:bg-[#F5F7FA] hover:border-[#0072FF]/40 shadow-sm transition-all duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
                       <Activity className="w-8 h-8 text-purple-300 mr-3" />
@@ -1367,7 +1367,7 @@ export default function Index() {
                 </Card>
 
                 {/* Performance & Architecture */}
-                <Card className="bg-white/10 backdrop-blur-md border-purple-300/20 hover:bg-white/15 transition-all duration-300">
+                <Card className="bg-white border-[#0072FF]/20 hover:bg-[#F5F7FA] hover:border-[#0072FF]/40 shadow-sm transition-all duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
                       <Globe className="w-8 h-8 text-purple-300 mr-3" />
