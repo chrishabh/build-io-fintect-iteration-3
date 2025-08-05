@@ -1153,6 +1153,72 @@ export default function Index() {
             ))}
           </div>
 
+          {/* Platform Showcase Gallery */}
+          <div className="mt-20 mb-16">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-bold text-[#333333] mb-4">Platform Showcase</h3>
+              <p className="text-lg text-[#666666] max-w-2xl mx-auto">
+                See our fintech solutions in action across mobile and web platforms
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Mobile Banking App */}
+              <div className="relative group">
+                <div className="absolute inset-0 bg-gradient-to-r from-[#00A3E1]/10 to-[#0072FF]/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+                <div className="relative bg-white rounded-2xl p-6 border border-[#00A3E1]/20 hover:border-[#00A3E1]/40 transition-all duration-300 shadow-lg">
+                  <img
+                    src="https://images.pexels.com/photos/6373086/pexels-photo-6373086.jpeg"
+                    alt="Mobile banking app mockup on smartphone"
+                    className="w-full h-64 object-cover rounded-xl mb-4"
+                  />
+                  <h4 className="text-xl font-semibold text-[#333333] mb-2">Mobile Banking</h4>
+                  <p className="text-[#666666] text-sm">Complete banking experience on mobile devices with real-time portfolio tracking</p>
+                  <div className="mt-4 flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-[#00A3E1] rounded-full"></div>
+                    <span className="text-xs text-[#666666]">iOS & Android</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Trading Platform */}
+              <div className="relative group">
+                <div className="absolute inset-0 bg-gradient-to-r from-[#0072FF]/10 to-[#00C6FF]/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+                <div className="relative bg-white rounded-2xl p-6 border border-[#0072FF]/20 hover:border-[#0072FF]/40 transition-all duration-300 shadow-lg">
+                  <img
+                    src="https://images.pexels.com/photos/28682352/pexels-photo-28682352.jpeg"
+                    alt="Trading platform displaying financial charts and data"
+                    className="w-full h-64 object-cover rounded-xl mb-4"
+                  />
+                  <h4 className="text-xl font-semibold text-[#333333] mb-2">Trading Platform</h4>
+                  <p className="text-[#666666] text-sm">Advanced trading interface with real-time market data and portfolio analytics</p>
+                  <div className="mt-4 flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-[#0072FF] rounded-full"></div>
+                    <span className="text-xs text-[#666666]">Real-time Data</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Web Dashboard */}
+              <div className="relative group">
+                <div className="absolute inset-0 bg-gradient-to-r from-[#00C6FF]/10 to-[#00E6E6]/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+                <div className="relative bg-white rounded-2xl p-6 border border-[#00C6FF]/20 hover:border-[#00C6FF]/40 transition-all duration-300 shadow-lg">
+                  <img
+                    src="https://images.pexels.com/photos/577195/pexels-photo-577195.jpeg"
+                    alt="Financial dashboard on laptop showing analytics and reports"
+                    className="w-full h-64 object-cover rounded-xl mb-4"
+                  />
+                  <h4 className="text-xl font-semibold text-[#333333] mb-2">Analytics Dashboard</h4>
+                  <p className="text-[#666666] text-sm">Comprehensive web dashboard with advanced analytics and reporting tools</p>
+                  <div className="mt-4 flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-[#00C6FF] rounded-full"></div>
+                    <span className="text-xs text-[#666666]">Advanced Analytics</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Technical Excellence & Security */}
           <div className="mt-20 bg-gradient-to-br from-white via-[#F5F7FA] to-white rounded-3xl p-12 relative overflow-hidden border border-[#00A3E1]/20">
             {/* Background Pattern */}
