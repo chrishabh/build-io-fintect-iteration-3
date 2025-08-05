@@ -623,10 +623,7 @@ export default function Index() {
       </section>
 
       {/* Solutions Section */}
-      <section
-        id="solutions"
-        className="py-20 px-6 bg-white relative z-10"
-      >
+      <section id="solutions" className="py-20 px-6 bg-white relative z-10">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#333333] mb-4">
@@ -1071,21 +1068,15 @@ export default function Index() {
                     <div className="grid md:grid-cols-3 gap-6 text-center">
                       <div>
                         <div className="text-3xl font-bold mb-2">360° View</div>
-                        <div className="text-white/80">
-                          Client Intelligence
-                        </div>
+                        <div className="text-white/80">Client Intelligence</div>
                       </div>
                       <div>
                         <div className="text-3xl font-bold mb-2">Automated</div>
-                        <div className="text-white/80">
-                          Campaign Management
-                        </div>
+                        <div className="text-white/80">Campaign Management</div>
                       </div>
                       <div>
                         <div className="text-3xl font-bold mb-2">Advanced</div>
-                        <div className="text-white/80">
-                          Analytics Dashboard
-                        </div>
+                        <div className="text-white/80">Analytics Dashboard</div>
                       </div>
                     </div>
                   </div>
@@ -1106,9 +1097,7 @@ export default function Index() {
                       </div>
                       <div>
                         <div className="text-3xl font-bold mb-2">Real-time</div>
-                        <div className="text-white/80">
-                          Financial Reporting
-                        </div>
+                        <div className="text-white/80">Financial Reporting</div>
                       </div>
                     </div>
                   </div>
@@ -1557,22 +1546,34 @@ export default function Index() {
               <h4 className="font-semibold mb-4 text-[#333333]">Solutions</h4>
               <ul className="space-y-2 text-[#666666]">
                 <li>
-                  <a href="#" className="hover:text-[#00A3E1] transition-colors">
+                  <a
+                    href="#"
+                    className="hover:text-[#00A3E1] transition-colors"
+                  >
                     Client Systems
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-[#00A3E1] transition-colors">
+                  <a
+                    href="#"
+                    className="hover:text-[#00A3E1] transition-colors"
+                  >
                     Back Office
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-[#00A3E1] transition-colors">
+                  <a
+                    href="#"
+                    className="hover:text-[#00A3E1] transition-colors"
+                  >
                     Data Analytics
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-[#00A3E1] transition-colors">
+                  <a
+                    href="#"
+                    className="hover:text-[#00A3E1] transition-colors"
+                  >
                     Compliance
                   </a>
                 </li>
