@@ -1502,8 +1502,8 @@ export default function Index() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg">
-                  <span className="text-white font-bold text-sm">FT</span>
+                <div className="w-8 h-8 rounded-lg overflow-hidden shadow-lg">
+                  <img src="https://cdn.builder.io/api/v1/image/assets%2F707c836443464c7fa6c9a69898b9d1aa%2Ff09e0d6342f64c2c9c141597b834874b?format=webp&width=800" alt="New Field Technologies" className="w-full h-full object-contain" />
                 </div>
                 <span className="text-xl font-bold text-white">
                   New Field Technologies
