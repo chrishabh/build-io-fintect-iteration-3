@@ -1183,7 +1183,7 @@ export default function Index() {
                         Data Encryption
                       </h4>
                     </div>
-                    <ul className="space-y-2 text-sm text-purple-200">
+                    <ul className="space-y-2 text-sm text-[#666666]">
                       <li className="flex items-start">
                         <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         End-to-end encryption (TLS 1.3 in transit)
@@ -1247,7 +1247,7 @@ export default function Index() {
                         Compliance & Regulatory
                       </h4>
                     </div>
-                    <ul className="space-y-2 text-sm text-purple-200">
+                    <ul className="space-y-2 text-sm text-[#666666]">
                       <li className="flex items-start">
                         <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         KYC/AML checks with third-party APIs
@@ -1311,7 +1311,7 @@ export default function Index() {
                         Monitoring & Incident Response
                       </h4>
                     </div>
-                    <ul className="space-y-2 text-sm text-purple-200">
+                    <ul className="space-y-2 text-sm text-[#666666]">
                       <li className="flex items-start">
                         <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Real-time security monitoring
@@ -1375,7 +1375,7 @@ export default function Index() {
                         Performance & Architecture
                       </h4>
                     </div>
-                    <ul className="space-y-2 text-sm text-purple-200">
+                    <ul className="space-y-2 text-sm text-[#666666]">
                       <li className="flex items-start">
                         <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         99.9% uptime SLA guarantee
@@ -1409,7 +1409,7 @@ export default function Index() {
                   </div>
                 </div>
                 <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-purple-300/20">
-                  <div className="text-3xl font-bold text-purple-200 mb-2">
+                  <div className="text-3xl font-bold text-[#666666] mb-2">
                     &lt;1ms
                   </div>
                   <div className="text-[#0072FF]">Authentication Response</div>
