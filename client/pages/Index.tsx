@@ -348,28 +348,39 @@ export default function Index() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <Card key={index} className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/15 hover:shadow-xl transition-all duration-300 group">
+              <Card
+                key={index}
+                className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/15 hover:shadow-2xl transition-all duration-500 group transform hover:scale-105 hover:-translate-y-2"
+                style={{
+                  animationDelay: `${index * 200}ms`,
+                  animation: 'fadeInUp 0.8s ease-out forwards'
+                }}
+              >
                 <CardHeader>
-                  <div className="mb-4">{feature.icon}</div>
-                  <CardTitle className="text-xl text-white group-hover:text-cyan-400 transition-colors">
+                  <div className="mb-4 transform group-hover:rotate-12 transition-transform duration-300">{feature.icon}</div>
+                  <CardTitle className="text-xl text-white group-hover:text-cyan-400 transition-colors duration-300">
                     {feature.title}
                   </CardTitle>
-                  <CardDescription className="text-blue-200">
+                  <CardDescription className="text-blue-200 group-hover:text-blue-100 transition-colors">
                     {feature.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2">
+                  <ul className="space-y-3">
                     {feature.features.map((item, idx) => (
-                      <li key={idx} className="flex items-center text-sm text-blue-100">
-                        <CheckCircle className="w-4 h-4 text-cyan-400 mr-2 flex-shrink-0" />
+                      <li
+                        key={idx}
+                        className="flex items-center text-sm text-blue-100 transform hover:translate-x-2 transition-transform duration-200"
+                        style={{animationDelay: `${(index * 200) + (idx * 100)}ms`}}
+                      >
+                        <CheckCircle className="w-4 h-4 text-cyan-400 mr-3 flex-shrink-0 animate-pulse" />
                         {item}
                       </li>
                     ))}
                   </ul>
-                  <Button variant="outline" className="w-full mt-4 border-white/30 text-white hover:bg-white/10 backdrop-blur-sm">
+                  <Button variant="outline" className="w-full mt-6 border-white/30 text-white hover:bg-gradient-to-r hover:from-cyan-500/20 hover:to-purple-500/20 backdrop-blur-sm transition-all duration-300 group-hover:border-cyan-400/50">
                     Learn More
-                    <ArrowRight className="ml-2 w-4 h-4" />
+                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </CardContent>
               </Card>
