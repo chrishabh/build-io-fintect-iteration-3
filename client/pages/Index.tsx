@@ -1144,14 +1144,14 @@ export default function Index() {
                 <Card className="bg-white border-[#00A3E1]/20 hover:bg-[#F5F7FA] hover:border-[#00A3E1]/40 transition-all duration-300 shadow-sm">
                   <CardContent className="p-6">
                     <div className="flex items-center mb-4">
-                      <Shield className="w-8 h-8 text-blue-300 mr-3" />
-                      <h4 className="text-lg font-semibold text-blue-100">
+                      <Shield className="w-8 h-8 text-[#00A3E1] mr-3" />
+                      <h4 className="text-lg font-semibold text-[#333333]">
                         Authentication & Identity
                       </h4>
                     </div>
-                    <ul className="space-y-2 text-sm text-blue-200">
+                    <ul className="space-y-2 text-sm text-[#666666]">
                       <li className="flex items-start">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#00A3E1] rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         Multi-Factor Authentication (MFA) for all users
                       </li>
                       <li className="flex items-start">
