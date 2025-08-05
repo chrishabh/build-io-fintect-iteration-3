@@ -908,25 +908,25 @@ export default function Index() {
             </div>
 
             {/* Bottom CTA Section */}
-            <div className="mt-32 text-center bg-gradient-to-r from-slate-800/50 via-blue-900/50 to-purple-900/50 backdrop-blur-2xl rounded-3xl p-16 border border-white/20">
-              <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <div className="mt-32 text-center bg-gradient-to-r from-white via-[#F5F7FA] to-white backdrop-blur-2xl rounded-3xl p-16 border border-[#00A3E1]/20 shadow-lg">
+              <h3 className="text-4xl md:text-5xl font-bold text-[#333333] mb-6">
                 Ready to Transform Your
-                <span className="block bg-gradient-to-r from-cyan-300 to-purple-300 bg-clip-text text-transparent">
+                <span className="block bg-gradient-to-r from-[#00A3E1] to-[#00E6E6] bg-clip-text text-transparent">
                   Financial Operations?
                 </span>
               </h3>
-              <p className="text-xl text-slate-300 mb-12 max-w-3xl mx-auto">
+              <p className="text-xl text-[#666666] mb-12 max-w-3xl mx-auto">
                 Join the hundreds of financial institutions already leveraging
                 our enterprise platform to drive innovation and growth.
               </p>
               <div className="flex flex-wrap justify-center gap-6">
-                <Button className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white border-0 px-10 py-5 text-xl font-semibold shadow-2xl hover:shadow-cyan-500/25 transition-all duration-500">
+                <Button className="bg-gradient-to-r from-[#0072FF] to-[#00C6FF] hover:from-[#00A3E1] hover:to-[#00E6E6] text-white border-0 px-10 py-5 text-xl font-semibold shadow-2xl hover:shadow-[#00A3E1]/25 transition-all duration-500">
                   Schedule Platform Demo
                   <ArrowRight className="ml-3 w-6 h-6" />
                 </Button>
                 <Button
                   variant="outline"
-                  className="border-white/20 text-white hover:bg-white/10 hover:border-cyan-400/50 px-10 py-5 text-xl font-semibold backdrop-blur-xl"
+                  className="border-[#00A3E1]/20 text-[#00A3E1] hover:bg-[#00A3E1]/10 hover:border-[#00A3E1]/50 px-10 py-5 text-xl font-semibold"
                 >
                   Download Whitepaper
                 </Button>
