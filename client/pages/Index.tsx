@@ -357,38 +357,38 @@ export default function Index() {
       </section>
 
       {/* Enterprise Services */}
-      <section id="services" className="py-20 px-6 bg-slate-50">
+      <section id="services" className="py-20 px-6 bg-gradient-to-br from-white/5 to-purple-900/20 relative z-10">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-800 mb-4">
+            <h2 className="text-4xl font-bold text-white mb-4">
               Enterprise Financial Service Platform
             </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Comprehensive solutions designed for the modern financial landscape. Trusted 
+            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+              Comprehensive solutions designed for the modern financial landscape. Trusted
               by leading institutions to power their digital transformation.
             </p>
           </div>
-          
+
           <div className="grid lg:grid-cols-3 gap-8">
             {enterpriseServices.map((service, index) => (
-              <Card key={index} className="border-slate-200 hover:shadow-xl transition-all duration-300">
+              <Card key={index} className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/15 hover:shadow-xl transition-all duration-300">
                 <CardHeader>
                   <div className="mb-4">{service.icon}</div>
-                  <CardTitle className="text-xl">{service.title}</CardTitle>
-                  <CardDescription className="text-slate-600">
+                  <CardTitle className="text-xl text-white">{service.title}</CardTitle>
+                  <CardDescription className="text-blue-200">
                     {service.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3 mb-6">
                     {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start text-sm text-slate-600">
-                        <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                      <li key={idx} className="flex items-start text-sm text-blue-100">
+                        <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>
                         {feature}
                       </li>
                     ))}
                   </ul>
-                  <Button variant="outline" className="w-full border-blue-200 text-blue-700 hover:bg-blue-50">
+                  <Button variant="outline" className="w-full border-white/30 text-white hover:bg-white/10 backdrop-blur-sm">
                     Learn More
                     <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
